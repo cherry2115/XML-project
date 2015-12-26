@@ -1,0 +1,2104 @@
+<div id="xps_meta">*******************************************************<br />Lang: en<br />Client: ELJ<br />HLY 47<br />S2405-8440(15)30055-4<br />10.1016/j.heliyon.2015.e00047<br />001<br /><br />*******************************************************</div>
+<p class="history" id="editor_para_1">Received: 11-5-2015 Revised: 4-11-2015 Accepted: 6-11-2015</p>
+<p class="at" id="editor_para_2">Co-cultivation of <em>Penicillium</em> sp. AKB-24 and <em>Aspergillus nidulans</em> AKB-25 as a cost-effective method to produce cellulases for the hydrolysis of pearl millet stover</p>
+<p class="au" id="editor_para_3"><span class="head_au"><span class="head_gn">Amit</span> <span class="head_sn">Kumar</span> <sup>*</sup> <a href="baliyaniitr@gmail.com">baliyaniitr@gmail.com</a> </span>&#65279; <span class="head_au"><span class="head_gn">Archana</span> <span class="head_sn">Gautam</span> </span>&#65279; <span class="head_au"><span class="head_gn">Dharm</span> <span class="head_sn">Dutt</span> </span>&#65279;</p>
+<p class="aff" id="editor_para_4">Department of Paper Technology, Indian Institute of Technology Roorkee, Saharanpur Campus, Saharanpur 247001, India</p>
+<p class="saff" id="editor_para_5"><span class="xps_organization">Department of Paper Technology</span>, <span class="xps_organization">Indian Institute of Technology Roorkee</span>, <span class="xps_address">Saharanpur Campus</span>, <span class="xps_city">Saharanpur</span>, <span class="xps_pincode">247001</span>, <span class="xps_country">India</span></p>
+<hr />
+<div id="xps_corr">
+<p class="cor" id="editor_para_6"><sup>*</sup>Corresponding author. Tel.: +91 9719998824.</p>
+</div>
+<hr />
+<div id="xps_abstract">
+<p class="abs" id="editor_para_7">Abstract</p>
+<p class="absp" id="editor_para_8">Hydrolysis of cellulose and hemicelluloses into fermentable sugars is the primary step for the production of fuels and chemicals from lignocellulosic biomass, and is often hindered by the high cost of cellulolytic and hemicellulolytic enzymes. In the present study co- and monocultures of <em>Penicillium</em> sp. AKB-24 and <em>Aspergillus nidulans</em> AKB-25 were used under a variety of fermentation conditions to optimize enzyme production, measured by pearl millet stover hydrolysis. Wheat bran was found to be the optimal carbon source yielding maximum enzyme production under solid-state fermentation conditions due to its water retention value (175%) and minimum C/N ratio (22.7). <em>Penicillium</em> sp. AKB-24 produced maximum endoglucanase (134 IU/gds), FPase (3 FPU/gds), glucosidase (6 IU/gds) and xylanase (3592 IU/gds) activities when incubated for 7 days at 30 &#176;C and pH 7 with a moisture content of 77.5%, and 1.2% yeast extract and 0.1% (w/v) sodium dodecyl sulphate supplement. Co-culturing of <em>Penicillium</em> sp. AKB-24 and <em>Aspergillus nidulans</em> AKB-25 enhanced endoglucanase, FPase, and exoglucanase activities by 34, 18, and 11% respectively compared to <em>Aspergillus nidulans</em> AKB-25 alone under optimum conditions. Enzyme produced by co-cultivation released equal amounts of reducing sugars at an enzyme dose of 15 FPU/g and reaction time 72 h, but the required quantity of enzyme was 14% less compared to enzyme released from <em>Aspergillus nidulans</em> AKB-25 mono-culture. In conclusion, co-cultivation of <em>Penicillium</em> sp. AKB-24 and <em>Aspergillus nidulans</em> AKB-25 to produce enzymes for the hydrolysis of pearl millet stover is more cost-effective than cultivation with <em>Aspergillus nidulans</em> AKB-25 alone.</p>
+<p class="kwd" role="keyword" id="editor_para_9">Keywords:&#8203; <span class="keyword">Biotechnology</span>, <span class="keyword">Enzymes</span>, <span class="keyword">Applied Microbiology</span>, <span class="keyword">Industrial Biotechnology</span></p>
+<p class="h1" role="grey" id="editor_para_10">1 Introduction</p>
+</div>
+<hr />
+<div id="xps_body">
+<p class="txt" id="editor_para_11">Different species from the genus <em>Aspergillus</em> and <em>Penicillium</em> are the most commonly used for the production of pharmaceuticals, food ingredients, and enzymes (<span class="xps_ndreflinking">Saini et al., 2015</span>). In most cases, these fungal saprophytes are associated to degradation of plant polysaccharides, such as celluloses, hemicelluloses, pectins, starches and other low molecular weight carbohydrates. Extracellular enzymes are necessary to convert the natural carbon sources (mainly natural polymers) into small molecules and enabling the cell to assimilate it. High cellulose conversion requires high enzyme concentrations and recycling of enzymes is difficult due to adsorption of enzymes to residual lignocelluloses (<span class="xps_ndreflinking">Eriksson et al., 2002</span>). The hydrolysis of plant polymers decreases rapidly with time and it leads to decreased yield and long process time (<span class="xps_ndreflinking">Gregg and Saddler, 1996</span>). The surface area of cellulose is an important substrate characteristic for the determination of initial rate of hydrolysis (<span class="xps_ndreflinking">Thompson and Chen, 1992</span>).</p>
+<p class="txt" id="editor_para_12">Renewable resources are becoming increasingly important, available in plenty in nature and have a potential for bioconversion into fuels and chemicals, natural and man-made, (<span class="xps_ndreflinking">Sanchez, 2009</span>) for changing the world economically, socially, and environmentally (<span class="xps_ndreflinking">Detroy and Stjulian, 1983</span>). Hydrolysis of the cellulosic components into fermentable sugars is the primary step for the production of fuels and chemicals from lignocellulosic biomass. The high cost of cellulolytic enzymes is the main obstruction in the cost-effective processing of lignocellulosic biomass. Considerable efforts aimed at mitigating cellulase production cost by improving the efficiency of known cellulase, identification of new, more active cellulase and creation of multi-component cellulase system optimized for selected pretreated substrates (<span class="xps_ndreflinking">Kumar et al., 2008</span>; <span class="xps_ndreflinking">Merino and Cherry, 2007</span>). Compared to submerged fermentation (SmF), solid-state fermentation (SSF) technology has been recognized to have lower consumption of water (concentrated enzymes) and energy, high side activities and generally, it has been claimed that product yields are higher (<span class="xps_ndreflinking">Singhania et al., 2010</span>; <span class="xps_ndreflinking">Delabona et al., 2012</span>). Several researchers reported that the addition of surfactant enhanced the production of cellulases and xylanases from different fungi. <span class="xps_ndreflinking">Kuhad et al., 1994</span><span class="xps_ndrefoutput">Kuhad et al. (1994)</span> showed 30% improvement in cellulase production by the addition of Tween-80. Co-culturing of fungi during SSF enhances the production of cellulolytic enzymes as they co-exited symbiotically on natural solid substrate in nature. Co-culture enables production more efficient of enzyme mixtures for industrial processes compared to monocultures (<span class="xps_ndreflinking">Gupte and Madamwar, 1997</span>; <span class="xps_ndreflinking">Yoon et al., 2014</span>). For efficient hydrolysis of lignocellulosic biomass in to reducing sugars, enzyme preparation requires balanced activities of all the components of cellulases such as endo-&#946;-1, 4-glucanases, exo-&#946;-1, 4-glucanase, and &#946;-glucosidase along with xylanases (<span class="xps_ndreflinking">Brijwani et al., 2010</span>; <span class="xps_ndreflinking">Gupte and Madamwar, 1997</span>). All these enzymes act synergistically to hydrolyze lignocellulosic biomass by the creation of new accessible sites for each other and prevention of product inhibition (<span class="xps_ndreflinking">de Carvalho et al., 2014</span>). Products obtained after hydrolysis of lignocellulosic biomass are composed of mainly glucose, xylose, cellobiose, and oligosaccharides. Among them glucose is the most important product which can be converted into variety of specialty chemicals such as ethanol, methane, hydrogen, organic acids, microbial polysaccharides, and single cell proteins (<span class="xps_ndreflinking">Howard et al., 2003</span>; <span class="xps_ndreflinking">Yoon et al., 2014</span>). Cellulolytic and hemicellulolytic enzymes have wide range of applications in pulp and paper, textile, food, brewery and wine, animal feed, detergent, and bioenergy industry (<span class="xps_ndreflinking">Dhillon et al., 2011</span>; <span class="xps_ndreflinking">Dutt and Kumar, 2014</span>; <span class="xps_ndreflinking">Singhania et al., 2010</span>).</p>
+<p class="txt" id="editor_para_13">Present study aimed at producing enzymes by co-culturing and mono culturing of <em>Penicillium</em> sp. AKB-24 and <em>Aspergillus nidulans</em> AKB-25. Fermentation conditions for co-culturing of <em>Penicillium</em> sp. AKB-24 and <em>Aspergillus nidulans</em> AKB-25 and <em>Penicillium</em> sp AKB-24 were optimized in order to get higher enzyme production. Finally, the effect of enzyme produced by co-culture and monoculture techniques was investigated on the hydrolysis of pearl millet stover.</p>
+<p class="h1" role="grey" id="editor_para_14">2 Materials and methods</p>
+<p class="h2" id="editor_para_15">2.1 Isolation and identification of fungi</p>
+<p class="txt" id="editor_para_16">The two fungal isolates AKB-24 and AKB-25 were isolated from the soil samples (rich in decaying lignocellulosic materials) and collected from district Jaipur in Rajasthan, India. Both the fungal isolates AKB-24 and AKB-25 sent to Microbial Culture Collection, National Centre for Cell Science, Pune (India) and National Fungal Culture Collection of India, Agharkar Research Institute, Pune (India) respectively for their identification. The fungal isolates were maintained over potato carrot agar (PCA) slants at 4 &#176;C.</p>
+<p class="h2" id="editor_para_17">2.2 FE-SEM analysis of selected fungal strains</p>
+<p class="txt" id="editor_para_18">FE-SEM analysis of sexual and asexual spores of fungal strains AKB-25 was carried out for their detailed morphological study. Fungal mat with along spores was subjected to fixation using 3% glutaraldehyde (v/v) and 2% formaldehyde (4:1) for 6 h. Following the primary fixation, samples were washed with distilled water and this process was repeated three times. Samples were then treated with ethanol gradients for dehydration. After dehydration, samples were air-dried and examined under FE-SEM at suitable voltage and magnifications.</p>
+<p class="h2" id="editor_para_19">2.3 Preparation of substrates</p>
+<p class="txt" id="editor_para_20">Various agro-residues such as sugarcane bagasse, black gram residue, corn stover, pearl millet stover, rice straw, rice husk, sugarcane leaves, sun hemp residue, wheat bran, wheat straw collected from Muzaffarnagar district in Uttar Pradesh, India. All the agro-residues washed with tap water, dried in sunlight and chopped in to 1-2 cm pieces. After chopping, all the residues dried at 70 &#176;C overnight to remove residual moisture. Dried agricultural residues were ground in a Wiley mill in the particle size range of 250 to 1400 &#956;m and they were used as the substrates for enzyme production. The elemental carbon and nitrogen contents in various agro-residues were estimated with organic elemental analyzer (Thermo scientific, Flash 2000). Water retention value is the percent ratio of contained water in the sample after centrifuging at a relative centrifugal force relative to dry weight of the sample. The sample was centrifuged at relative centrifugal force of 900 G for 30 min where G is the relative centrifugal force at room temperature, which is given in multiples of earth gravity. The samples were removed onto aluminium foil, the wet weights were measured and the samples were dried at 105&#177;2 &#176;C until they reached constant mass (dry weights). The WRV was calculated as per equation given by <span class="xps_ndreflinking">Cheng et al., 2010</span><span class="xps_ndrefoutput">Cheng et al. (2010)</span>.</p>
+<p class="eq" id="editor_para_21"><img class="TDMathEditor" id="editor_math_1" src="http://172.16.0.107:8080/temp/files/MNT_ELSEVIER_JOURNAL_HLY_47_110/mathimage/b5d9b4236b94479c0e8ef5f74f08eeb0.gif" alt="&lt;math&gt;&lt;mrow&gt;&lt;mtext&gt;WRV&lt;/mtext&gt;&lt;mrow&gt;&lt;mo stretchy=&quot;true&quot;&gt;(&lt;/mo&gt;&lt;mo&gt;%&lt;/mo&gt;&lt;mo stretchy=&quot;true&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mtext&gt;Wwet&lt;/mtext&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mtext&gt;Wdry&lt;/mtext&gt;&lt;/mrow&gt;&lt;mtext&gt;Wdry&lt;/mtext&gt;&lt;/mfrac&gt;&lt;mo&gt;&amp;#x00D7;&lt;/mo&gt;&lt;mn&gt;100&lt;/mn&gt;&lt;/mrow&gt;&lt;/math&gt;" /></p>
+<p class="txt" id="editor_para_22">Where W<sub>wet</sub> is the weight of wet sample after centrifugation and W<sub>dry</sub> is weight of oven dried samples.</p>
+<p class="txt" id="editor_para_23">For hydrolysis studies, pearl millet stover was pretreated with 3% NaOH (as such) at 121 &#176;C for 20 min. During pretreatment, solid to liquid ratio was maintained at 1:8. Alkali pretreated solid residue was repeatedly washed with tape water to neutral pH and finally washed with distilled water. After washing, pretreated solid residue used for enzymatic saccharification without drying.</p>
+<p class="h2" id="editor_para_24">2.4 Enzyme production under SSF</p>
+<p class="txt" id="editor_para_25">Various agricultural residues such as sugarcane bagasse, black gram residue, corn stover, pearl millet stover, rice straw, rice husk, sugarcane leaves, sunhemp residue, wheat bran, and wheat straw were used as carbon sources for enzyme production during SSF. Five gram of each substrate was moistened with Mandel Weber media (g/l: 1.4 (NH<sub>4</sub>)<sub>2</sub>SO<sub>4</sub>, 2.0 KH<sub>2</sub>PO<sub>4</sub>, 0.3CaCl<sub>2</sub>, 0.3 MgSO<sub>4</sub>.7H<sub>2</sub>O, 0.1 Tween-80 and trace elements: 0.005 FeSO<sub>4</sub>.7H<sub>2</sub>O, 0.0016 MnSO<sub>4</sub>.7H<sub>2</sub>O, 0.0014 ZnSO<sub>4</sub>.7H<sub>2</sub>O, 0.002 CoCl<sub>2</sub>.6H<sub>2</sub>O). Initial moisture content and initial pH were maintained at 77.5% and 5.5 respectively. The initial pH of Mandel Weber media for enzyme production was adjusted with 1N HCl or 1N NaOH before adding to the flasks. Flasks were sterilized by autoclaving at 121 &#176;C for 30 min. Flasks were inoculated with five discs of actively growing fungi and incubated at 30 &#176;C for 6 days (<span class="xps_ndreflinking">Yoon et al., 2014</span>). The enzyme was extracted on rotator shaker at 150 rpm and 30&#177;1 &#176;C for 60 min by adding 50 ml distilled water to the fermented medium. Following the centrifugation, different enzyme activities such as endoglucanase, filter paper activity (FPase), &#946;-glucosidase and xylanase activities were determined in supernatant.</p>
+<p class="h2" id="editor_para_26">2.5 Optimization of cultural conditions</p>
+<p class="txt" id="editor_para_27">Optimization of different cultural parameters for enzyme production was performed by using one factor at a time (OFAT) approach (<span class="xps_ndreflinking">Deswal et al., 2011</span>). For the selection of best carbon source, several agricultural residues were utilized for enzyme production under SSF. To optimize incubation time harvesting of enzyme was carried out up to 10 days at an interval of 24 h. To find out the effect of temperature on enzyme production, fermentation was carried out at different temperatures (26<span class="xps_ndash">&#8211;</span>42 &#176;C) at an interval of 4 &#176;C. The effect of pH on enzyme production was assessed by adjusting initial pH of production medium varying from 3 to 10 keeping a gap of 1 with 1 N HCl or 1 N NaOH. The effect of moisture content on enzyme production was assessed by varying the initial moisture content to 55.0, 65.0, 70.0, 75.0, 77.5, 80.0, 82.5, and 85%. The effect of nitrogen sources enzyme production was investigated by supplementing the medium with nitrogen sources like NH<sub>4</sub>Cl, NH<sub>4</sub>NO<sub>3</sub>, (NH<sub>4</sub>)<sub>2</sub>PO<sub>4</sub>, (NH<sub>4</sub>)<sub>2</sub>SO<sub>4</sub>, NaNO<sub>3</sub> (inorganic), HN<sub>2</sub>CONH<sub>2</sub> (organic) and beef extract, malt extract, peptone, soybean meal, tryptone, and yeast extract (complex) at four different concentration levels. The concentration of inorganic and organic nitrogen sources was tested at levels 0.04, 0.08, 0.12, and 0.16% (as available nitrogen basis) while complex organic nitrogen sources were supplemented as 0.4, 0.8, 1.2, and 1.6% (as w/v basis). In order to observe the effect of surfactant on enzyme production, various surfactants (Tween-20, Tween-40, Tween-60, Tween-80, Triton-x-100, SDS and EDTA) were added at concentrations like 0.05, 0.10, and 0.15% (w/v) to the NSS solution.</p>
+<p class="h2" id="editor_para_28">2.6 Enzyme production with co-cultivation of <em>Penicillium</em> sp. AKB-24 and <em>Aspergillus nidulans</em> AKB-25</p>
+<p class="txt" id="editor_para_29">All the fermentation conditions were optimized for <em>Penicillium</em> sp. AKB-24 and optimal conditions for <em>Aspergillus nidulans</em> AKB-25 were taken from PhD thesis (<span class="xps_ndreflinking">Kumar 2015</span>) for comparing the results of mono-cultivation with mixed cultivation. The co-cultivation of <em>Penicillium</em> sp. AKB-24 and <em>Aspergillus nidulans</em> AKB-25 were carried out at optimal conditions as reported in <span class="xps_floatlinking">Tables 3 and 5</span>. Likewise, fermentation medium was inoculated with five disc of actively growing <em>Penicillium</em> sp. AKB-24 and incubated for 3 days at 30 &#176;C, after 3 days of incubation, spores of <em>A. nidulans</em> AKB-25 were added (1&#215;10<sup>5</sup>/g of substrate). The extraction of enzyme was carried out after seven days of incubation and analysed for various enzyme activities as cited above.</p>
+<p class="h2" id="editor_para_30">2.7 Saccharification studies</p>
+<p class="txt" id="editor_para_31">The saccharification of alkali pretreated pearl millet stover (substrate) was carried out maintaining the 2% concentration. Different doses of enzymes varying from 5 to 20 FPU/g dry weight of substrate were added to the substrate making up the final reaction volume of 50 ml and maintaining the pH at pH 5.0 with citrate buffer. Further, the reaction mixture was incubated at 50 &#176;C and 120 rpm for 96 h in incubator shaker (New Brunswick Scientific, Innova&#174; 43, USA). To prevent microbial contamination during saccharification process, 0.01% sodium azide was added to reaction mixture. Hydrolysate samples were withdrawn up to 84 h at regular intervals of 12 h and centrifuged to remove remaining solids. The degree of saccharification was estimated based on released reducing sugars as per method given by <span class="xps_ndreflinking">Miller, 1959</span><span class="xps_ndrefoutput">Miller (1959)</span>.</p>
+<p class="h2" id="editor_para_32">2.8 Enzyme assays</p>
+<p class="txt" id="editor_para_33">All the enzyme activities were assayed by incubating appropriately diluted crude enzyme with respective substrates, which were dissolved in citrate buffer (50 mM, pH 5.5) at 50 &#176;C. Endoglucanase and FPase activities were determined by the method as described by <span class="xps_ndreflinking">Ghose, 1987</span><span class="xps_ndrefoutput">Ghose (1987)</span>. Endoglucanase activity was determined by reacting 0.5 ml appropriately diluted crude enzyme with 0.5 ml of 2% (w/v) carboxymethyl cellulose of medium viscosity (Sigma Chemical Co. St Louis, MO, USA) for 30 min at 50 &#176;C. FPase activity was analysed by incubating Whatman no. 1 filter paper strip of 50 mg (approximately 1<span class="xps_thinspace">&#8201;</span>&#215;<span class="xps_thinspace">&#8201;</span>6 cm) with crude enzyme totalling a reaction volume of 1.5 ml at 50 &#176;C for 60 min (<span class="xps_ndreflinking">Ghose, 1987</span>). Xylanase activity was measured by incubating the 500 &#956;l appropriately diluted crude enzyme with 500 &#956;l of 1% (w/v) beechwood xylan (Sigma Chemical Co. St Louis, MO, USA) at 50 &#176;C for 15 min. One unit of enzyme activity is defined as amount of enzyme required to liberate one micromole of reducing sugars by hydrolyzing respective substrate per min per ml under reaction conditions (<span class="xps_ndreflinking">Bailey et al., 1992</span>). &#946;-glucosidase activity was determined by using 5 mM p-nitrophenyl-&#946;-D-glucopyranoside (<span class="xps_ndreflinking">Wood and Bhat, 1988</span>). One unit of &#946;-glucosidase activity is defined as amount of enzyme that produces one micromole of <em>p</em>-nitro phenol per min per ml under specified assay conditions. The concentration of reducing sugars was quantified by dinitrosalicylic acid (DNS) method (<span class="xps_ndreflinking">Miller, 1959</span>). Enzyme activities were expressed as activity units per gram of initial dry solid substrates (IU/gds).</p>
+<p class="h2" id="editor_para_34">2.9 Statistical analysis</p>
+<p class="txt" id="editor_para_35">All experiments were carried out in triplicate and experimental results were represented as the mean &#177; standard deviation of values.</p>
+<p class="h1" role="grey" id="editor_para_36">3 Results and discussion</p>
+<p class="h2" id="editor_para_37">3.1 Identification microorganisms</p>
+<p class="txt" id="editor_para_38">ITS sequencing of fungal strains (AKB-24 and AKB-25) carried out at Microbial Culture Collection (MCC), National Centre for Cell Science, Pune, India. The fungal isolate AKB-24 identified as <em>Penicillium</em> sp. at MCC, National Centre for Cell Science, Pune, India and deposited with accession number MCC 1031. Similar sequences obtained from GenBank and alignment of similar sequences carried out using ClustalW software. Phylogenetic tree constructed for <em>Penicillium</em> sp. AKB-24 and closely related organisms by using neighbour joining method software MEGA 5.2 (<span class="xps_floatlinking">Fig. 1</span> <span class="xps_afloatlinking">Fig. 1</span>) (<span class="xps_ndreflinking">Tamura et al., 2011</span>). Fungal strain AKB-25 identified as <em>Aspergillus nidulans</em> based on morphological characteristics by the National Fungal Culture Collection of India, Agharkar Research Institute, Pune (India) and deposited with accession number NFCCI 2977. Scanning electron microscopy carried out for the analysis of morphological characteristics of fungal strain <em>Aspergillus nidulans</em> AKB-25 (<span class="xps_floatlinking">Fig. 2</span> <span class="xps_afloatlinking">Fig. 2</span>). Analysis of ITS sequences of fungal strain <em>Aspergillus nidulans</em> AKB-25 also supported the results obtained in morphological identification. The ITS sequences of both the fungal strains <em>Penicillium</em> sp. AKB-24 and <em>Aspergillus nidulans</em> AKB-25 were submitted to GenBank with accession numbers KP734016 and KP734017 respectively.</p>
+<p class="h2" id="editor_para_39">3.2 Agricultural residues as the carbon sources for enzyme production</p>
+<p class="txt" id="editor_para_40"><em>Penicillium</em> sp. AKB-24 produced the maximal endoglucanase activity (66.96 IU/gds) with wheat bran as the carbon source and the descending order of endoglucanase production using next top three agro-residues were as follows: rice straw (58.42 IU/gds) &gt; sugarcane bagasse (41.85 IU/gds) &gt; sunhemp residue (41.85 IU/gds). Likewise, as the source of carbon, wheat bran produced the highest FPase activity (1.31 FPU/gds) and rice straw and sunhemp residue produced the second (0.87 FPU/gds) and the third (0.50 FPU/gds) highest FPase activities with fungal strain <em>Penicillium</em> sp. AKB-24. In addition, <em>Penicillium</em> sp. AKB-24 produced the highest glucosidase activity using wheat bran (2.75 IU/gds) as the best carbon source and followed by rice straw (2.52 IU/gds) and sunhemp residue (1.60 IU/gds). Conversely, <em>Penicillium</em> sp. AKB-24 produced the highest xylanase activity (2150.79 IU/gds) using corn stover as the carbon source which was further followed by wheat bran (1865.15 IU/gds) and sugarcane leaves (1628.95 IU/gds) (<span class="xps_floatlinking">Fig. 3</span> <span class="xps_afloatlinking">Fig. 3</span>). Based on the production of FPase, endoglucanase and glucosidase, wheat bran was selected as the source of carbon for further optimization.</p>
+<p class="txt" id="editor_para_41">The effect of two important factors such as porosity and C/N ratio of the substrates enzyme production under SSF conditions was investigated. Porosity of all the substrates was determined in terms of water retention value (WRV) and wheat bran and sugarcane leaves showed the maximum WRV 174.94 and 171.12% respectively. Wheat bran showed the minimal C/N ratio (22.68) compared to other substrates while sugarcane leaves showed higher C/N ratio (69.49) (<span class="xps_floatlinking">Table 1</span> <span class="xps_afloatlinking">Table 1</span>). The higher porosity and lower C/N ratio of wheat bran favoured enzyme production of enzyme. The chemical compositions, accessibility, physical association of components in a substrate are the most important factors for enzyme production by fungi under SSF (<span class="xps_ndreflinking">Gupte and Madamwar, 1997</span>; <span class="xps_ndreflinking">Yoon et al., 2014</span>). Microorganisms grow on external and internal moist particles surface during SSF conditions. The space among particles is occupied by continuous gas phase which is referred as void volume or porosity of the substrate (<span class="xps_ndreflinking">Brijwani and Vadlani, 2011</span>; <span class="xps_ndreflinking">Richard et al., 2004</span>). Porosity of substrate continues the oxygen availability required for fungal growth during SSF conditions. Therefore, higher porosity of substrate improves the production of enzyme by the fungal cultures under aerobic SSF conditions (<span class="xps_ndreflinking">Brijwani and Vadlani, 2011</span>; <span class="xps_ndreflinking">Rahardjo et al., 2005</span>).</p>
+<p class="txt" id="editor_para_42">Wheat bran is able to remain loose in moist condition; thereby it provides large surface area for fungal growth (<span class="xps_ndreflinking">Dhillon et al., 2011</span>). Wheat bran is a good source of nitrogen compared to other agro-residues tested. Several researchers have indicated the importance of C/N ratio for enzyme production (<span class="xps_ndreflinking">Delabona et al., 2013</span>; <span class="xps_ndreflinking">Ellouz et al., 1995</span>). <span class="xps_ndreflinking">Delabona et al., 2013</span><span class="xps_ndrefoutput">Delabona et al. (2013)</span> found C/N ratio of 16.9 for wheat bran and reported enhance production of cellulase compared to other substrates by <em>Aspergillus fumigates</em> P40M2. Furthermore, wheat bran is the suitable carbon source for induction of enzymes in filamentous fungi under SSF conditions due to its composition (<span class="xps_ndreflinking">Deswal et al., 2011</span>). Wheat bran contains starch (13.8<span class="xps_ndash">&#8211;</span>24.9%), protein (13.2<span class="xps_ndash">&#8211;</span>18.4%), cellulose (11.0%), hemicellulose (10.9<span class="xps_ndash">&#8211;</span>26%), fats (3.5<span class="xps_ndash">&#8211;</span>3.9%), phenolic acids (1.1%), and ash (3.4<span class="xps_ndash">&#8211;</span>8.1%) (<span class="xps_ndreflinking">Apprich et al., 2014</span>; <span class="xps_ndreflinking">Dornez et al., 2006</span>). Wheat bran can supply ample of nutrients like proteins, hemicelluloses, iron, zinc, copper and manganese to microorganisms. In addition, hemicelluloses have proved as the good inducer for the production of cellulolytic enzymes and wheat bran is a rich source of hemicelluloses (<span class="xps_ndreflinking">Zhang and Sang, 2012</span>).</p>
+<p class="txt" id="editor_para_43">In solid-state fermentation, enzyme production was carried out using lignocellulosic biomass. Cellulose and hemicelluloses are used as carbon source for the production of cellulolytic and hemicellulolytic enzymes. Cellulose and hemicelluloses are the effective inducer for cellulolytic and hemicellulolytic enzymes respectively. Cellulose and xylan are the macromolecular polymers and they cannot enter through cell wall of fungal mycelia. Constitutively produced cellulases and xylanases acts on these polymers to release the low molecular weight oligosaccharides, disaccharides and monosaccharides, which play essential role in the induction of cellulases and xylanases. Xylose, xylobiose, xylooligosaccharides and heterodisaccharides of xylose and glucose are released from the xylan, which regulate the biosynthesis of xylanases (<span class="xps_ndreflinking">Kulkarni et al., 1999</span>). Several oligosaccharides and disaccharides such as cellobiose, sophorose, sorbose, &#948;-cellobiono-1,5-lactone, galactose, and gentiobiose induces the production of cellulases. Cellulose was also reported as inducer for the synthesis of xylanases (<span class="xps_ndreflinking">Liao et al., 2014</span>; <span class="xps_ndreflinking">Todero Ritter et al., 2013</span>).</p>
+<p class="h2" id="editor_para_44">3.3 Time course of enzyme production</p>
+<p class="txt" id="editor_para_45"><span class="xps_floatlinking">Table 2</span> <span class="xps_afloatlinking">Table 2</span> shows time course of enzyme production by <em>Penicillium</em> sp. AKB-24 using wheat bran as the substrate. Maximum endoglucanase (73.41 IU/gds), FPase (1.42 FPU/gds), and xylanase (1983.91 IU/gds) activities obtained on 7th day of incubation using wheat bran as the carbon source and beyond that all these enzyme activities declined with time. Enzyme production in various microorganisms reached to maximum level in stationary phase and declined during death phase. During death phase, depletion of nutrient concentration and cellular fragmentation is very common, resulting to release of intracellular material and proteases in fermentation broth (<span class="xps_ndreflinking">Bansal et al., 2012</span>; <span class="xps_ndreflinking">Dhillon et al., 2011</span>). <span class="xps_ndreflinking">Sehnem et al., 2006</span><span class="xps_ndrefoutput">Sehnem et al. (2006)</span> reported an optimum incubation time of 7 days for cellulase production by <em>Penicillium echinulatum</em>. <em>Penicillium</em> sp. AKB-24 produced maximum &#946;-glucosidase (4.80 IU/gds) on 9th day of incubation and decreased thereafter. The present results are close to the finding of <span class="xps_ndreflinking">Deswal et al., 2011</span><span class="xps_ndrefoutput">Deswal et al. (2011)</span> who reported maximum endoglucanase and &#946;-glucosidase production by <em>Fomitopsis</em> sp. RCK 2010 at 11th and 15th day of incubation respectively.</p>
+<p class="h2" id="editor_para_46">3.4 Effect of temperature and initial pH on enzyme production</p>
+<p class="txt" id="editor_para_47">Temperature is an important fungal-dependent parameter that affects the production of enzyme. Therefore, it is necessary to optimize temperature for particular fungi to produce maximum enzyme activity (<span class="xps_ndreflinking">Yoon et al., 2014</span>). All the enzyme activities including, endoglucanase (72.85 IU/gds), FPase (1.43 FPU/gds), &#946;-glucosidase (3.41 IU/gds), and xylanase (1963.80 IU/gds) were found maximum at 30 &#176;C by <em>Penicillium</em> sp. AKB-24. Higher temperature during enzyme production might lead to poor growth and reduction in enzyme yield due to denaturation of enzyme (<span class="xps_ndreflinking">Sabu et al., 2002</span>; <span class="xps_ndreflinking">Yoon et al., 2014</span>). Results observed in the current study were in accordance with the previous reports where temperature 30 &#176;C have been reported optimum for cellulase, xylanase and &#946;-glucosidase by <em>P. citrinum</em> (<span class="xps_ndreflinking">Ng et al., 2010</span>) and <em>P. decumbens</em> (<span class="xps_ndreflinking">Liu et al., 2011</span>).</p>
+<p class="txt" id="editor_para_48"><em>Penicillium</em> sp. AKB-24 showed maximum, endoglucanase (76.69 IU/gds), FPase (1.51 FPU/gds), &#946;-glucosidase (3.75 IU/gds) and xylanase (2143.28 IU/gds) activities at an initial pH of 7.0. Increasing or decreasing the initial pH from optimum value, affected the enzyme production to less extent. In all the cases, final pH of crude enzymes also measured and found within the range of 6.13<span class="xps_ndash">&#8211;</span>6.54 after fermentation (<span class="xps_floatlinking">Table 2</span>). Therefore, pH adjusted in the beginning is not a controlled factor during SSF conditions. Lignocellulosic substrates have complex structure and have a buffering effect during SSF, which minimizes the variation in pH. The growth of fungi during SSF also might vary the pH due to their metabolic activities (<span class="xps_ndreflinking">Mamma et al., 2008</span>; <span class="xps_ndreflinking">Yoon et al., 2014</span>).</p>
+<p class="h2" id="editor_para_49">3.5 Effect of initial moisture content on enzyme production</p>
+<p class="txt" id="editor_para_50">Influence of moisture content on enzyme production by <em>Penicillium</em> sp. AKB-24 was tested by in the range 55 to 85% using wheat bran as the substrate. <em>Penicillium</em> sp. AKB-24 resulted maximum endoglucanase (77.60 IU/gds), FPase (1.54 FPU/gds), &#946;-glucosidase (3.94 IU/gds) and xylanase (2214.17 IU/gds) production at 77.5% moisture content (<span class="xps_floatlinking">Table 2</span>). An increase or decrease in moisture content resulted into lower endoglucanase, FPase, &#946;-glucosidase, and xylanase productions. A higher than optimum moisture content resulted decrease in porosity, gummy texture, and lower oxygen transfer whereas a lower moisture content led to decreased swelling of substrate and solubility of nutrients (<span class="xps_ndreflinking">Kaur et al., 2011</span>). It inhibits effective uptake of nutrients by fungi. If moisture is too high during SSF, risk of contamination by unfavourable microorganisms is greater (<span class="xps_ndreflinking">Yoon et al., 2014</span>). <span class="xps_ndreflinking">Liu et al., 2011</span><span class="xps_ndrefoutput">Liu et al. (2011)</span> reported maximum cellulase production by <em>Penicillium decumbens</em> ML-017 at 72% moisture content using rice bran as the substrate under SSF (<span class="xps_ndreflinking">Liu et al., 2011</span>). <span class="xps_ndreflinking">Ng et al., 2010</span><span class="xps_ndrefoutput">Ng et al. (2010)</span> reported maximum endoglucanase, FPase, and &#946;-glucosidase productions by <em>Penicillium citrinum</em> YS40-5 during SSF at 90% moisture content on rice bran as the substrate.</p>
+<p class="h2" id="editor_para_51">3.6 Effect of nitrogen sources</p>
+<p class="txt" id="editor_para_52"><em>Penicillium</em> sp. AKB-24 induced maximum yield of FPase (2.14 FPU/gds) and xylanase (2910.00 IU/gds) at urea dosing of 0.08 and 0.12% (expressed as available nitrogen) respectively. Alternatively, <em>Penicillium</em> sp. AKB-24 induced maximum level of endoglucanase (100.45 IU/gds) using ammonium sulphate (0.08% expressed as available nitrogen) among various simple nitrogen sources (<span class="xps_floatlinking">Fig. 4</span> <span class="xps_afloatlinking">Fig. 4</span>). <em>Penicillium</em> sp. AKB-24 found more effective to induce enzyme production using complex nitrogen sources (beef extract, peptone, and yeast extract) compared to simple nitrogen sources. Among all the nitrogen sources, <em>Penicillium</em> sp. AKB-24 produced maximum production of FPase (2.38 FPU/gds), endoglucanase (115.05 IU/gds), and xylanase (2918.05 IU/gds) with yeast extract (1.2% w/v) as the complex nitrogen source (<span class="xps_floatlinking">Figs. 5</span> <span class="xps_afloatlinking">Fig. 5</span> and <span class="xps_floatlinking">Fig. 6</span><span class="xps_floatoutput">6</span> <span class="xps_afloatlinking">Fig. 6</span>). Fungal growth and synthesis of extracellular enzymes are influenced by the availability of precursors of protein synthesis (<span class="xps_ndreflinking">Kaur et al., 2011</span>). Proper combination of nitrogen sources, lignocellulosic substrate, and fungal strain is necessary for optimum production of cellulases and xylanases (<span class="xps_ndreflinking">Yoon et al., 2014</span>). <span class="xps_ndreflinking">Maeda et al., 2010</span><span class="xps_ndrefoutput">Maeda et al. (2010)</span> reported similar results with urea and yeast extract as the best nitrogen sources for cellulase production by <em>Penicillium funiculosum</em> using pretreated sugarcane bagasse as the carbon source. <span class="xps_ndreflinking">Adsul et al., 2009</span><span class="xps_ndrefoutput">Adsul et al. (2009)</span> showed yeast extract as the most suitable nitrogen source for cellulase production by <em>Penicillium janthinellum</em> during SSF using wheat bran and pure cellulose as the substrate.</p>
+<p class="h2" id="editor_para_53">3.7 Effect of surfactants</p>
+<p class="txt" id="editor_para_54">Different concentrations i.e. 0.05, 0.10 and 0.20% (w/v) of surfactants namely Tween-20, Tween-40, Tween-60, Tween-80, Triton-X-100, and SDS and EDTA were added at optimum conditions to observe its effect on cellulase and xylanase production by <em>Penicillium</em> sp. AKB-24. Except EDTA, all the surfactant stimulated the production of cellulase and xylanase and among those, SDS and Tween-80 had maximum stimulating effect for the production of cellulase and xylanase by <em>Penicillium</em> sp. AKB-24. A SDS concentration of 0.10% (w/v) produced maximum endoglucanase (133.94 IU/gds), FPase (2.96 FPU/gds), and xylanase (3592.26 IU/gds) yield and it was followed by Tween-80 (0.10% w/v), which produced endoglucanase, FPase, and xylanase production by 129.75 IU/gds, 2.91 FPU/gds, and 3335.85 IU/gds respectively by <em>Penicillium</em> sp. AKB-24 (<span class="xps_floatlinking">Table 3</span> <span class="xps_afloatlinking">Table 3</span>). SDS at concentration 0.10% (w/v) produced maximum &#946;-glucosidase activity (5.88 IU/gds) by <em>Penicillium</em> sp. AKB 24 when added at optimum conditions. Surfactant facilitated the penetration of NSS into the interstices of substrate by reducing the surface tension between NSS and substrate, wetting the substrate surface and emulsifying the extractives. The stimulatory effect of surfactants on enzyme production may be due to increase in permeability of cell membrane. Various report show that some amount of cellulolytic and hemicellulolytic enzymes is bound to fungal hypha or found in close association of hypha. Surfactants may promote the release of cell bound enzymes (<span class="xps_ndreflinking">Dutt and Kumar, 2014</span>; <span class="xps_ndreflinking">Pardo, 1996</span>). Tween-80 and SDS have been proved effective for the production of cellulases by <em>Fusarium</em> sp. (<span class="xps_ndreflinking">Niranjane et al., 2007</span>) and <em>Aspergillus</em> sp. SU14 (<span class="xps_ndreflinking">Vu et al., 2011</span>). <span class="xps_ndreflinking">Sindhu et al., 2011</span><span class="xps_ndrefoutput">Sindhu et al. (2011)</span> investigated the effect of surfactants on cellulase production and observed maximum production of cellulase by <em>Penicillium</em> sp. using Tween-80 at 0.05% (w/v).</p>
+<p class="h2" id="editor_para_55">3.8 Improvement in enzyme production by co-cultivation</p>
+<p class="txt" id="editor_para_56">Co-cultivation of <em>Penicillium</em> sp. AKB-24 and <em>Aspergillus nidulans</em> AKB-25 resulted into higher production of endoglucanase, FPase, and exoglucanase compared to monocultures of <em>Penicillium</em> sp. AKB-24 and <em>Aspergillus nidulans</em> AKB-25. The co-cultivation of <em>Penicillium</em> sp. AKB-24 and <em>Aspergillus nidulans</em> AKB-25 showed increased production of endoglucanase, FPase, and exoglucanase by 33.88, 18.12, and 10.77% respectively when compared with <em>Aspergillus nidulans</em> AKB-25. Similarly, the production of endoglucanase, FPase, exoglucanase and &#946;-glucosidase enhanced by 52.08, 36.48, 49.19, and 500% respectively compared to <em>Penicillium</em> sp. AKB-24. Conversely, the &#946;-glucosidase activity obtained from co-culture mitigated by 19.90 % compared to <em>Aspergillus nidulans</em> AKB-25 (<span class="xps_floatlinking">Tables 4 and 5</span> <span class="xps_afloatlinking">Table 4, Table 5</span>). The co-culture of fungi did not show significant improvement in xylanase activity. Amylase produced by co-culture method showed an improvement in amylase activity by 122.53% compared to <em>Aspergillus nidulans</em> AKB-25 but amylase activity mitigated by 57.28% compared to <em>Penicillium</em> sp. AKB-24. The decrease in amylase activity during co-culture (Black gram residue + wheat bran medium) may be due lower quantity of starch fermentation medium compared to monoculture of <em>Penicillium</em> sp. AKB-24 on wheat bran medium. The positive effect of co-culture of fungi on hydrolytic enzymes production may be due to better adaptability and substrate utilization compared to monocultures (<span class="xps_ndreflinking">Yoon et al., 2014</span>). Complete hydrolysis of lignocellulosic substrate requires combined action of endoglucanase, exoglucanase and &#946;- glucosidase. Present study reveals that &#946;-glucosidase production was low for <em>Penicillium</em> sp. AKB-24 while <em>Aspergillus nidulans</em> AKB-25 produced higher level of &#946;-glucosidase. The higher quantity of &#946;-glucosidase during co-culture prevents the accumulation of cellobiose, which acts as inhibitor for endoglucanase and exoglucanase (<span class="xps_ndreflinking">Gupte and Madamwar, 1997</span>). <span class="xps_ndreflinking">Gupte and Madamwar, 1997</span><span class="xps_ndrefoutput">Gupte and Madamwar (1997)</span> reported improved endoglucanase, FPase, exoglucanase and &#946;-glucosidase activity by the co-cultivation of <em>Aspergillus ellipticus</em> and <em>Aspergillus fumigatus</em> on alkali-pretreated sugarcane bagasse during SSF. <span class="xps_ndreflinking">Yang et al., 2013</span><span class="xps_ndrefoutput">Yang et al. (2013)</span> observed increased cellulases and ligninases activities with co-culturing of <em>Tricoderma reesei</em> RUT- C30 and <em>Phanerochaete chrysosporium</em> using pumpkin residue as the substrate.</p>
+<p class="h2" id="editor_para_57">3.9 Saccharification by crude enzyme from co-culture</p>
+<p class="txt" id="editor_para_58">Crude enzyme produced from co-cultivation of <em>A. nidulans</em> AKB-25 and <em>Penicillium</em> sp. AKB-24 was evaluated for its ability to hydrolyze pearl millet stover at different enzyme doses varying from 5.0 to 20.0 FPU/g of substrate, hydrolysis time from 12 to 84 h for each enzyme dose and keeping other conditions constant as described in subsection 2.7. Release of reducing sugars increased with increasing enzyme dose and 15 FPU/g produced maximum reducing sugars. An enzyme dose beyond 15 FPU/g did not increase reducing sugars substantially (<span class="xps_floatlinking">Table 6</span> <span class="xps_afloatlinking">Table 6</span>). Further, release of reducing sugars increased with increasing hydrolysis time and reached to the maximum at a hydrolysis time of 72 h for each enzyme dose. The release of reducing sugars beyond a hydrolysis time of 72 h became insignificant for each enzyme dose. The hydrolysis of substrate increases with increasing enzyme dose up to a certain level afterwards, relative number of binding sites reduces and enzyme may start competing for the same binding site leading to a reduction in overall reaction rate (<span class="xps_ndreflinking">Banerjee et al., 2010</span>; <span class="xps_ndreflinking">Van Dyk and Pletschke, 2012</span>). Crude enzyme from co-culture was found effective in hydrolysis of alkali pretreated pearl millet stover due to higher amount of &#946;-glucosidase and xylanase along with cellulase, which plays an important role in the process of saccharification. Various researchers indicated that supplementation of xylanase and &#946;-glucosidase improved the cellulose digestion at reduced cellulase dosing. High xylanase activity is helpful for higher conversion of cellulose and hemicelluloses into reducing sugars. Xylanase solubilises the xylan in hemicelluloses, enlarges the pore size in substrate, which assists cellulase action. Xylooligomers are the strong inhibitors of cellulases. Higher amount of xylanase in enzyme converts the xylooligomers into monomers and neutralizes the effect of inhibition by xylooligomers. The accumulation of cellobiose in reaction mixture inhibits cellulase enzyme during hydrolysis and &#946;-glucosidase reduces the effect of inhibition by converting cellobiose into glucose (<span class="xps_ndreflinking">Kumar and Wyman, 2009</span>; <span class="xps_ndreflinking">Van Dyk and Pletschke, 2012</span>). <span class="xps_ndreflinking">Chandel et al., 2011</span><span class="xps_ndrefoutput">Chandel et al. (2011)</span> studied hydrolysis of <em>Saccharum spontaneum</em> with cellulase and xylanase from <em>Aspergillus oryzae</em> MTCC1846 and observed maximum release of reducing sugars (541.2 mg/g substrate) from alkali-pretreated substrate at an enzyme dose of 25 FPU/g.</p>
+<p class="txt" id="editor_para_59">Compared to enzymes obtained from co-cultivation of <em>A. nidulans</em> AKB-25 and <em>Penicillium</em> sp. AKB-24, <em>A. nidulans</em> AKB-25 released the same amount of reducing sugars at an enzyme dose of 15 FPU/g and reaction time 72 h. The enzyme produced by co-cultivation technique required less (14.28%) quantity of enzyme compared to enzyme produced by <em>A. nidulans</em> AKB-25 alone at the same conditions and the same yield of reducing sugars. Therefore, enzyme production by co-cultivation technique is cost-effective.</p>
+<p class="h1" role="grey" id="editor_para_60">4 Conclusions</p>
+<p class="txt" id="editor_para_61">The maximum surface area and minimum C/N ratio made the wheat bran the best carbon source among other agro-residues for the production of cellulases. Production of endoglucanase, FPase, and exoglucanase by co-cultivation technique was cost-effective as enzyme produced by co-cultivation method required less quantity (14.28%) of enzyme compared to enzyme produced by monoculture technique (<em>A. nidulans</em> AKB-25 alone) for the hydrolysis of pearl millet stover.</p>
+<p class="h1" id="editor_para_62">Declarations</p>
+<p class="h2" id="editor_para_63">Author contribution statement</p>
+<p class="txt" id="editor_para_64">Amit Kumar: Conceived and designed the experiments; Performed the experiments; Wrote the paper.</p>
+<p class="txt" id="editor_para_65">Archana Gautam: Contributed reagents, materials, analysis tools or data.</p>
+<p class="txt" id="editor_para_66">Dharma Dutt: Analyzed and interpreted the data.</p>
+<p class="h2" id="editor_para_67">Funding statement</p>
+<p class="txt" id="editor_para_68">Amit Kumar was supported by a fellowship from Jawahar Lal Nehru Memorial Fund, New Delhi (India).</p>
+<p class="h2" id="editor_para_69">Competing interest statement</p>
+<p class="txt" id="editor_para_70">The authors declare no conflict of interest.</p>
+<p class="h2" id="editor_para_71">Additional information statement</p>
+<p class="txt" id="editor_para_72"><span class="supple_extended">No additional information is available for this paper.</span></p>
+<p class="txt" id="editor_para_73"><span class="supple_compactStandard">Supplementary data associated with this article can be found, in the online version, at <span class="xps_interref">doi:10.1016/j.heliyon.2015.e00047</span></span>.</p>
+</div>
+<hr />
+<p class="ref" id="editor_para_74">References</p>
+<div id="xps_ref">
+<p id="editor_para_75"><span class="ref_lbl">Adsul et al., 2009</span> <span class="ref_au"><span class="ref_gn">M.G.</span> <span class="ref_sn">Adsul</span> </span>, <span class="ref_au"><span class="ref_gn">A.P.</span> <span class="ref_sn">Terwadkar</span> </span>, <span class="ref_au"><span class="ref_gn">A.J.</span> <span class="ref_sn">Varma</span> </span>, <span class="ref_au"><span class="ref_gn">D.</span> <span class="ref_sn">Gokhale</span> </span>. <span class="ref_atitle">Cellulases from Penicillium janthinellum mutants: solid-state production and their stability in ionic liquids</span> <span class="ref_jtitle">BioResources</span> <span class="ref_yr">2009</span>; <span class="ref_vol">4</span>: <span class="ref_issue">(4)</span> <span class="ref_fpage">1670</span>-<span class="ref_lpage">1681</span></p>
+<p id="editor_para_76"><span class="ref_lbl">Apprich et al., 2014</span> <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Apprich</span> </span>, <span class="ref_au"><span class="ref_gn">&#214;.</span> <span class="ref_sn">Tirpanalan</span> </span>, <span class="ref_au"><span class="ref_gn">J.</span> <span class="ref_sn">Hell</span> </span>, <span class="ref_au"><span class="ref_gn">M.</span> <span class="ref_sn">Reisinger</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">B&#246;hmdorfer</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Siebenhandl-Ehn</span> </span>, <span class="ref_au"><span class="ref_gn">W.</span> <span class="ref_sn">Kneifel</span> </span>. <span class="ref_atitle">Wheat bran-based biorefinery 2: Valorization of products</span> <span class="ref_jtitle">LWT Food Sci. Technol.</span> <span class="ref_yr">2014</span>; <span class="ref_vol">56</span>: <span class="ref_issue">(2)</span> <span class="ref_fpage">222</span>-<span class="ref_lpage">231</span></p>
+<p id="editor_para_77"><span class="ref_lbl">Bailey et al., 1992</span> <span class="ref_au"><span class="ref_gn">M.J.</span> <span class="ref_sn">Bailey</span> </span>, <span class="ref_au"><span class="ref_gn">P.</span> <span class="ref_sn">Biely</span> </span>, <span class="ref_au"><span class="ref_gn">K.</span> <span class="ref_sn">Poutanen</span> </span>. <span class="ref_atitle">Interlaboratory testing of methods for assay of xylanase activity</span> <span class="ref_jtitle">J. Biotechnol.</span> <span class="ref_yr">1992</span>; <span class="ref_vol">23</span>: <span class="ref_issue">(3)</span> <span class="ref_fpage">257</span>-<span class="ref_lpage">270</span></p>
+<p id="editor_para_78"><span class="ref_lbl">Banerjee et al., 2010</span> <span class="ref_au"><span class="ref_gn">G.</span> <span class="ref_sn">Banerjee</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Car</span> </span>, <span class="ref_au"><span class="ref_gn">J.S.</span> <span class="ref_sn">Scott-Craig</span> </span>, <span class="ref_au"><span class="ref_gn">M.S.</span> <span class="ref_sn">Borrusch</span> </span>, <span class="ref_au"><span class="ref_gn">M.</span> <span class="ref_sn">Bongers</span> </span>, <span class="ref_au"><span class="ref_gn">J.D.</span> <span class="ref_sn">Walton</span> </span>. <span class="ref_atitle">Synthetic multi-component enzyme mixtures for deconstuction of lignocellulosic biomass</span> <span class="ref_jtitle">Bioresour. Technol.</span> <span class="ref_yr">2010</span>; <span class="ref_vol">101</span>: <span class="ref_issue">(23)</span> <span class="ref_fpage">9097</span>-<span class="ref_lpage">9105</span></p>
+<p id="editor_para_79"><span class="ref_lbl">Bansal et al., 2012</span> <span class="ref_au"><span class="ref_gn">N.</span> <span class="ref_sn">Bansal</span> </span>, <span class="ref_au"><span class="ref_gn">R.</span> <span class="ref_sn">Soni</span> </span>, <span class="ref_au"><span class="ref_gn">C.</span> <span class="ref_sn">Janveja</span> </span>, <span class="ref_au"><span class="ref_gn">S.K.</span> <span class="ref_sn">Soni</span> </span>. <span class="ref_atitle">Production of xylanase-cellulase complex by <em>Bacillus subtilis</em> NS7 for the biodegradation of agro-waste residues</span> <span class="ref_jtitle">Lignocellulose</span> <span class="ref_yr">2012</span>; <span class="ref_vol">1</span>: <span class="ref_issue">(3)</span> <span class="ref_fpage">196</span>-<span class="ref_lpage">209</span></p>
+<p id="editor_para_80"><span class="ref_lbl">Brijwani et al., 2010</span> <span class="ref_au"><span class="ref_gn">K.</span> <span class="ref_sn">Brijwani</span> </span>, <span class="ref_au"><span class="ref_gn">H.S.</span> <span class="ref_sn">Oberoi</span> </span>, <span class="ref_au"><span class="ref_gn">P.V.</span> <span class="ref_sn">Vadlani</span> </span>. <span class="ref_atitle">Production of a cellulolytic enzyme system in mixed-culture solid-state fermentation of soybean hulls supplemented with wheat bran</span> <span class="ref_jtitle">Process Biochem.</span> <span class="ref_yr">2010</span>; <span class="ref_vol">45</span>: <span class="ref_issue">(1)</span> <span class="ref_fpage">120</span>-<span class="ref_lpage">128</span></p>
+<p id="editor_para_81"><span class="ref_lbl">Brijwani and Vadlani, 2011</span> <span class="ref_au"><span class="ref_gn">K.</span> <span class="ref_sn">Brijwani</span> </span>, <span class="ref_au"><span class="ref_gn">P.V.</span> <span class="ref_sn">Vadlani</span> </span>. <span class="ref_atitle">Cellulolytic Enzymes Production via Solid-State Fermentation: Effect of Pretreatment Methods on Physicochemical Characteristics of Substrate</span> <span class="ref_jtitle">Enzyme Res.</span> <span class="ref_yr">2011</span>; <span class="ref_vol">2011</span>: <span class="end_ref_comment">10, article id 860134</span></p>
+<p id="editor_para_82"><span class="ref_lbl">Chandel et al., 2011</span> <span class="ref_au"><span class="ref_gn">A.K.</span> <span class="ref_sn">Chandel</span> </span>, <span class="ref_au"><span class="ref_gn">O.V.</span> <span class="ref_sn">Singh</span> </span>, <span class="ref_au"><span class="ref_gn">V.L.</span> <span class="ref_sn">Rao</span> </span>, <span class="ref_au"><span class="ref_gn">G.</span> <span class="ref_sn">Chandrasekhar</span> </span>, <span class="ref_au"><span class="ref_gn">M.L.</span> <span class="ref_sn">Narasu</span> </span>. <span class="ref_atitle">Bioconversion of novel substrate <em>Saccharum spontaneum</em>, a weedy material, into ethanol by <em>Pichia stipitis</em> NCIM3498</span> <span class="ref_jtitle">Bioresour. Technol.</span> <span class="ref_yr">2011</span>; <span class="ref_vol">102</span>: <span class="ref_issue">(2)</span> <span class="ref_fpage">1709</span>-<span class="ref_lpage">1714</span></p>
+<p id="editor_para_83"><span class="ref_lbl">Cheng et al., 2010</span> <span class="ref_au"><span class="ref_gn">Q.</span> <span class="ref_sn">Cheng</span> </span>, <span class="ref_au"><span class="ref_gn">J.</span> <span class="ref_sn">Wang</span> </span>, <span class="ref_au"><span class="ref_gn">J.</span> <span class="ref_sn">McNeel</span> </span>, <span class="ref_au"><span class="ref_gn">P.</span> <span class="ref_sn">Jacobson</span> </span>. <span class="ref_atitle">Water retention value measurements of cellulosic materials using a centrifuge technique</span> <span class="ref_jtitle">BioResources</span> <span class="ref_yr">2010</span>; <span class="ref_vol">5</span>: <span class="ref_issue">(3)</span> <span class="ref_fpage">1945</span>-<span class="ref_lpage">1954</span></p>
+<p id="editor_para_84"><span class="ref_lbl">de Carvalho et al., 2014</span> <span class="ref_au"><span class="ref_gn">M.L.A.</span> <span class="ref_sn">de Carvalho</span> </span>, <span class="ref_au"><span class="ref_gn">D.F.</span> <span class="ref_sn">Carvalho</span> </span>, <span class="ref_au"><span class="ref_gn">E.B.</span> <span class="ref_sn">Gomes</span> </span>, <span class="ref_au"><span class="ref_gn">R.N.</span> <span class="ref_sn">Maeda</span> </span>, <span class="ref_au"><span class="ref_gn">L.M.M.S.</span> <span class="ref_sn">Anna</span> </span>, <span class="ref_au"><span class="ref_gn">A.M.</span> <span class="ref_sn">Castro</span> </span>, <span class="ref_au"><span class="ref_gn">J.N.</span> <span class="ref_sn">Pereira</span> </span>. <span class="ref_atitle">Optimisation of cellulase production by Penicillium funiculosum in a stirred tank bioreactor using multivariate response surface analysis</span> <span class="ref_jtitle">Enzyme Res.</span> <span class="ref_yr">2014</span>; <span class="ref_vol">2014</span>: <span class="end_ref_comment">8, article id 703,291</span></p>
+<p id="editor_para_85"><span class="ref_lbl">Delabona et al., 2013</span> <span class="ref_au"><span class="ref_gn">P.dS.</span> <span class="ref_sn">Delabona</span> </span>, <span class="ref_au"><span class="ref_gn">R.D.P.B.</span> <span class="ref_sn">Pirota</span> </span>, <span class="ref_au"><span class="ref_gn">C.A.</span> <span class="ref_sn">Codima</span> </span>, <span class="ref_au"><span class="ref_gn">C.I.R.</span> <span class="ref_sn">Tremacoldi</span> </span>, <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Rodrigues</span> </span>, <span class="ref_au"><span class="ref_gn">C.S.</span> <span class="ref_sn">Farinas</span> </span>. <span class="ref_atitle">Effect of initial moisture content on two Amazon rainforest Aspergillus strains cultivated on agro-industrial residues: Biomass-degrading enzymes production and characterization</span> <span class="ref_jtitle">Ind. Crop Prod.</span> <span class="ref_yr">2013</span>; <span class="ref_vol">42</span>: <span class="ref_fpage">236</span>-<span class="ref_lpage">242</span></p>
+<p id="editor_para_86"><span class="ref_lbl">Delabona et al., 2012</span> <span class="ref_au"><span class="ref_gn">P.dS.</span> <span class="ref_sn">Delabona</span> </span>, <span class="ref_au"><span class="ref_gn">R.D.P.B.</span> <span class="ref_sn">Pirota</span> </span>, <span class="ref_au"><span class="ref_gn">C.A.</span> <span class="ref_sn">Codima</span> </span>, <span class="ref_au"><span class="ref_gn">C.R.</span> <span class="ref_sn">Tremacoldi</span> </span>, <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Rodrigues</span> </span>, <span class="ref_au"><span class="ref_gn">C.S.</span> <span class="ref_sn">Farinas</span> </span>. <span class="ref_atitle">Using Amazon forest fungi and agricultural residues as a strategy to produce cellulolytic enzymes</span> <span class="ref_jtitle">Biomass Bioenerg.</span> <span class="ref_yr">2012</span>; <span class="ref_vol">37</span>: <span class="ref_fpage">243</span>-<span class="ref_lpage">250</span></p>
+<p id="editor_para_87"><span class="ref_lbl">Deswal et al., 2011</span> <span class="ref_au"><span class="ref_gn">D.</span> <span class="ref_sn">Deswal</span> </span>, <span class="ref_au"><span class="ref_gn">Y.P.</span> <span class="ref_sn">Khasa</span> </span>, <span class="ref_au"><span class="ref_gn">R.C.</span> <span class="ref_sn">Kuhad</span> </span>. <span class="ref_atitle">Optimization of cellulase production by a brown rot fungus <em>Fomitopsis</em> sp. RCK2010 under solid-state fermentation. Bioresour</span> <span class="ref_jtitle">Technol.</span> <span class="ref_yr">2011</span>; <span class="ref_vol">102</span>: <span class="ref_issue">(10)</span> <span class="ref_fpage">6065</span>-<span class="ref_lpage">6072</span></p>
+<p id="editor_para_88"><span class="ref_lbl">Detroy and Stjulian, 1983</span> <span class="ref_au"><span class="ref_gn">R.W.</span> <span class="ref_sn">Detroy</span> </span>, <span class="ref_au"><span class="ref_gn">G.</span> <span class="ref_sn">Stjulian</span> </span>. <span class="ref_atitle">Biomass conversion <span class="xps_ndash">&#8211;</span>fermentation chemicals and fuels</span> <span class="ref_jtitle">Crit. Rev. Microbiol.</span> <span class="ref_yr">1983</span>; <span class="ref_vol">10</span>: <span class="ref_issue">(3)</span> <span class="ref_fpage">203</span>-<span class="ref_lpage">228</span></p>
+<p id="editor_para_89"><span class="ref_lbl">Dhillon et al., 2011</span> <span class="ref_au"><span class="ref_gn">G.S.</span> <span class="ref_sn">Dhillon</span> </span>, <span class="ref_au"><span class="ref_gn">H.S.</span> <span class="ref_sn">Oberoi</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Kaur</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Bansal</span> </span>, <span class="ref_au"><span class="ref_gn">S.K.</span> <span class="ref_sn">Brar</span> </span>. <span class="ref_atitle">Value-addition of agricultural wastes for augmented cellulase and xylanase production through solid-state tray fermentation employing mixed-culture of fungi</span> <span class="ref_jtitle">Ind. Crop Prod.</span> <span class="ref_yr">2011</span>; <span class="ref_vol">34</span>: <span class="ref_fpage">1160</span>-<span class="ref_lpage">1167</span></p>
+<p id="editor_para_90"><span class="ref_lbl">Dornez et al., 2006</span> <span class="ref_au"><span class="ref_gn">E.</span> <span class="ref_sn">Dornez</span> </span>, <span class="ref_au"><span class="ref_gn">K.</span> <span class="ref_sn">Gebruers</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Wiame</span> </span>, <span class="ref_au"><span class="ref_gn">J.A.</span> <span class="ref_sn">Delcour</span> </span>, <span class="ref_au"><span class="ref_gn">C.M.</span> <span class="ref_sn">Courtin</span> </span>. <span class="ref_atitle">Insight into the distribution of arabinoxylans, endoxylanases, and endoxylanase inhibitors in industrial wheat roller mill streams</span> <span class="ref_jtitle">J Agric Food Chem.</span> <span class="ref_yr">2006</span>; <span class="ref_vol">54</span>: <span class="ref_issue">(22)</span> <span class="ref_fpage">8521</span>-<span class="ref_lpage">8529</span></p>
+<p id="editor_para_91"><span class="ref_lbl">Dutt and Kumar, 2014</span> <span class="ref_au"><span class="ref_gn">D.</span> <span class="ref_sn">Dutt</span> </span>, <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Kumar</span> </span>. <span class="ref_atitle">Optimization of cellulase production under solid-state fermentation by <em>Aspergillus flavus</em> (AT-2) and <em>Aspergillus niger</em> (AT-3) and its impact on stickies and ink particle size of sorted office paper</span> <span class="ref_jtitle">Cellulose Chem. Technol.</span> <span class="ref_yr">2014</span>; <span class="ref_vol">48</span>: <span class="ref_issue">(3-4)</span> <span class="ref_fpage">285</span>-<span class="ref_lpage">298</span></p>
+<p id="editor_para_92"><span class="ref_lbl">Ellouz et al., 1995</span> <span class="ref_au"><span class="ref_gn">C.S.</span> <span class="ref_sn">Ellouz</span> </span>, <span class="ref_au"><span class="ref_gn">H.</span> <span class="ref_sn">Belguith</span> </span>, <span class="ref_au"><span class="ref_gn">I.</span> <span class="ref_sn">Hassairi</span> </span>, <span class="ref_au"><span class="ref_gn">K.</span> <span class="ref_sn">M'Rad</span> </span>, <span class="ref_au"><span class="ref_gn">R.</span> <span class="ref_sn">Ellouz</span> </span>. <span class="ref_atitle">Optimization of cellulase production by <em>Penicillium occitanis</em></span> <span class="ref_jtitle">Appl. Microbiol. Biotechnol.</span> <span class="ref_yr">1995</span>; <span class="ref_vol">43</span>: <span class="ref_issue">(2)</span> <span class="ref_fpage">267</span>-<span class="ref_lpage">269</span></p>
+<p id="editor_para_93"><span class="ref_lbl">Eriksson et al., 2002</span> <span class="ref_au"><span class="ref_gn">T.</span> <span class="ref_sn">Eriksson</span> </span>, <span class="ref_au"><span class="ref_gn">J.</span> <span class="ref_sn">B&#246;rjesson</span> </span>, <span class="ref_au"><span class="ref_gn">F.</span> <span class="ref_sn">Tjerneld</span> </span>. <span class="ref_atitle">Mechanism of surfactant effect in enzymatic hydrolysis of lignocelluloses</span> <span class="ref_jtitle">Enzyme Microb. Technol.</span> <span class="ref_yr">2002</span>; <span class="ref_vol">31</span>: <span class="ref_issue">(4)</span> <span class="ref_fpage">353</span>-<span class="ref_lpage">364</span></p>
+<p id="editor_para_94"><span class="ref_lbl">Ghose, 1987</span> <span class="ref_au"><span class="ref_gn">T.K.</span> <span class="ref_sn">Ghose</span> </span>. <span class="ref_atitle">Measurement of cellulase activities</span> <span class="ref_jtitle">Pure Appl. Chem.</span> <span class="ref_yr">1987</span>; <span class="ref_vol">59</span>: <span class="ref_issue">(2)</span> <span class="ref_fpage">257</span>-<span class="ref_lpage">268</span></p>
+<p id="editor_para_95"><span class="ref_lbl">Gregg and Saddler, 1996</span> <span class="ref_au"><span class="ref_gn">D.</span> <span class="ref_sn">Gregg</span> </span>, <span class="ref_au"><span class="ref_gn">J.N.</span> <span class="ref_sn">Saddler</span> </span>. <span class="ref_atitle">Factors affecting cellulose hydrolysis and the potential of enzyme recycle to enhance the efficiency of an integrated wood to ethanol process</span> <span class="ref_jtitle">Biotechnol. Bioeng.</span> <span class="ref_yr">1996</span>; <span class="ref_vol">51</span>: <span class="ref_issue">(4)</span> <span class="ref_fpage">375</span>-<span class="ref_lpage">383</span></p>
+<p id="editor_para_96"><span class="ref_lbl">Gupte and Madamwar, 1997</span> <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Gupte</span> </span>, <span class="ref_au"><span class="ref_gn">D.</span> <span class="ref_sn">Madamwar</span> </span>. <span class="ref_atitle">Solid-state fermentation of lignocellulosic waste for cellulase and &#946;-glucosidase production by cocultivation of <em>Aspergillus ellipticus</em> and <em>Aspergillus fumigatus</em></span> <span class="ref_jtitle">Biotechnol. Prog.</span> <span class="ref_yr">1997</span>; <span class="ref_vol">13</span>: <span class="ref_issue">(2)</span> <span class="ref_fpage">166</span>-<span class="ref_lpage">169</span></p>
+<p id="editor_para_97"><span class="ref_lbl">Howard et al., 2003</span> <span class="ref_au"><span class="ref_gn">R.L.</span> <span class="ref_sn">Howard</span> </span>, <span class="ref_au"><span class="ref_gn">E.</span> <span class="ref_sn">Abotsi</span> </span>, <span class="ref_au"><span class="ref_gn">J.V.E.L.</span> <span class="ref_sn">Rensburg</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Howard</span> </span>. <span class="ref_atitle">Lignocellulose biotechnology: issues of bioconversion and enzyme production Afr</span> <span class="ref_jtitle">J. Biotechnol.</span> <span class="ref_yr">2003</span>; <span class="ref_vol">2</span>: <span class="ref_issue">(12)</span> <span class="ref_fpage">602</span>-<span class="ref_lpage">619</span></p>
+<p id="editor_para_98"><span class="ref_lbl">Kaur et al., 2011</span> <span class="ref_au"><span class="ref_gn">H.</span> <span class="ref_sn">Kaur</span> </span>, <span class="ref_au"><span class="ref_gn">D.</span> <span class="ref_sn">Dutt</span> </span>, <span class="ref_au"><span class="ref_gn">C.H.</span> <span class="ref_sn">Tyagi</span> </span>. <span class="ref_atitle">Production of novel alkali-thermo-tolerant cellulase-poor xylanases from <em>Coprinopsis Cinerea</em> HK-1 NFCCI-2032</span> <span class="ref_jtitle">BioResources</span> <span class="ref_yr">2011</span>; <span class="ref_vol">6</span>: <span class="ref_issue">(2)</span> <span class="ref_fpage">1376</span>-<span class="ref_lpage">1391</span></p>
+<p id="editor_para_99"><span class="ref_lbl">Kuhad et al., 1994</span> <span class="ref_au"><span class="ref_gn">R.C.</span> <span class="ref_sn">Kuhad</span> </span>, <span class="ref_au"><span class="ref_gn">M.</span> <span class="ref_sn">Kumar</span> </span>, <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Singh</span> </span>. <span class="ref_atitle">A hypercellulolytic mutant of <em>Fusarium oxysporum</em></span> <span class="ref_jtitle">Lett. Appl. Microbiol.</span> <span class="ref_yr">1994</span>; <span class="ref_vol">19</span>: <span class="ref_issue">(5)</span> <span class="ref_fpage">397</span>-<span class="ref_lpage">400</span></p>
+<p id="editor_para_100"><span class="ref_lbl">Kulkarni et al., 1999</span> <span class="ref_au"><span class="ref_gn">N.</span> <span class="ref_sn">Kulkarni</span> </span>, <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Shendye</span> </span>, <span class="ref_au"><span class="ref_gn">M.</span> <span class="ref_sn">Rao</span> </span>. <span class="ref_atitle">Molecular and biotechnological aspects of xylanases</span> <span class="ref_jtitle">FEMS Microbiol. Rev.</span> <span class="ref_yr">1999</span>; <span class="ref_vol">23</span>: <span class="ref_issue">(4)</span> <span class="ref_fpage">411</span>-<span class="ref_lpage">456</span></p>
+<p id="editor_para_101"><span class="ref_lbl">Kumar, 2015</span> <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Kumar</span> </span>, <span class="ref_ctitle"></span> <span class="ref_btitle">Production of fungal cellulases and xylanases and their industrial <br />applications [PhD Thesis]</span> <span class="ref_pub_name">IIT Roorkee</span> <span class="ref_pub_place">India</span> <span class="ref_yr">2015</span>;<span class="end_ref_comment"></span></p>
+<span class="end_ref_comment"></span>
+<p id="editor_para_102"><span class="ref_lbl">Kumar et al., 2008</span> <span class="ref_au"><span class="ref_gn">R.</span> <span class="ref_sn">Kumar</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Singh</span> </span>, <span class="ref_au"><span class="ref_gn">O.V.</span> <span class="ref_sn">Singh</span> </span>. <span class="ref_atitle">Bioconversion of lignocellulosic biomass: biochemical and molecular perspectives</span> <span class="ref_jtitle">J. Ind. Microbiol. Biotechnol.</span> <span class="ref_yr">2008</span>; <span class="ref_vol">35</span>: <span class="ref_issue">(5)</span> <span class="ref_fpage">377</span>-<span class="ref_lpage">391</span></p>
+<p id="editor_para_103"><span class="ref_lbl">Kumar and Wyman, 2009</span> <span class="ref_au"><span class="ref_gn">R.</span> <span class="ref_sn">Kumar</span> </span>, <span class="ref_au"><span class="ref_gn">C.E.</span> <span class="ref_sn">Wyman</span> </span>. <span class="ref_atitle">Effects of cellulase and xylanase enzymes on the deconstruction of solids from pretreatment of poplar by leading technologies</span> <span class="ref_jtitle">Biotechnol. Progr.</span> <span class="ref_yr">2009</span>; <span class="ref_vol">25</span>: <span class="ref_issue">(2)</span> <span class="ref_fpage">302</span>-<span class="ref_lpage">314</span></p>
+<p id="editor_para_104"><span class="ref_lbl">Liao et al., 2014</span> <span class="ref_au"><span class="ref_gn">H.</span> <span class="ref_sn">Liao</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Li</span> </span>, <span class="ref_au"><span class="ref_gn">Z.</span> <span class="ref_sn">Wei</span> </span>, <span class="ref_au"><span class="ref_gn">Q.</span> <span class="ref_sn">Shen</span> </span>, <span class="ref_au"><span class="ref_gn">Y.</span> <span class="ref_sn">Xu</span> </span>. <span class="ref_atitle">Insights into high-efficiency lignocellulolytic enzyme production by <em>Penicillium oxalicum</em> GZ-2 induced by a complex substrate</span> <span class="ref_jtitle">Biotechnol. Biofuels</span> <span class="ref_yr">2014</span>; <span class="ref_vol">7</span>: <span class="ref_issue">(1)</span> <span class="ref_fpage">162</span></p>
+<p id="editor_para_105"><span class="ref_lbl">Liu et al., 2011</span> <span class="ref_au"><span class="ref_gn">Y.-T.</span> <span class="ref_sn">Liu</span> </span>, <span class="ref_au"><span class="ref_gn">Z.-Y.</span> <span class="ref_sn">Luo</span> </span>, <span class="ref_au"><span class="ref_gn">C.-N.</span> <span class="ref_sn">Long</span> </span>, <span class="ref_au"><span class="ref_gn">H.-D.</span> <span class="ref_sn">Wang</span> </span>, <span class="ref_au"><span class="ref_gn">M.-N.</span> <span class="ref_sn">Long</span> </span>, <span class="ref_au"><span class="ref_gn">Z.</span> <span class="ref_sn">Hu</span> </span>. <span class="ref_atitle">Cellulase production in a new mutant strain of <em>Penicillium decumbens</em> ML-017 by solid state-fermentation with rice bran</span> <span class="ref_jtitle">New Biotechnol.</span> <span class="ref_yr">2011</span>; <span class="ref_vol">28</span>: <span class="ref_issue">(6)</span> <span class="ref_fpage">733</span>-<span class="ref_lpage">737</span></p>
+<p id="editor_para_106"><span class="ref_lbl">Maeda et al., 2010</span> <span class="ref_au"><span class="ref_gn">R.</span> <span class="ref_sn">Maeda</span> </span>, <span class="ref_au"><span class="ref_gn">M.</span> <span class="ref_sn">da Silva</span> </span>, <span class="ref_au"><span class="ref_gn">L.M.M.</span> <span class="ref_sn">Santa Anna</span> </span>, <span class="ref_au"><span class="ref_gn">N.J.</span> <span class="ref_sn">Pereira</span> </span>. <span class="ref_atitle">Nitrogen source optimization for cellulase production by Penicillium funiculosum, using a sequential experimental design methodology and the desirability function</span> <span class="ref_jtitle">Appl. Biochem. Biotechnol.</span> <span class="ref_yr">2010</span>; <span class="ref_vol">161</span>: <span class="ref_issue">(1-8)</span> <span class="ref_fpage">411</span>-<span class="ref_lpage">422</span></p>
+<p id="editor_para_107"><span class="ref_lbl">Mamma et al., 2008</span> <span class="ref_au"><span class="ref_gn">D.</span> <span class="ref_sn">Mamma</span> </span>, <span class="ref_au"><span class="ref_gn">E.</span> <span class="ref_sn">Kourtoglou</span> </span>, <span class="ref_au"><span class="ref_gn">P.</span> <span class="ref_sn">Christakopoulos</span> </span>. <span class="ref_atitle">Fungal multienzyme production on industrial by-products of the citrus-processing industry. Bioresour</span> <span class="ref_jtitle">Technol.</span> <span class="ref_yr">2008</span>; <span class="ref_vol">99</span>: <span class="ref_issue">(7)</span> <span class="ref_fpage">2373</span>-<span class="ref_lpage">2383</span></p>
+<p id="editor_para_108"><span class="ref_lbl">Merino and Cherry, 2007</span> <span class="ref_au"><span class="ref_gn">S.T.</span> <span class="ref_sn">Merino</span> </span>, <span class="ref_au"><span class="ref_gn">J.</span> <span class="ref_sn">Cherry</span> </span>. <span class="ref_atitle">Progress and challenges in enzyme development for biomass utilization</span> <span class="ref_jtitle">Adv. Biochem. Eng. Biotechnol.</span> <span class="ref_yr">2007</span>; <span class="ref_vol">108</span>: <span class="ref_fpage">95</span>-<span class="ref_lpage">120</span></p>
+<p id="editor_para_109"><span class="ref_lbl">Miller, 1959</span> <span class="ref_au"><span class="ref_gn">G.L.</span> <span class="ref_sn">Miller</span> </span>. <span class="ref_atitle">Use of dinitrosaiicyiic acid reagent for determination of reducing sugar</span> <span class="ref_jtitle">Anal. Chem.</span> <span class="ref_yr">1959</span>; <span class="ref_vol">31</span>: <span class="ref_issue">(3)</span> <span class="ref_fpage">426</span>-<span class="ref_lpage">428</span></p>
+<p id="editor_para_110"><span class="ref_lbl">Ng et al., 2010</span> <span class="ref_au"><span class="ref_gn">I.S.</span> <span class="ref_sn">Ng</span> </span>, <span class="ref_au"><span class="ref_gn">C.-W.</span> <span class="ref_sn">Li</span> </span>, <span class="ref_au"><span class="ref_gn">S.-P.</span> <span class="ref_sn">Chan</span> </span>, <span class="ref_au"><span class="ref_gn">J.-L.</span> <span class="ref_sn">Chir</span> </span>, <span class="ref_au"><span class="ref_gn">P.T.</span> <span class="ref_sn">Chen</span> </span>, <span class="ref_au"><span class="ref_gn">C.-G.</span> <span class="ref_sn">Tong</span> </span>, <span class="ref_au"><span class="ref_gn">S.-M.</span> <span class="ref_sn">Yu</span> </span>, <span class="ref_au"><span class="ref_gn">T.-H.D.</span> <span class="ref_sn">Ho</span> </span>. <span class="ref_atitle">High-level production of a thermoacidophilic &#946;-glucosidase from <em>Penicillium citrinum</em> YS40-5 by solid-state fermentation with rice bran</span> <span class="ref_jtitle">Bioresour. Technol.</span> <span class="ref_yr">2010</span>; <span class="ref_vol">101</span>: <span class="ref_issue">(4)</span> <span class="ref_fpage">1310</span>-<span class="ref_lpage">1317</span></p>
+<p id="editor_para_111"><span class="ref_lbl">Niranjane et al., 2007</span> <span class="ref_au"><span class="ref_gn">A.P.</span> <span class="ref_sn">Niranjane</span> </span>, <span class="ref_au"><span class="ref_gn">P.</span> <span class="ref_sn">Madhou</span> </span>, <span class="ref_au"><span class="ref_gn">T.W.</span> <span class="ref_sn">Stevenson</span> </span>. <span class="ref_atitle">The effect of carbohydrate carbon sources on the production of cellulase by <em>Phlebia gigantea</em></span> <span class="ref_jtitle">Enzyme Microb. Technol.</span> <span class="ref_yr">2007</span>; <span class="ref_vol">40</span>: <span class="ref_issue">(6)</span> <span class="ref_fpage">1464</span>-<span class="ref_lpage">1468</span></p>
+<p id="editor_para_112"><span class="ref_lbl">Pardo, 1996</span> <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Pardo</span> </span>. <span class="ref_atitle">Effect of surfactants on cellulase production by <em>Nectria catalinensis</em></span> <span class="ref_jtitle">Curr. Microbiol.</span> <span class="ref_yr">1996</span>; <span class="ref_vol">33</span>: <span class="ref_issue">(4)</span> <span class="ref_fpage">275</span>-<span class="ref_lpage">278</span></p>
+<p id="editor_para_113"><span class="ref_lbl">Rahardjo et al., 2005</span> <span class="ref_au"><span class="ref_gn">Y.S.P.</span> <span class="ref_sn">Rahardjo</span> </span>, <span class="ref_au"><span class="ref_gn">F.</span> <span class="ref_sn">Jolink</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Haemers</span> </span>, <span class="ref_au"><span class="ref_gn">J.</span> <span class="ref_sn">Tramper</span> </span>, <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Rinzema</span> </span>. <span class="ref_atitle">Significance of bed porosity, bran and specific surface area in solid-state cultivation of <em>Aspergillus oryzae</em>. Biomol</span> <span class="ref_jtitle">Eng.</span> <span class="ref_yr">2005</span>; <span class="ref_vol">22</span>: <span class="ref_issue">(4)</span> <span class="ref_fpage">133</span>-<span class="ref_lpage">139</span></p>
+<p id="editor_para_114"><span class="ref_lbl">Richard et al., 2004</span> <span class="ref_au"><span class="ref_gn">T.L.</span> <span class="ref_sn">Richard</span> </span>, <span class="ref_au"><span class="ref_gn">A.H.M.</span> <span class="ref_sn">Veeken</span> </span>, <span class="ref_au"><span class="ref_gn">V.</span> <span class="ref_sn">de Wilde</span> </span>, <span class="ref_au"><span class="ref_gn">H.V.M.</span> <span class="ref_sn">Hamelers</span> </span>. <span class="ref_atitle">Air-filled porosity and permeability relationships during solid-state fermentation</span> <span class="ref_jtitle">Biotechnol. Progr.</span> <span class="ref_yr">2004</span>; <span class="ref_vol">20</span>: <span class="ref_issue">(5)</span> <span class="ref_fpage">1372</span>-<span class="ref_lpage">1381</span></p>
+<p id="editor_para_115"><span class="ref_lbl">Sabu et al., 2002</span> <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Sabu</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Sarita</span> </span>, <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Pandey</span> </span>, <span class="ref_au"><span class="ref_gn">B.</span> <span class="ref_sn">Bogar</span> </span>, <span class="ref_au"><span class="ref_gn">G.</span> <span class="ref_sn">Szakacs</span> </span>, <span class="ref_au"><span class="ref_gn">C.R.</span> <span class="ref_sn">Soccol</span> </span>. <span class="ref_atitle">Solid-state fermentation for production of phytase by Rhizopus oligosporus</span> <span class="ref_jtitle">Appl. Biochem. Biotechnol.</span> <span class="ref_yr">2002</span>; <span class="ref_vol">102<span class="xps_ndash">&#8211;</span>103</span>: <span class="ref_issue">(1<span class="xps_ndash">&#8211;</span>6)</span> <span class="ref_fpage">251</span>-<span class="ref_lpage">260</span></p>
+<p id="editor_para_116"><span class="ref_lbl">Saini et al., 2015</span> <span class="ref_au"><span class="ref_gn">R.</span> <span class="ref_sn">Saini</span> </span>, <span class="ref_au"><span class="ref_gn">J.K.</span> <span class="ref_sn">Saini</span> </span>, <span class="ref_au"><span class="ref_gn">M.</span> <span class="ref_sn">Adsul</span> </span>, <span class="ref_au"><span class="ref_gn">A.K.</span> <span class="ref_sn">Patel</span> </span>, <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Mathur</span> </span>, <span class="ref_au"><span class="ref_gn">D.</span> <span class="ref_sn">Tuli</span> </span>, <span class="ref_au"><span class="ref_gn">R.R.</span> <span class="ref_sn">Singhania</span> </span>. <span class="ref_atitle">Enhanced cellulase production by <em>Penicillium oxalicum</em> for bio-ethanol application</span> <span class="ref_jtitle">Bioresour. Technol.</span> <span class="ref_yr">2015</span>; <span class="ref_vol">188</span>: <span class="ref_fpage">240</span>-<span class="ref_lpage">246</span></p>
+<p id="editor_para_117"><span class="ref_lbl">Sanchez, 2009</span> <span class="ref_au"><span class="ref_gn">C.</span> <span class="ref_sn">Sanchez</span> </span>. <span class="ref_atitle">Lignocellulosic residues: Biodegradation and bioconversion by fungi</span> <span class="ref_jtitle">Biotechnol. Adv.</span> <span class="ref_yr">2009</span>; <span class="ref_vol">27</span>: <span class="ref_issue">(2)</span> <span class="ref_fpage">185</span>-<span class="ref_lpage">194</span></p>
+<p id="editor_para_118"><span class="ref_lbl">Sehnem et al., 2006</span> <span class="ref_au"><span class="ref_gn">N.</span> <span class="ref_sn">Sehnem</span> </span>, <span class="ref_au"><span class="ref_gn">L.</span> <span class="ref_sn">de Bittencourt</span> </span>, <span class="ref_au"><span class="ref_gn">M.</span> <span class="ref_sn">Camassola</span> </span>, <span class="ref_au"><span class="ref_gn">A.P.</span> <span class="ref_sn">Dillon</span> </span>. <span class="ref_atitle">Cellulase production by <em>Penicillium echinulatum</em> on lactose</span> <span class="ref_jtitle">Appl. Microbiol. Biotechnol.</span> <span class="ref_yr">2006</span>; <span class="ref_vol">72</span>: <span class="ref_issue">(1)</span> <span class="ref_fpage">163</span>-<span class="ref_lpage">167</span></p>
+<p id="editor_para_119"><span class="ref_lbl">Sindhu et al., 2011</span> <span class="ref_au"><span class="ref_gn">R.</span> <span class="ref_sn">Sindhu</span> </span>, <span class="ref_au"><span class="ref_gn">N.G.</span> <span class="ref_sn">Suprabha</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Shashidhar</span> </span>. <span class="ref_atitle">Media engineering for the production of cellulase from <em>Penicillium</em> species (SBSS 30) under solid state-fermentation. Biotechnol</span> <span class="ref_jtitle">Bioinf. Bioeng.</span> <span class="ref_yr">2011</span>; <span class="ref_vol">1</span>: <span class="ref_issue">(3)</span> <span class="ref_fpage">343</span>-<span class="ref_lpage">349</span></p>
+<p id="editor_para_120"><span class="ref_lbl">Singhania et al., 2010</span> <span class="ref_au"><span class="ref_gn">R.R.</span> <span class="ref_sn">Singhania</span> </span>, <span class="ref_au"><span class="ref_gn">R.K.</span> <span class="ref_sn">Sukumaran</span> </span>, <span class="ref_au"><span class="ref_gn">A.K.</span> <span class="ref_sn">Patel</span> </span>, <span class="ref_au"><span class="ref_gn">C.</span> <span class="ref_sn">Larroche</span> </span>, <span class="ref_au"><span class="ref_gn">A.</span> <span class="ref_sn">Pandey</span> </span>. <span class="ref_atitle">Advancement and comparative profiles in the production technologies using solid-state and submerged fermentation for microbial cellulases</span> <span class="ref_jtitle">Enzyme Microb. Technol.</span> <span class="ref_yr">2010</span>; <span class="ref_vol">46</span>: <span class="ref_issue">(7)</span> <span class="ref_fpage">541</span>-<span class="ref_lpage">549</span></p>
+<p id="editor_para_121"><span class="ref_lbl">Tamura et al., 2011</span> <span class="ref_au"><span class="ref_gn">K.</span> <span class="ref_sn">Tamura</span> </span>, <span class="ref_au"><span class="ref_gn">D.</span> <span class="ref_sn">Peterson</span> </span>, <span class="ref_au"><span class="ref_gn">N.</span> <span class="ref_sn">Peterson</span> </span>, <span class="ref_au"><span class="ref_gn">G.</span> <span class="ref_sn">Stecher</span> </span>, <span class="ref_au"><span class="ref_gn">M.</span> <span class="ref_sn">Nei</span> </span>, <span class="ref_au"><span class="ref_gn">S.</span> <span class="ref_sn">Kumar</span> </span>. <span class="ref_atitle">MEGA5: Molecular evolutionary genetics analysis using maximum likelihood, evolutionary distance, and maximum parsimony methods</span> <span class="ref_jtitle">Mol. Biol Evol.</span> <span class="ref_yr">2011</span>; <span class="ref_vol">28</span>: <span class="ref_issue">(10)</span> <span class="ref_fpage">2731</span>-<span class="ref_lpage">2739</span></p>
+<p id="editor_para_122"><span class="ref_lbl">Thompson and Chen, 1992</span> <span class="ref_au"><span class="ref_gn">D.N.</span> <span class="ref_sn">Thompson</span> </span>, <span class="ref_au"><span class="ref_gn">H.-C.</span> <span class="ref_sn">Chen</span> </span>. <span class="ref_atitle">Comparison of pretreatment methods on the basis of available surface area</span> <span class="ref_jtitle">Bioresour. Technol.</span> <span class="ref_yr">1992</span>; <span class="ref_vol">39</span>: <span class="ref_issue">(2)</span> <span class="ref_fpage">155</span>-<span class="ref_lpage">163</span></p>
+<p id="editor_para_123"><span class="ref_lbl">Todero Ritter et al., 2013</span> <span class="ref_au"><span class="ref_gn">C.E.</span> <span class="ref_sn">Todero Ritter</span> </span>, <span class="ref_au"><span class="ref_gn">M.</span> <span class="ref_sn">Camassola</span> </span>, <span class="ref_au"><span class="ref_gn">D.</span> <span class="ref_sn">Zampieri</span> </span>, <span class="ref_au"><span class="ref_gn">M.M.</span> <span class="ref_sn">Silveira</span> </span>, <span class="ref_au"><span class="ref_gn">A.J.P.</span> <span class="ref_sn">Dillon</span> </span>. <span class="ref_atitle">Cellulase and xylanase production by <em>Penicillium echinulatum</em> in submerged media containing cellulose amended with sorbitol</span> <span class="ref_jtitle">Enzyme Res.</span> <span class="ref_yr">2013</span>; <span class="end_ref_comment">9, Article ID-240219</span></p>
+<p id="editor_para_124"><span class="ref_lbl">Van Dyk and Pletschke, 2012</span> <span class="ref_au"><span class="ref_gn">J.S.</span> <span class="ref_sn">Van Dyk</span> </span>, <span class="ref_au"><span class="ref_gn">B.I.</span> <span class="ref_sn">Pletschke</span> </span>. <span class="ref_atitle">A review of lignocellulose bioconversion using enzymatic hydrolysis and synergistic cooperation between enzymes-factors affecting enzymes, conversion and synergy</span> <span class="ref_jtitle">Biotechnol. Adv.</span> <span class="ref_yr">2012</span>; <span class="ref_vol">30</span>: <span class="ref_issue">(6)</span> <span class="ref_fpage">1458</span>-<span class="ref_lpage">1480</span></p>
+<p id="editor_para_125"><span class="ref_lbl">Vu et al., 2011</span> <span class="ref_au"><span class="ref_gn">V.H.</span> <span class="ref_sn">Vu</span> </span>, <span class="ref_au"><span class="ref_gn">T.A.</span> <span class="ref_sn">Pham</span> </span>, <span class="ref_au"><span class="ref_gn">K.</span> <span class="ref_sn">Kim</span> </span>. <span class="ref_atitle">Improvement of fungal cellulase production by mutation and optimization of solid state-fermentation</span> <span class="ref_jtitle">Mycobiology</span> <span class="ref_yr">2011</span>; <span class="ref_vol">39</span>: <span class="ref_issue">(1)</span> <span class="ref_fpage">20</span>-<span class="ref_lpage">25</span></p>
+<p id="editor_para_126"><span class="ref_lbl">Wood and Bhat, 1988</span> <span class="ref_au"><span class="ref_gn">T.M.</span> <span class="ref_sn">Wood</span> </span>, <span class="ref_au"><span class="ref_gn">K.M.</span> <span class="ref_sn">Bhat</span> </span>. <span class="ref_atitle">Methods for measuring cellulase activities</span> <span class="ref_jtitle">Methods Enzymol.</span> <span class="ref_yr">1988</span>; <span class="ref_vol">160</span>: <span class="ref_fpage">87</span>-<span class="ref_lpage">112</span></p>
+<p id="editor_para_127"><span class="ref_lbl">Yang et al., 2013</span> <span class="ref_au"><span class="ref_gn">R.</span> <span class="ref_sn">Yang</span> </span>, <span class="ref_au"><span class="ref_gn">D.</span> <span class="ref_sn">Meng</span> </span>, <span class="ref_au"><span class="ref_gn">X.</span> <span class="ref_sn">Hu</span> </span>, <span class="ref_au"><span class="ref_gn">Y.</span> <span class="ref_sn">Ni</span> </span>, <span class="ref_au"><span class="ref_gn">Q.</span> <span class="ref_sn">Li</span> </span>. <span class="ref_atitle">Saccharification of pumpkin residues by coculturing of <em>Trichoderma reesei</em> RUT-C30 and <em>Phanerochaete chrysosporium</em> burdsall with delayed inoculation timing</span> <span class="ref_jtitle">J. Agric. Food. Chem</span> <span class="ref_yr">2013</span>; <span class="ref_vol">61</span>: <span class="ref_issue">(38)</span> <span class="ref_fpage">9192</span>-<span class="ref_lpage">9199</span></p>
+<p id="editor_para_128"><span class="ref_lbl">Yoon et al., 2014</span> <span class="ref_au"><span class="ref_gn">L.W.</span> <span class="ref_sn">Yoon</span> </span>, <span class="ref_au"><span class="ref_gn">T.N.</span> <span class="ref_sn">Ang</span> </span>, <span class="ref_au"><span class="ref_gn">G.C.</span> <span class="ref_sn">Ngoh</span> </span>, <span class="ref_au"><span class="ref_gn">A.S.M.</span> <span class="ref_sn">Chua</span> </span>. <span class="ref_atitle">Fungal solid-state fermentation and various methods of enhancement in cellulase production</span> <span class="ref_jtitle">Biomass Bioenerg</span> <span class="ref_yr">2014</span>; <span class="ref_vol">67</span>: <span class="ref_fpage">319</span>-<span class="ref_lpage">338</span></p>
+<p id="editor_para_129"><span class="ref_lbl">Zhang and Sang, 2012</span> <span class="ref_au"><span class="ref_gn">H.</span> <span class="ref_sn">Zhang</span> </span>, <span class="ref_au"><span class="ref_gn">Q.</span> <span class="ref_sn">Sang</span> </span>. <span class="ref_atitle">Statistical optimization of cellulases production by <em>Penicillium chrysogenum</em> QML-2 under solid-state fermentation and primary application to chitosan hydrolysis</span> <span class="ref_jtitle">World J. Microbiol. Biotechnol.</span> <span class="ref_yr">2012</span>; <span class="ref_vol">28</span>: <span class="ref_issue">(3)</span> <span class="ref_fpage">1163</span>-<span class="ref_lpage">1174</span></p>
+</div>
+<hr />
+<div id="xps_float">
+<p class="fig" id="editor_para_130"><span class="xps_label">Fig. 1</span> Phylogenetic trees for fungal strains <em>Penicillium</em> sp. AKB-24.<span class="xps_Image">gr1</span></p>
+<p class="fig" id="editor_para_131"><span class="xps_label">Fig. 2</span> Sexual and asexual structures of <em>Aspergillus Nidulans</em> AKB-25: (A) Cleistothecia (B) Close-up of peridium of a cleistothecium with hulle cells (C) developing ascus (D) ascospores (E) conidiophore (F) conidia.<span class="xps_Image">gr2</span></p>
+<p class="fig" id="editor_para_132"><span class="xps_label">Fig. 3</span> Screening of different carbon sources for enzyme production by <em>Penicillium</em> sp. AKB-24: (A) endoglucanase, (B) FPase, (C) glucosidase, (D) xylanase.<span class="xps_Image">gr3</span></p>
+<p class="fig" id="editor_para_133"><span class="xps_label">Fig. 4</span> Effect of nitrogen sources on endoglucanase production by <em>Penicillium</em> sp. AKB-24.<span class="xps_Image">gr4</span></p>
+<p class="fig" id="editor_para_134"><span class="xps_label">Fig. 5</span> Effect of nitrogen sources on FPase production by <em>Penicillium</em> sp. AKB-24.<span class="xps_Image">gr5</span></p>
+<p class="fig" id="editor_para_135"><span class="xps_label">Fig. 6</span> Effect of nitrogen sources on xylanase production by <em>Penicillium</em> sp. AKB-24.<span class="xps_Image">gr6</span></p>
+<p class="tab" id="editor_para_136"><span class="xps_label">Table 1</span> C/N ratio and WRV of different crop residues.</p>
+<table frame="topbot">
+<thead>
+<tr>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_137">S. No.</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_138">Substrates</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_139">C %</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_140">N %</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_141">C/N ratio</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_142">WRV (%)</p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_143">1</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_144">Sugarcane bagasse</p>
+</td>
+<td>
+<p class="txt" id="editor_para_145"><span class="char_dot">43.47</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_146"><span class="char_dot">0.53</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_147"><span class="char_dot">82.02</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_148"><span class="char_dot">126.73</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_149">2</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_150">Black gram</p>
+</td>
+<td>
+<p class="txt" id="editor_para_151"><span class="char_dot">42.59</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_152"><span class="char_dot">0.98</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_153"><span class="char_dot">43.46</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_154"><span class="char_dot">145.15</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_155">3</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_156">Corn stover</p>
+</td>
+<td>
+<p class="txt" id="editor_para_157"><span class="char_dot">43.93</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_158"><span class="char_dot">0.74</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_159"><span class="char_dot">59.36</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_160"><span class="char_dot">160.12</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_161">4</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_162">Pearl millet stover</p>
+</td>
+<td>
+<p class="txt" id="editor_para_163"><span class="char_dot">40.37</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_164"><span class="char_dot">0.48</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_165"><span class="char_dot">84.1</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_166"><span class="char_dot">128.27</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_167">5</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_168">Rice husk</p>
+</td>
+<td>
+<p class="txt" id="editor_para_169"><span class="char_dot">41.32</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_170"><span class="char_dot">0.63</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_171"><span class="char_dot">65.59</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_172"><span class="char_dot">92.05</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_173">6</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_174">Rice straw</p>
+</td>
+<td>
+<p class="txt" id="editor_para_175"><span class="char_dot">36.58</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_176"><span class="char_dot">0.66</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_177"><span class="char_dot">55.42</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_178"><span class="char_dot">148.79</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_179">7</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_180">Sunhemp</p>
+</td>
+<td>
+<p class="txt" id="editor_para_181"><span class="char_dot">43.27</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_182"><span class="char_dot">0.54</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_183"><span class="char_dot">80.13</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_184"><span class="char_dot">133.24</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_185">8</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_186">Sugarcane tops</p>
+</td>
+<td>
+<p class="txt" id="editor_para_187"><span class="char_dot">42.39</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_188"><span class="char_dot">0.61</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_189"><span class="char_dot">69.49</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_190"><span class="char_dot">171.12</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_191">9</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_192">Wheat bran</p>
+</td>
+<td>
+<p class="txt" id="editor_para_193"><span class="char_dot">44.12</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_194"><span class="char_dot">1.95</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_195"><span class="char_dot">22.63</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_196"><span class="char_dot">174.94</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_197">10</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_198">Wheat straw</p>
+</td>
+<td>
+<p class="txt" id="editor_para_199"><span class="char_dot">43.12</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_200"><span class="char_dot">0.68</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_201"><span class="char_dot">63.41</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_202"><span class="char_dot">144.78</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="tab" id="editor_para_203"><span class="xps_label">Table 2</span> Effect of incubation time, temperature, initial pH and initial moisture content on enzyme production <em>Penicillium</em> sp. AKB-24.</p>
+<table style="width: 384px;" border="0" cellpadding="0" cellspacing="0">
+<thead>
+<tr>
+<td class="rule" height="52" width="64">
+<p class="txt" id="editor_para_204">Variables</p>
+</td>
+<td class="rule" width="64">
+<p class="txt" id="editor_para_205">&#160;</p>
+</td>
+<td class="rule" width="64">
+<p class="txt" id="editor_para_206">Endoglucanase (IU/gds)</p>
+</td>
+<td class="rule" width="64">
+<p class="txt" id="editor_para_207">FPase (FPU/gds)</p>
+</td>
+<td class="rule" width="64">
+<p class="txt" id="editor_para_208">Glucosidase (IU/gds)</p>
+</td>
+<td class="rule" width="64">
+<p class="txt" id="editor_para_209">Xylanase (IU/gds)</p>
+</td>
+</tr>
+</thead>
+<colgroup><col style="width: 48pt;" span="6" width="64" /> </colgroup>
+<tbody>
+<tr style="height: 15.75pt;" height="21">
+<td colspan="6" height="21" width="384">
+<p class="txt" id="editor_para_210"><strong>Incubation time (days)</strong></p>
+</td>
+</tr>
+<tr style="height: 15.75pt;" height="21">
+<td colspan="6" height="21" width="384">
+<p class="txt" id="editor_para_211"><em>Penicillium</em> sp. AKB-24</p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_212">1</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_213">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_214"><span class="char_dot">0</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_215"><span class="char_dot">0</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_216"><span class="char_dot">0</span></p>
+</td>
+<td width="64">
+<p id="editor_para_217"><span class="char_plusmn">393.16&#177;30.58</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_218">2</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_219">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_220"><span class="char_dot">0.67&#177;0.03</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_221"><span class="char_dot">0</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_222"><span class="char_dot">0.14&#177;0.01</span></p>
+</td>
+<td width="64">
+<p id="editor_para_223"><span class="char_plusmn">509.80&#177;33.34</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_224">3</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_225">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_226"><span class="char_dot">20.92&#177;1.08</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_227"><span class="char_dot">0.16&#177;0.01</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_228"><span class="char_dot">0.54&#177;0.03</span></p>
+</td>
+<td width="64">
+<p id="editor_para_229"><span class="char_plusmn">972.34&#177;56.97</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_230">4</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_231">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_232"><span class="char_dot">37.66&#177;2.50</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_233"><span class="char_dot">0.43&#177;0.03</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_234"><span class="char_dot">0.95&#177;0.05</span></p>
+</td>
+<td width="64">
+<p id="editor_para_235"><span class="char_plusmn">1270.99&#177;81.47</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_236">5</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_237">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_238"><span class="char_dot">56.44&#177;3.47</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_239"><span class="char_dot">0.77&#177;0.04</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_240"><span class="char_dot">2.63&#177;0.14</span></p>
+</td>
+<td width="64">
+<p id="editor_para_241"><span class="char_plusmn">1599.79&#177;89.42</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_242">6</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_243">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_244"><span class="char_dot">66.96&#177;4.46</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_245"><span class="char_dot">1.01&#177;0.04</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_246"><span class="char_dot">2.92&#177;0.18</span></p>
+</td>
+<td width="64">
+<p id="editor_para_247"><span class="char_plusmn">1847.66&#177;90.53</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_248">7</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_249">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_250"><span class="char_dot">73.41&#177;3.75</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_251"><span class="char_dot">1.42&#177;0.05</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_252"><span class="char_dot">3.42&#177;0.13</span></p>
+</td>
+<td width="64">
+<p id="editor_para_253"><span class="char_plusmn">1983.91&#177;91.85</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_254">8</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_255">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_256"><span class="char_dot">65.95&#177;3.44</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_257"><span class="char_dot">1.22&#177;0.06</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_258"><span class="char_dot">4.49&#177;0.24</span></p>
+</td>
+<td width="64">
+<p id="editor_para_259"><span class="char_plusmn">1813.97&#177;95.23</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_260">9</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_261">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_262"><span class="char_dot">56.44&#177;3.27</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_263"><span class="char_dot">1.10&#177;0.06</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_264"><span class="char_dot">4.80&#177;0.26</span></p>
+</td>
+<td width="64">
+<p id="editor_para_265"><span class="char_plusmn">1737.55&#177;99.90</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_266">10</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_267">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_268"><span class="char_dot">52.31&#177;3.32</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_269"><span class="char_dot">1.07&#177;0.05</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_270"><span class="char_dot">3.94&#177;0.24</span></p>
+</td>
+<td width="64">
+<p id="editor_para_271"><span class="char_plusmn">1578.68&#177;84.45</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_272">11</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_273">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_274"><span class="char_dot">47.19&#177;3.30</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_275"><span class="char_dot">0.98&#177;0.05</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_276"><span class="char_dot">2.64&#177;0.14</span></p>
+</td>
+<td width="64">
+<p id="editor_para_277"><span class="char_plusmn">1463.04&#177;94.80</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_278">12</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_279">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_280"><span class="char_dot">46.04&#177;3.17</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_281"><span class="char_dot">0.90&#177;0.04</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_282"><span class="char_dot">2.43&#177;0.10</span></p>
+</td>
+<td width="64">
+<p id="editor_para_283"><span class="char_plusmn">1302.16&#177;70.18</span></p>
+</td>
+</tr>
+<tr style="height: 15.75pt;" height="21">
+<td colspan="6" height="21" width="384">
+<p class="txt" id="editor_para_284"><em>Aspergillus nidulans</em> AKB-25<span class="xps_tfnlinking"><sup>*</sup></span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_285">4</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_286">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_287"><span class="char_dot">65.79&#177;3.19</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_288"><span class="char_dot">1.58&#177;0.08</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_289"><span class="char_dot">23.58&#177;1.30</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_290"><span class="char_plusmn">1449.95&#177;81.63</span></p>
+</td>
+</tr>
+<tr style="height: 15.75pt;" height="21">
+<td colspan="6" height="21" width="384">
+<p class="txt" id="editor_para_291"><strong>Temperature (&#730;C)</strong></p>
+</td>
+</tr>
+<tr style="height: 15.75pt;" height="21">
+<td colspan="6" height="21" width="384">
+<p class="txt" id="editor_para_292"><em>Penicillium</em> sp. AKB-24</p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_293">26</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_294">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_295"><span class="char_dot">31.39&#177;1.61</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_296"><span class="char_dot">0.62&#177;0.03</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_297"><span class="char_dot">0.93&#177;0.06</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_298"><span class="char_plusmn">1717.94&#177;105.13</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_299">30</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_300">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_301"><span class="char_dot">72.85&#177;3.84</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_302"><span class="char_dot">1.43&#177;0.05</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_303"><span class="char_dot">3.41&#177;0.16</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_304"><span class="char_plusmn">1963.80&#177;106.63</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_305">34</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_306">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_307"><span class="char_dot">66.96&#177;3.44</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_308"><span class="char_dot">1.24&#177;0.06</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_309"><span class="char_dot">3.06&#177;0.12</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_310"><span class="char_plusmn">1778.28&#177;93.89</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_311">38</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_312">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_313"><span class="char_dot">62.78&#177;3.05</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_314"><span class="char_dot">0.94&#177;0.05</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_315"><span class="char_dot">2.82&#177;0.14</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_316"><span class="char_plusmn">1524.63&#177;71.04</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_317">42</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_318">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_319"><span class="char_dot">27.14&#177;1.75</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_320"><span class="char_dot">0.44&#177;0.03</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_321"><span class="char_dot">0.82&#177;0.06</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_322"><span class="char_plusmn">1074.91&#177;49.33</span></p>
+</td>
+</tr>
+<tr style="height: 15.75pt;" height="21">
+<td colspan="6" height="21" width="384">
+<p class="txt" id="editor_para_323"><em>Aspergillus nidulans</em> AKB-25<span class="xps_tfnlinking"><sup>*</sup></span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_324">30</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_325">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_326"><span class="char_dot">65.79&#177;3.88</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_327"><span class="char_dot">1.60&#177;0.09</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_328"><span class="char_dot">23.93&#177;1.50</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_329"><span class="char_plusmn">1472.17&#177;76.25</span></p>
+</td>
+</tr>
+<tr style="height: 15pt;" height="20">
+<td colspan="6" height="20">
+<p class="txt" id="editor_para_330"><strong>pH</strong></p>
+</td>
+</tr>
+<tr style="height: 15.75pt;" height="21">
+<td height="21" width="64">
+<p class="txt" id="editor_para_331"><strong>Initial</strong></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_332"><strong>Final</strong></p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr style="height: 15pt;" height="20">
+<td colspan="3" height="20">
+<p class="txt" id="editor_para_333"><em>Penicillium</em> sp. AKB-24</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_334">3</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_335"><span class="char_dot">6.13</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_336"><span class="char_dot">67.53&#177;3.60</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_337"><span class="char_dot">1.18&#177;0.06</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_338"><span class="char_dot">2.71&#177;0.16</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_339"><span class="char_plusmn">1533.93&#177;80.99</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_340">4</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_341"><span class="char_dot">6.19</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_342"><span class="char_dot">70.36&#177;4.79</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_343"><span class="char_dot">1.28&#177;0.07</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_344"><span class="char_dot">3.08&#177;0.17</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_345"><span class="char_plusmn">1796.38&#177;82.45</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_346">5</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_347"><span class="char_dot">6.23</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_348"><span class="char_dot">71.94&#177;3.51</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_349"><span class="char_dot">1.36&#177;0.07</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_350"><span class="char_dot">3.22&#177;0.17</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_351"><span class="char_plusmn">1894.42&#177;87.52</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_352">6</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_353"><span class="char_dot">6.26</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_354"><span class="char_dot">72.51&#177;3.89</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_355"><span class="char_dot">1.42&#177;0.06</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_356"><span class="char_dot">3.67&#177;0.16</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_357"><span class="char_plusmn">2049.77&#177;115.81</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_358">7</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_359"><span class="char_dot">6.37</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_360"><span class="char_dot">76.69&#177;4.04</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_361"><span class="char_dot">1.51&#177;0.07</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_362"><span class="char_dot">3.75&#177;0.18</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_363"><span class="char_plusmn">2143.28&#177;122.59</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_364">8</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_365"><span class="char_dot">6.4</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_366"><span class="char_dot">70.92&#177;3.62</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_367"><span class="char_dot">1.44&#177;0.06</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_368"><span class="char_dot">3.52&#177;0.19</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_369"><span class="char_plusmn">1960.78&#177;97.05</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_370">9</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_371"><span class="char_dot">6.42</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_372"><span class="char_dot">67.30&#177;3.13</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_373"><span class="char_dot">1.32&#177;0.06</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_374"><span class="char_dot">3.09&#177;0.17</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_375"><span class="char_plusmn">1815.98&#177;95.70</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_376">10</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_377"><span class="char_dot">6.54</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_378"><span class="char_dot">66.85&#177;3.40</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_379"><span class="char_dot">1.21&#177;0.05</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_380"><span class="char_dot">2.93&#177;0.14</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_381"><span class="char_plusmn">1725.49&#177;83.85</span></p>
+</td>
+</tr>
+<tr style="height: 15.75pt;" height="21">
+<td colspan="6" height="21" width="384">
+<p class="txt" id="editor_para_382"><em>Aspergillus nidulans</em> AKB-25<span class="xps_tfnlinking"><sup>*</sup></span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_383">8</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_384"><span class="char_dot">8.1</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_385"><span class="char_dot">79.00&#177;3.19</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_386"><span class="char_dot">1.73&#177;0.10</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_387"><span class="char_dot">27.50&#177;1.33</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_388"><span class="char_plusmn">1832.25&#177;125.50</span></p>
+</td>
+</tr>
+<tr style="height: 15pt;" height="20">
+<td colspan="6" height="20">
+<p class="txt" id="editor_para_389"><strong>Moisture contents</strong></p>
+</td>
+</tr>
+<tr style="height: 15.75pt;" height="21">
+<td colspan="6" height="21">
+<p class="txt" id="editor_para_390"><em>Penicillium</em> sp. AKB-24</p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_391">55</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_392">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_393"><span class="char_dot">18.77&#177;1.21</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_394"><span class="char_dot">0.18&#177;0.01</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_395"><span class="char_dot">1.08&#177;0.04</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_396"><span class="char_plusmn">811.46&#177;52.09</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_397">65</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_398">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_399"><span class="char_dot">31.33&#177;1.96</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_400"><span class="char_dot">0.50&#177;0.02</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_401"><span class="char_dot">1.75&#177;0.11</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_402"><span class="char_plusmn">1169.38&#177;64.66</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_403">70</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_404">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_405"><span class="char_dot">52.26&#177;2.37</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_406"><span class="char_dot">0.71&#177;0.03</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_407"><span class="char_dot">3.27&#177;0.18</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_408"><span class="char_plusmn">1717.94&#177;62.53</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_409">75</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_410">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_411"><span class="char_dot">58.59&#177;3.29</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_412"><span class="char_dot">1.26&#177;0.06</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_413"><span class="char_dot">3.48&#177;0.19</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_414"><span class="char_plusmn">2009.05&#177;106.47</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_415">77.5</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_416">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_417"><span class="char_dot">77.60&#177;3.47</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_418"><span class="char_dot">1.54&#177;0.07</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_419"><span class="char_dot">3.94&#177;0.18</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_420"><span class="char_plusmn">2214.17&#177;110.26</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_421">80</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_422">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_423"><span class="char_dot">71.15&#177;3.45</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_424"><span class="char_dot">1.40&#177;0.07</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_425"><span class="char_dot">3.71&#177;0.12</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_426"><span class="char_plusmn">2113.12&#177;96.78</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_427">82.5</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_428">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_429"><span class="char_dot">62.78&#177;3.59</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_430"><span class="char_dot">1.14&#177;0.05</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_431"><span class="char_dot">3.32&#177;0.13</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_432"><span class="char_plusmn">1935.14&#177;100.82</span></p>
+</td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_433">85</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_434">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_435"><span class="char_dot">33.48&#177;1.71</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_436"><span class="char_dot">0.63&#177;0.03</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_437"><span class="char_dot">1.69&#177;0.06</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_438"><span class="char_plusmn">1173.45&#177;62.54</span></p>
+</td>
+</tr>
+<tr style="height: 15.75pt;" height="21">
+<td colspan="5" height="21" width="320">
+<p class="txt" id="editor_para_439"><em>Aspergillus nidulans</em> AKB-25<span class="xps_tfnlinking"><sup>*</sup></span></p>
+</td>
+<td></td>
+</tr>
+<tr style="height: 26.25pt;" height="35">
+<td height="35" width="64">
+<p class="txt" id="editor_para_440">80</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_441">&#160;</p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_442"><span class="char_dot">104.85&#177;6.98</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_443"><span class="char_dot">2.06&#177;0.13</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_444"><span class="char_dot">28.94&#177;1.78</span></p>
+</td>
+<td width="64">
+<p class="txt" id="editor_para_445"><span class="char_plusmn">1955.24&#177;126.30</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="tnote" id="editor_para_446">&#177; refers standard deviation.</p>
+<p class="tfoot" id="editor_para_447"><sup>*</sup>For Aspergillus nidulans AKB-25 only optimum values have given.</p>
+<p class="tab" id="editor_para_448"><span class="xps_label">Table 3</span> Effect surfactants on enzyme production by <em>Penicillium</em> sp. AKB-24.</p>
+<table frame="topbot">
+<thead>
+<tr>
+<td align="left">
+<p class="txt" id="editor_para_449">Surfactants</p>
+</td>
+<td class="rule" colspan="3" align="left">
+<p class="txt" id="editor_para_450">Endoglucanase (IU/gds)</p>
+</td>
+<td class="rule" colspan="3" align="left">
+<p class="txt" id="editor_para_451">FPase (FPU/gds)</p>
+</td>
+<td class="rule" colspan="3" align="left">
+<p class="txt" id="editor_para_452">Xylanase (IU/gds)</p>
+</td>
+</tr>
+<tr>
+<td class="rule" align="left"></td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_453">0.05%</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_454">0.10%</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_455">0.20%</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_456">0.05%</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_457">0.10%</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_458">0.20%</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_459">0.05%</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_460">0.10%</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_461">0.20%</p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="rule" role="rowhead" colspan="10" align="left">
+<p class="txt" id="editor_para_462"><em>Penicillium</em> sp. AKB-24</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_463">T-20</p>
+</td>
+<td>
+<p class="txt" id="editor_para_464"><span class="char_plusmn">108.82&#177;5.69</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_465"><span class="char_plusmn">123.47&#177;6.03</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_466"><span class="char_plusmn">115.10&#177;5.47</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_467"><span class="char_plusmn">2.47&#177;0.09</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_468"><span class="char_plusmn">2.70&#177;0.10</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_469"><span class="char_plusmn">2.24&#177;0.10</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_470"><span class="char_plusmn">2978.88&#177;109.02</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_471"><span class="char_plusmn">3261.69&#177;151.66</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_472"><span class="char_plusmn">2855.71&#177;147.35</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_473">T-40</p>
+</td>
+<td>
+<p class="txt" id="editor_para_474"><span class="char_plusmn">110.92&#177;5.71</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_475"><span class="char_plusmn">125.57&#177;6.60</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_476"><span class="char_plusmn">115.10&#177;4.48</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_477"><span class="char_plusmn">2.50&#177;0.11</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_478"><span class="char_plusmn">2.64&#177;0.12</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_479"><span class="char_plusmn">2.18&#177;0.12</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_480"><span class="char_plusmn">2924.84&#177;141.26</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_481"><span class="char_plusmn">3136.00&#177;162.13</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_482"><span class="char_plusmn">2541.48&#177;133.68</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_483">T-60</p>
+</td>
+<td>
+<p class="txt" id="editor_para_484"><span class="char_plusmn">108.82&#177;4.32</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_485"><span class="char_plusmn">123.47&#177;5.96</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_486"><span class="char_plusmn">113.01&#177;5.69</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_487"><span class="char_plusmn">2.56&#177;0.11</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_488"><span class="char_plusmn">2.79&#177;0.13</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_489"><span class="char_plusmn">2.41&#177;0.13</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_490"><span class="char_plusmn">3002.76&#177;140.82</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_491"><span class="char_plusmn">3262.95&#177;162.82</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_492"><span class="char_plusmn">3049.27&#177;154.90</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_493">T-80</p>
+</td>
+<td>
+<p class="txt" id="editor_para_494"><span class="char_plusmn">113.01&#177;5.81</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_495"><span class="char_plusmn">129.75&#177;6.27</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_496"><span class="char_plusmn">121.38&#177;4.24</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_497"><span class="char_plusmn">2.68&#177;0.12</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_498"><span class="char_plusmn">2.91&#177;0.15</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_499"><span class="char_plusmn">2.78&#177;0.14</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_500"><span class="char_plusmn">3002.76&#177;112.00</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_501"><span class="char_plusmn">3335.85&#177;170.12</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_502"><span class="char_plusmn">3081.95&#177;146.39</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_503">T-x-100</p>
+</td>
+<td>
+<p class="txt" id="editor_para_504"><span class="char_plusmn">117.19&#177;5.10</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_505"><span class="char_plusmn">113.01&#177;4.46</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_506"><span class="char_plusmn">100.45&#177;4.90</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_507"><span class="char_plusmn">2.701&#177;0.14</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_508"><span class="char_plusmn">2.54&#177;0.13</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_509"><span class="char_plusmn">2.45&#177;0.045</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_510"><span class="char_plusmn">2435.90&#177;94.75</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_511"><span class="char_plusmn">2185.77&#177;126.77</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_512"><span class="char_plusmn">1690.55&#177;61.53</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_513">SDS</p>
+</td>
+<td>
+<p class="txt" id="editor_para_514"><span class="char_plusmn">125.57&#177;5.95</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_515"><span class="char_plusmn">133.94&#177;7.19</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_516"><span class="char_plusmn">113.01&#177;3.76</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_517"><span class="char_plusmn">2.63&#177;0.12</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_518"><span class="char_plusmn">2.96&#177;0.14</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_519"><span class="char_plusmn">2.67&#177;0.13</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_520"><span class="char_plusmn">3094.52&#177;160.29</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_521"><span class="char_plusmn">3592.26&#177;170.99</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_522"><span class="char_plusmn">2379.34&#177;117.30</span></p>
+</td>
+</tr>
+<tr>
+<td class="rule" role="rowhead" align="left">
+<p class="txt" id="editor_para_523">EDTA</p>
+</td>
+<td class="rule">
+<p class="txt" id="editor_para_524"><span class="char_plusmn">98.36&#177;4.61</span></p>
+</td>
+<td class="rule">
+<p class="txt" id="editor_para_525"><span class="char_plusmn">92.08&#177;3.48</span></p>
+</td>
+<td class="rule">
+<p class="txt" id="editor_para_526"><span class="char_plusmn">85.80&#177;4.34</span></p>
+</td>
+<td class="rule">
+<p class="txt" id="editor_para_527"><span class="char_plusmn">1.78&#177;0.11</span></p>
+</td>
+<td class="rule">
+<p class="txt" id="editor_para_528"><span class="char_plusmn">1.61&#177;0.09</span></p>
+</td>
+<td class="rule">
+<p class="txt" id="editor_para_529"><span class="char_plusmn">1.56&#177;0.08</span></p>
+</td>
+<td class="rule">
+<p class="txt" id="editor_para_530"><span class="char_plusmn">2469.83&#177;130.16</span></p>
+</td>
+<td class="rule">
+<p class="txt" id="editor_para_531"><span class="char_plusmn">2297.64&#177;81.79</span></p>
+</td>
+<td class="rule">
+<p class="txt" id="editor_para_532"><span class="char_plusmn">2048.77&#177;88.71</span></p>
+</td>
+</tr>
+<tr>
+<td class="rule" role="rowhead" align="center">
+<p class="txt" id="editor_para_533">Control</p>
+</td>
+<td class="rule" colspan="3" align="center">
+<p class="txt" id="editor_para_534"><span class="char_plusmn">106.73&#177;5.14</span></p>
+</td>
+<td class="rule" colspan="3" align="center">
+<p class="txt" id="editor_para_535"><span class="char_plusmn">2.08&#177;0.8</span></p>
+</td>
+<td class="rule" colspan="3" align="center">
+<p class="txt" id="editor_para_536"><span class="char_plusmn">2510.06&#177;126.75</span></p>
+</td>
+</tr>
+<tr>
+<td class="rule" role="rowhead" colspan="10" align="left">
+<p class="txt" id="editor_para_537"><em>Aspergillus nidulans</em> AKB-25</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="center">
+<p class="txt" id="editor_para_538">T-x-100</p>
+</td>
+<td colspan="3" align="center">
+<p class="txt" id="editor_para_539"><span class="char_plusmn">152.14&#177;8.29</span></p>
+</td>
+<td colspan="3" align="center">
+<p class="txt" id="editor_para_540"><span class="char_plusmn">3.42&#177;0.18</span></p>
+</td>
+<td colspan="3" align="center">
+<p class="txt" id="editor_para_541"><span class="char_plusmn">2441.03&#177;144.99</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="tnote" id="editor_para_542">&#177; refers standard deviation.</p>
+<p class="tab" id="editor_para_543"><span class="xps_label">Table 4</span> Co-culture of <em>Aspergillus nidulans</em> AKB-25 and <em>Penicillium</em> sp. AKB-24.</p>
+<table frame="topbot">
+<thead>
+<tr>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_544">Particulars</p>
+</td>
+<td class="rule" align="left"></td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_545">FPase, FPU/gds</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_546">Endoglucanase, IU/gds</p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td role="rowhead" align="left"></td>
+<td align="left">
+<p class="txt" id="editor_para_547">Wheat bran (WB)</p>
+</td>
+<td>
+<p class="txt" id="editor_para_548"><span class="char_plusmn">2.93&#177;0.10</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_549"><span class="char_plusmn">137.19&#177;5.93</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_550">Carbon sources<span class="xps_tfnlinking"><sup>*</sup></span></p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_551">Black gram (BG)</p>
+</td>
+<td>
+<p class="txt" id="editor_para_552"><span class="char_plusmn">3.48&#177;0.14</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_553"><span class="char_plusmn">155.89&#177;5.19</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left"></td>
+<td align="left">
+<p class="txt" id="editor_para_554">WB:BG (1:1)</p>
+</td>
+<td>
+<p class="txt" id="editor_para_555"><span class="char_plusmn">3.64&#177;0.14</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_556"><span class="char_plusmn">172.52&#177;6.80</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="3" role="rowhead" align="left">
+<p class="txt" id="editor_para_557">pH<span class="xps_tfnlinking"><sup>**</sup></span></p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_558">6</p>
+</td>
+<td>
+<p class="txt" id="editor_para_559"><span class="char_plusmn">3.38&#177;0.12</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_560"><span class="char_plusmn">166.29&#177;8.13</span></p>
+</td>
+</tr>
+<tr>
+<td align="left">
+<p class="txt" id="editor_para_561">7</p>
+</td>
+<td>
+<p class="txt" id="editor_para_562"><span class="char_plusmn">3.67&#177;0.17</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_563"><span class="char_plusmn">174.60&#177;8.87</span></p>
+</td>
+</tr>
+<tr>
+<td align="left">
+<p class="txt" id="editor_para_564">8</p>
+</td>
+<td>
+<p class="txt" id="editor_para_565"><span class="char_plusmn">3.83&#177;0.16</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_566"><span class="char_plusmn">187.07&#177;9.09</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" role="rowhead" align="left">
+<p class="txt" id="editor_para_567">Moisture content<span class="xps_tfnlinking"><sup>***</sup></span></p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_568">77.5</p>
+</td>
+<td>
+<p class="txt" id="editor_para_569"><span class="char_plusmn">3.84&#177;0.15</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_570"><span class="char_plusmn">187.07&#177;8.19</span></p>
+</td>
+</tr>
+<tr>
+<td align="left">
+<p class="txt" id="editor_para_571">80</p>
+</td>
+<td>
+<p class="txt" id="editor_para_572"><span class="char_plusmn">4.04&#177;0.19</span></p>
+</td>
+<td>
+<p class="txt" id="editor_para_573"><span class="char_plusmn">203.70&#177;9.41</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="tnote" id="editor_para_574">&#177; refers standard deviation.</p>
+<p class="tnote" id="editor_para_575">Fermentation conditions:</p>
+<p class="tfoot" id="editor_para_576"><sup>*</sup>pH-7, moisture content-77.5, temperature-30 &#176;C, incubation time -7 days.</p>
+<p class="tfoot" id="editor_para_577"><sup>**</sup>Moisture content-77.5, carbon sources-WB:BG (1:1), temperature-30 &#176;C, incubation time -7 days.</p>
+<p class="tfoot" id="editor_para_578"><sup>***</sup>pH-8, carbon sources-WB:BG (1:1), temperature-30 &#176;C, incubation time -7 days.</p>
+<p class="tab" id="editor_para_579"><span class="xps_label">Table 5</span> Optimized conditions for enzyme production and comparison of production level among monocultures and co-cultures of <em>A.</em> <em>nidulans</em> AKB 25 and <em>Penicillium</em> sp. AKB 24.</p>
+<table frame="topbot">
+<thead>
+<tr>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_580">Particulars</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_581"><em>A. nidulans</em> AKB-25</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_582"><em>Penicillium</em> sp. AKB-24</p>
+</td>
+<td class="rule" align="left">
+<p class="txt" id="editor_para_583">Co-culture of <em>A. nidulans</em> AKB-25 and <em>Penicillium</em> sp. AKB-24</p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td role="rowhead" colspan="4" align="left">
+<p class="txt" id="editor_para_584"><strong>Optimal cultural parameters</strong></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_585">Carbon source</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_586">Black gram</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_587">Wheat bran</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_588">Black gram+ Wheat bran</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_589">Incubation time (days)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_590">4</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_591">7</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_592">7</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_593">Temperature (&#176;C)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_594">30</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_595">30</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_596">30</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_597">pH</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_598">8</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_599">7</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_600">8</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_601">Moisture content (%)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_602">80</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_603">77.5</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_604">80</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_605">Nitrogen source (%)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_606">Ammonium sulphate (0.12 % N)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_607">Yeast extract (1.2 % W/V)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_608">Ammonium sulphate (0.6 % N) + Yeast extract (0.6 % W/V)</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_609">Surfactant (%)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_610">Triton-x-100 (0.05 % w/v)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_611">SDS (0.10 % w/v)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_612">Triton-x-100 (0.05 % w/v)</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" colspan="4" align="left">
+<p class="txt" id="editor_para_613"><span class="xps_halfrowspace">&#8211;</span></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" colspan="4" align="left">
+<p class="txt" id="editor_para_614"><strong>Enzyme activities</strong></p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_615">Endoglucanase (IU/gds)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_616">152.14&#177;8.29</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_617">133.94&#177;7.19</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_618">203.70&#177;9.41</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_619">FPase (FPU/gds)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_620">3.42&#177;0.18</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_621">2.96&#177;0.14</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_622">4.04&#177;0.19</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_623">Exoglucanase (IU/gds)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_624">3.34&#177;0.14</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_625">2.48&#177;0.09</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_626">3.70&#177;0.13</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_627">&#946;-Glucosidase (IU/gds)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_628">44.05&#177;2.17</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_629">5.88&#177;0.26</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_630">35.28&#177;1.15</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_631">Xylanase (IU/gds)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_632">2441.03&#177;144.99</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_633">3592.26&#177;170.99</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_634">3674.94&#177;183.12</p>
+</td>
+</tr>
+<tr>
+<td role="rowhead" align="left">
+<p class="txt" id="editor_para_635">Amylase (IU/gds)</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_636">37.41&#177;1.95</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_637">194.90&#177;11.05</p>
+</td>
+<td align="left">
+<p class="txt" id="editor_para_638">83.25&#177;4.30</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="tnote" id="editor_para_639">&#177; refers standard deviation.</p>
+<p class="tab" id="editor_para_640"><span class="xps_label">Table 6</span> Enzymatic hydrolysis of pearl millet stover by crude enzyme from co-cultures of <em>A. nidulans</em> AKB-25 and <em>Penicillium</em> sp. AKB-24.</p>
+<table style="width: 421px;" border="0" cellpadding="0" cellspacing="0">
+<thead>
+<tr style="height: 42px;">
+<td class="rule" colspan="5" height="42" width="421">
+<p class="txt" id="editor_para_641">Crude enzyme from co-cultures of <em>A. nidulans</em> AKB-25 and <em>Penicillium</em> sp. AKB-24</p>
+</td>
+</tr>
+</thead>
+<colgroup><col style="width: 48pt;" width="64" /> <col style="width: 64pt;" width="85" /> <col style="width: 68pt;" width="91" /> <col style="width: 78pt;" width="104" /> <col style="width: 58pt;" width="77" /> </colgroup>
+<tbody>
+<tr style="height: 45.75pt;" height="61">
+<td height="61" width="64">
+<p class="txt" id="editor_para_642">Enzyme activity, IU/ml</p>
+</td>
+<td colspan="4" width="357">
+<p class="txt" id="editor_para_643"><span class="char_dot">0.42</span></p>
+</td>
+</tr>
+<tr style="height: 45.75pt;" height="61">
+<td height="61" width="64">
+<p class="txt" id="editor_para_644">Enzyme dosing (FPU/g)</p>
+</td>
+<td width="85">
+<p class="txt" id="editor_para_645"><span class="char_dot">5 (11.90 ml)<span class="xps_tfnlinking"><sup>*</sup></span></span></p>
+</td>
+<td width="91">
+<p class="txt" id="editor_para_646"><span class="char_dot">10 (23.80 ml)<span class="xps_tfnlinking"><sup>*</sup></span></span></p>
+</td>
+<td width="104">
+<p class="txt" id="editor_para_647"><span class="char_dot">15 (35.71 ml)<span class="xps_tfnlinking"><sup>*</sup></span></span></p>
+</td>
+<td width="77">
+<p class="txt" id="editor_para_648"><span class="char_dot">20 (47.61)<span class="xps_tfnlinking"><sup>*</sup></span></span></p>
+</td>
+</tr>
+<tr style="height: 30.75pt;" height="41">
+<td colspan="5" height="41" width="64">
+<p class="txt" id="editor_para_649"><strong>Hydrolysis time (h)</strong></p>
+</td>
+</tr>
+<tr style="height: 30.75pt;" height="41">
+<td height="41" width="64">
+<p class="txt" id="editor_para_650">12</p>
+</td>
+<td width="85">
+<p class="txt" id="editor_para_651"><span class="char_dot">259.24&#177;8.92</span></p>
+</td>
+<td width="91">
+<p class="txt" id="editor_para_652"><span class="char_dot">323.55&#177;16.50</span></p>
+</td>
+<td width="104">
+<p class="txt" id="editor_para_653"><span class="char_dot">406.52&#177;18.05</span></p>
+</td>
+<td width="77">
+<p class="txt" id="editor_para_654"><span class="char_dot">420.13&#177;15.84</span></p>
+</td>
+</tr>
+<tr style="height: 30.75pt;" height="41">
+<td height="41" width="64">
+<p class="txt" id="editor_para_655">24</p>
+</td>
+<td width="85">
+<p class="txt" id="editor_para_656"><span class="char_dot">336.08&#177;14.25</span></p>
+</td>
+<td width="91">
+<p class="txt" id="editor_para_657"><span class="char_dot">396.25&#177;13.79</span></p>
+</td>
+<td width="104">
+<p class="txt" id="editor_para_658"><span class="char_dot">476.11&#177;20.57</span></p>
+</td>
+<td width="77">
+<p class="txt" id="editor_para_659"><span class="char_dot">490.55&#177;24.92</span></p>
+</td>
+</tr>
+<tr style="height: 30.75pt;" height="41">
+<td height="41" width="64">
+<p class="txt" id="editor_para_660">36</p>
+</td>
+<td width="85">
+<p class="txt" id="editor_para_661"><span class="char_dot">389.96&#177;16.11</span></p>
+</td>
+<td width="91">
+<p class="txt" id="editor_para_662"><span class="char_dot">460.37&#177;19.98</span></p>
+</td>
+<td width="104">
+<p class="txt" id="editor_para_663"><span class="char_dot">532.54&#177;17.25</span></p>
+</td>
+<td width="77">
+<p class="txt" id="editor_para_664"><span class="char_dot">547.62&#177;21.25</span></p>
+</td>
+</tr>
+<tr style="height: 30.75pt;" height="41">
+<td height="41" width="64">
+<p class="txt" id="editor_para_665">48</p>
+</td>
+<td width="85">
+<p class="txt" id="editor_para_666"><span class="char_dot">419.49&#177;16.32</span></p>
+</td>
+<td width="91">
+<p class="txt" id="editor_para_667"><span class="char_dot">514.66&#177;22.23</span></p>
+</td>
+<td width="104">
+<p class="txt" id="editor_para_668"><span class="char_dot">575.27&#177;22.72</span></p>
+</td>
+<td width="77">
+<p class="txt" id="editor_para_669"><span class="char_dot">582.85&#177;25.35</span></p>
+</td>
+</tr>
+<tr style="height: 30.75pt;" height="41">
+<td height="41" width="64">
+<p class="txt" id="editor_para_670">60</p>
+</td>
+<td width="85">
+<p class="txt" id="editor_para_671"><span class="char_dot">446.17&#177;13.30</span></p>
+</td>
+<td width="91">
+<p class="txt" id="editor_para_672"><span class="char_dot">537.16&#177;21.11</span></p>
+</td>
+<td width="104">
+<p class="txt" id="editor_para_673"><span class="char_dot">602.39&#177;29.34</span></p>
+</td>
+<td width="77">
+<p class="txt" id="editor_para_674"><span class="char_dot">606.92&#177;22.09</span></p>
+</td>
+</tr>
+<tr style="height: 30.75pt;" height="41">
+<td height="41" width="64">
+<p class="txt" id="editor_para_675">72</p>
+</td>
+<td width="85">
+<p class="txt" id="editor_para_676"><span class="char_dot">455.64&#177;16.58</span></p>
+</td>
+<td width="91">
+<p class="txt" id="editor_para_677"><span class="char_dot">550.36&#177;26.75</span></p>
+</td>
+<td width="104">
+<p class="txt" id="editor_para_678"><span class="char_dot">612.45&#177;24.17</span></p>
+</td>
+<td width="77">
+<p class="txt" id="editor_para_679"><span class="char_dot">616.75&#177;27.57</span></p>
+</td>
+</tr>
+<tr style="height: 30.75pt;" height="41">
+<td height="41" width="64">
+<p class="txt" id="editor_para_680">84</p>
+</td>
+<td width="85">
+<p class="txt" id="editor_para_681"><span class="char_dot">458.82&#177;15.31</span></p>
+</td>
+<td width="91">
+<p class="txt" id="editor_para_682"><span class="char_dot">554.15&#177;24.05</span></p>
+</td>
+<td width="104">
+<p class="txt" id="editor_para_683"><span class="char_dot">615.38&#177;28.92</span></p>
+</td>
+<td width="77">
+<p class="txt" id="editor_para_684"><span class="char_dot">618.44&#177;27.77</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 435px;" border="0" cellpadding="0" cellspacing="0">
+<thead>
+<tr style="height: 21px;">
+<td class="rule" colspan="5" height="21" width="435">
+<p class="txt" id="editor_para_685">Crude enzyme from <em>A. nidulans</em> AKB-25</p>
+</td>
+</tr>
+</thead>
+<colgroup><col style="width: 48pt;" width="64" /> <col style="width: 64pt;" width="85" /> <col style="width: 68pt;" width="91" /> <col style="width: 78pt;" width="104" /> <col style="width: 68pt;" width="91" /> </colgroup>
+<tbody>
+<tr style="height: 45.75pt;" height="61">
+<td height="61" width="64">
+<p class="txt" id="editor_para_686">Enzyme activity, IU/ml</p>
+</td>
+<td colspan="4" width="371">
+<p class="txt" id="editor_para_687"><span class="char_dot">0.36</span></p>
+</td>
+</tr>
+<tr style="height: 45.75pt;" height="61">
+<td height="61" width="64">
+<p class="txt" id="editor_para_688">Enzyme dosing (FPU/g)</p>
+</td>
+<td width="85">
+<p class="txt" id="editor_para_689"><span class="char_dot">5 (13.88 ml)<span class="xps_tfnlinking"><sup>*</sup></span></span></p>
+</td>
+<td width="91">
+<p class="txt" id="editor_para_690"><span class="char_dot">10 (27.77 ml)<span class="xps_tfnlinking"><sup>*</sup></span></span></p>
+</td>
+<td width="104">
+<p class="txt" id="editor_para_691"><span class="char_dot">15 (41.66 ml)<span class="xps_tfnlinking"><sup>*</sup></span></span></p>
+</td>
+<td width="91">
+<p class="txt" id="editor_para_692"><span class="char_dot">20 (55.55 ml)<span class="xps_tfnlinking"><sup>*</sup></span></span></p>
+</td>
+</tr>
+<tr style="height: 30.75pt;" height="41">
+<td colspan="5" height="41" width="64">
+<p class="txt" id="editor_para_693"><strong>Hydrolysis time (h)</strong></p>
+</td>
+</tr>
+<tr style="height: 30.75pt;" height="41">
+<td height="41" width="64">
+<p class="txt" id="editor_para_694">72</p>
+</td>
+<td width="85">
+<p class="txt" id="editor_para_695"><span class="char_dot">451.72&#177;14.44</span></p>
+</td>
+<td width="91">
+<p class="txt" id="editor_para_696"><span class="char_dot">556.14&#177;25.85</span></p>
+</td>
+<td width="104">
+<p class="txt" id="editor_para_697"><span class="char_dot">613.17&#177;20.42</span></p>
+</td>
+<td width="91">
+<p class="txt" id="editor_para_698"><span class="char_dot">610.35&#177;24.56</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="tnote" id="editor_para_699">&#177; refers standard deviation.</p>
+<p class="tfoot" id="editor_para_700"><sup>*</sup>Values in bracket shows the amount of enzyme required in ml.</p>
+</div>
