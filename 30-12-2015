@@ -1,0 +1,107 @@
+package Sample;
+import java.io.*;
+import java.util.regex.Pattern;
+
+import org.xml.sax.*;
+
+import javax.xml.parsers.*;
+import javax.xml.transform.*;
+import javax.xml.transform.stream.*;
+import javax.xml.transform.sax.*;
+
+public class HeadXml {
+	
+		  BufferedReader in;
+		  StreamResult out;
+
+		 TransformerHandler th;
+		 private static final String REGEX = "<br/>";
+
+				  public static void main (String args[]) {
+						      new HeadXml().begin();
+						  }
+
+						  public void begin () {
+						    try{
+						      in = new BufferedReader(new FileReader("E:/head3.txt"));
+						      out = new StreamResult("E:/head3.xml");
+						      openXml();
+						      String str;
+						      
+						      Pattern p = Pattern.compile(REGEX);
+						        String[] items = p.split("<br />");
+						        for(String s : items) 
+						             {
+						               System.out.println(s);
+						             }	
+						        
+						        System.out.print(items);
+						      while ((str = in.readLine()) != null) {
+						         process(str);
+						      }
+						      in.close();
+						      closeXml();
+						    }
+						    catch (Exception e) {
+						    	e.printStackTrace(); }
+						    }
+						
+
+
+						  public void openXml() throws ParserConfigurationException,TransformerConfigurationException,SAXException{
+							 
+								 
+								  SAXTransformerFactory tf=(SAXTransformerFactory)SAXTransformerFactory.newInstance();
+								  th=tf.newTransformerHandler();
+								  
+								  Transformer serilizer=th.getTransformer();
+								  serilizer.setOutputProperty("{http://xml.apache.org/xstl}indent-amount", "4");
+								  serilizer.setOutputProperty(OutputKeys.INDENT, "yes");
+								  th.setResult(out);
+								  th.startDocument();
+								  th.startElement(null, null, "item-info",null);
+								  }
+						  		  
+						  		  public void process(String s) throws SAXException{
+								  th.startElement(null, null, "jid",null);
+								  
+								  th.characters(s.toCharArray(), 0, s.length());
+								  th.endElement(null, null, "jid");
+								  
+//								  
+								  th.endElement(null, null, "item-info");
+						  		  }
+							  
+							  	 
+						  		  public void closeXml() throws SAXException{
+								  th.endElement(null, null, "item-info");
+								  th.endDocument();
+								  
+								  
+							  }
+							 
+							  
+							  
+							  
+						  }	  
+							  
+							  
+							  
+							  
+							  
+							  
+							 
+//th.startElement(null, null, "aid",null);
+//th.characters(s.toCharArray(), 2, s.length());
+//th.endElement(null, null, "aid");
+
+//th.startElement(null, null, "ce:article-number",null);
+//th.characters(s.toCharArray(), 3, s.length());
+//
+//th.endElement(null, null, "ce:article-number");
+
+//th.characters(s.toCharArray(), 4, s.length());
+
+
+
+
