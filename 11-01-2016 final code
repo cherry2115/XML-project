@@ -1,0 +1,1716 @@
+package New;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.ResourceBundle;
+import java.util.regex.*;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.sax.SAXTransformerFactory;
+import javax.xml.transform.sax.TransformerHandler;
+import javax.xml.transform.stream.StreamResult;
+
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.AttributesImpl;
+
+import sun.org.mozilla.javascript.internal.regexp.SubString;
+
+import com.sun.org.apache.xerces.internal.impl.xs.identity.Selector.Matcher;
+
+import java.util.regex.Pattern;
+
+public class Code
+{
+			BufferedReader in;
+		    static StreamResult out;
+		    static TransformerHandler th;
+		    static AttributesImpl atts;
+		    BufferedWriter log=null;
+        	static File logFile=null;
+        	static FileOutputStream fos=null;
+        	static String langcode="";
+        	static String LangCode="|aa|ab|af|am|ar|as|ay|az|ba|be|bg|bh|bi|bn|bo|br|ca|co|cs|cy|da|de|dz|el|en|eo|es|et|eu|"
+        			+ "fa|fi|fj|fo|fr|fy|ga|gd|gl|gn|gu|ha|he|hi|hr|hu|hy|ia|id|ie|ik|is|it|ja|jw|ka|kk|kl|km|kn|ko|"
+        			+ "ks|ku|ky|la|ln|lo|lt|lv|mg|mi|mk|ml|mn|mo|mr|ms|mt|my|na|ne|nl|no|oc|om|or|pa|pl|ps|pt|qu|rm|"
+        			+ "rn|ro|ru|rw|sa|sd|sg|si|sk|sl|sm|sn|so|sq|sr|ss|st|su|sv|sw|ta|te|tg|th|ti|tk|tl|tn|to|tr|ts|"
+        			+ "tt|tw|uk|ur|uz|vi|vo|wo|xh|yi|yo|zh|zu|";
+        	static String copyrightInfo="@|000|free-of-copyright| |@|001|unknown| |@|002|full-transfer|Elsevier Company|"
+        			+ "@|003|us-gov| |@|004|crown| |@|005|limited-transfer|Elsevier Company|@|006|other|Author|"
+        			+ "@|007|no-transfer| |@|008|other| |@";
+        	
+        	static String str = "";
+        	static String xmlout="";
+        	static String docsubtype="fla";
+
+        	static String inputpath="";
+        	static String xmldirpath="";
+        	// Here's our entry point ... 
+        	
+//        	 ResourceBundle rb=ResourceBundle.getBundle("New.filename");
+//        	String inputpath=rb.getString("inputpath") ;
+//        	String outputpath=rb.getString("outputpath") ;
+     	 public static void main(String args[]) throws IOException
+		    {
+     		 	inputpath=args[0];
+     		 
+		    	Initlisation initial = new Initlisation();
+				Initlisation.checkjavaVersion(1.7f);
+//					String Path;
+//					Path filePath =Paths.get("D:");
+				
+				
+		    	
+		        new Code().doit();
+		    }
+
+		    public  void doit() 
+		    	{
+		    	   try 
+		    		{
+		    		 
+					in = new BufferedReader(new FileReader(inputpath));
+				 
+					 String dirpath=inputpath.toString().substring(0,inputpath.toString().lastIndexOf("\\"));
+					  
+//					    System.out.println("dir-path..."+dirpath);
+					     xmldirpath=dirpath.concat("\\tx1.xml");
+//					    out = new StreamResult(new FileWriter("xmldirpath"));
+//					    System.out.println("xml-dir-path..."+xmldirpath);
+					  
+					    String logdirpath=dirpath.concat("\\Log.txt");
+					    File logFile=new File(logdirpath);
+//					    System.out.println("log-dir-path..."+logdirpath);
+					
+//					    new File("logdirpath");
+		     		 	fos=new FileOutputStream(logFile);
+//		     		 	 System.exit(0);
+						 
+		     		  
+						if(!logFile.exists())
+			        	{
+			        		logFile.createNewFile();
+			        	}
+					  
+					
+//		            
+		            //String str = "";
+		            String s="";
+			    	String  iteminfo_str="";
+			    	String  header_str="";
+			    	String  body_str="";
+			    	String  tail_str="";
+			    	
+			    	
+			    	while ((s = in.readLine()) != null)
+		            { 
+		            	str += s+"\n";
+					}
+//		            System.out.println("str..."+str);
+		            
+			    	str=str.replaceAll("<([^/!?])", "<td:$1");
+		       	
+			    	str=str.replaceAll("</", "</td:");
+		       	 
+//		      	 	System.out.println("My Output is==== : " +str); 
+		       	  	 
+			    	iteminfo_str= ItemInfo(str);
+			    	xmlout+=iteminfo_str;
+			    	header_str=HeaderInfo(str);
+			    	xmlout+=header_str;
+		       	
+			    	body_str = BodyInfo(str);
+			    	xmlout+=body_str;
+			  	
+		     	
+			    	tail_str = TailInfo(str);
+			    	xmlout+=tail_str;
+		     	
+			    	xmlout=processids(xmlout);
+			    	xmlout=processcommontags(xmlout);
+		       	
+		       	
+		       	xmlout+="</article>";
+		       	xmlout="<?xml version=\"1.0\" encoding=\"utf-8\"?><!DOCTYPE article PUBLIC \"-//ES//DTD journal article DTD version 5.4.0//EN//XML\" \"art540.dtd\" []>"
+		    			+ "<article version=\"5.4\" xml:lang=\""+langcode+"\" docsubtype=\""+docsubtype+"\">"+xmlout;
+		       	processxmlout(xmlout);
+		       	
+		       	
+//		      	System.exit(0);
+		       	 in.close();
+//		            closeXML();
+		        }
+		        catch (Exception e) 
+		        {
+		            e.printStackTrace();
+		        }
+		    }
+	
+		   
+
+			private String processids(String xmlout1) {
+				// TODO Auto-generated method stub
+		    	
+		    	
+		    	System.out.println("Processing IDs for Elements...");
+				    	    
+				    	int  idcount=0;
+				    	System.out.println("\t...contrubution");
+				    	while(xmlout1.matches("(.*?)<sb:contribution>(.*?)")){
+					    	Pattern p = Pattern.compile("<sb:contribution>",Pattern.DOTALL);		
+					    	java.util.regex.Matcher m=p.matcher(xmlout1);
+					    	if(m.find()){
+					    		String grp=m.group();
+//					    		String grp1=m.group(1);
+					    		String grpprp=xmlout1.substring(0, m.start());
+					    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+					    		idcount+=5;
+					    		
+					    		grp="<sb:reference id=\"sbref"+String.format("%04d", idcount)+"\"><sb:contribution>";
+//					    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+					    		xmlout1=grpprp+grp+grppop;
+					    	}
+				    	}
+		    	
+		    	
+		    	
+		    			 idcount=0;
+			    	System.out.println("\t...Bibolography");
+			    	while(xmlout1.matches("(?s)(.*?)<ce:bibliography>(.*?)")){
+				    	Pattern p = Pattern.compile("<ce:bibliography>",Pattern.DOTALL);		
+				    	java.util.regex.Matcher m=p.matcher(xmlout1);
+				    	if(m.find()){
+				    		String grp=m.group();
+		//		    		String grp1=m.group(1);
+				    		String grpprp=xmlout1.substring(0, m.start());
+				    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+				    		idcount+=5;
+				    		grp="<ce:bibliography id=\"bibl"+String.format("%04d", idcount)+"\">";
+		//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+				    		xmlout1=grpprp+grp+grppop;
+				    	}
+			    	}
+		    	
+			    	/*
+			    	idcount=0;
+		    		
+	    			System.out.println("\t\t...Bibref-label");
+			    	while(xmlout1.matches("(?s)(.*?)<ce:label>(.*?)")){
+				    Pattern p = Pattern.compile("<ce:label>",Pattern.DOTALL);		
+				    java.util.regex.Matcher m=p.matcher(xmlout1);
+				    	if(m.find()){
+				    		String grp=m.group();
+		//		    		String grp1=m.group(1);
+				    		String grpprp=xmlout1.substring(0, m.start());
+				    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+				    		idcount+=5;
+//				    		 id="bibs0005"><ce:bib-reference id="bib0005"><ce:label>
+				    		grp="<ce:bibliography-sec id=\"bibs"+String.format("%04d", idcount)+"\"><ce:bib-reference id=\"bib"+String.format("%04d", idcount)+"\"><ce:label>";
+//				    		String grpbiblab=grp+"<ce:label>";
+				    		xmlout1=grpprp+grp+grppop;
+				    	}
+			    	} 
+			    	*/
+			    	
+		    	
+			    	
+		    	  idcount=0;
+		    	System.out.println("\t...Paragraph");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:para>(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:para>",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:para id=\"par"+String.format("%04d", idcount)+"\">";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+			    	idcount=0;
+			    	System.out.println("\t\t...Equations");
+			    	while(xmlout1.matches("(?s)(.*?)<ce:formula>(.*?)")){
+				    	Pattern p = Pattern.compile("<ce:formula>",Pattern.DOTALL);		
+				    	java.util.regex.Matcher m=p.matcher(xmlout1);
+				    	if(m.find()){
+				    		String grp=m.group();
+//				    		String grp1=m.group(1);
+				    		
+				    		String grpprp=xmlout1.substring(0, m.start());
+				    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+				    		idcount+=5;
+				    		grp="<ce:formula id=\"eq"+String.format("%04d", idcount)+"\">";
+	//			    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+				    		xmlout1=grpprp+grp+grppop;
+//				    		System.out.println(xmlout1);
+				    	}
+			    	}
+			    	
+			    	
+			    	idcount=0;
+			    	System.out.println("\t\t...Alt-image for Equations");
+			    	while(xmlout1.matches("(?s)(.*?)<mml:math>(.*?)")){
+				    	Pattern p = Pattern.compile("<mml:math>",Pattern.DOTALL);		
+				    	java.util.regex.Matcher m=p.matcher(xmlout1);
+				    	if(m.find()){
+				    		String grp=m.group();
+//				    		String grp1=m.group(1);
+				    		
+				    		String grpprp=xmlout1.substring(0, m.start());
+				    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+				    		idcount+=1;
+				    		grp="<mml:math altimg=\"si"+String.format("%d", idcount)+".gif\">";
+	//			    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+				    		xmlout1=grpprp+grp+grppop;
+//				    		System.out.println(xmlout1);
+				    	}
+			    	}
+		    	
+		    	
+		    	 idcount=0;
+		    	System.out.println("\t...Correspondence");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:correspondence><ce:label>(.*?)</ce:label>(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:correspondence><ce:label>(.*?)</ce:label>",Pattern.DOTALL);		
+		    		java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+			    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:correspondence id=\"cor"+String.format("%04d", idcount)+"\"><ce:label>"+grp1+"</ce:label>";
+			    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	
+		    	idcount=0;
+		    	System.out.println("\t...Abstract");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:abstract>(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:abstract>",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:abstract id=\"abs"+String.format("%04d", idcount)+"\">";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	idcount=0;
+		    	System.out.println("\t...Abstract-section");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:abstract-sec>(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:abstract-sec>",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:abstract-sec id=\"abst"+String.format("%04d", idcount)+"\">";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	idcount=0;
+		    	System.out.println("\t...sections");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:section>(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:section>",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+//			    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:section id=\"sec"+String.format("%04d", idcount)+"\">";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    			    	
+		    	idcount=0;
+		    	System.out.println("\t...section-title");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:section-title((?:(?!(?:\\s+id=)).)*?)>(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:section-title((?:(?!(?:\\s+id=)).)*?)>",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+			    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:section-title id=\"sect"+String.format("%04d", idcount)+"\""+grp1+">";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	idcount=0;
+		    	System.out.println("\t...simple-para");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:simple-para>(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:simple-para>",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:simple-para id=\"spar"+String.format("%04d", idcount)+"\">";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	idcount=0;
+		    	System.out.println("\t...keywords");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:keywords\\s+class=(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:keywords\\s+class=",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:keywords id=\"kwd"+String.format("%04d", idcount)+"\" class=";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	idcount=0;
+		    	System.out.println("\t\t...keyword");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:keyword>(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:keyword>",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:keyword id=\"kw"+String.format("%04d", idcount)+"\">";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%05d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	
+		    	idcount=0;
+		    	System.out.println("\t\t...Author Group");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:author-group>(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:author-group>",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:author-group id=\"aug"+String.format("%04d", idcount)+"\">";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	idcount=0;
+		    	System.out.println("\t\t...Authors");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:author>(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:author>",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:author id=\"aut"+String.format("%04d", idcount)+"\">";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	idcount=0;
+		    	System.out.println("\t\t...Affiliations");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:affiliation>(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:affiliation>",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:affiliation id=\"aff"+String.format("%04d", idcount)+"\">";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	idcount=0;
+		    	System.out.println("\t\t...Article Title");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:title>(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:title>",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:title id=\"tit"+String.format("%04d", idcount)+"\">";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	idcount=0;
+		    	System.out.println("\t\t...Cross reference");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:cross-ref\\s+refid=(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:cross-ref\\s+refid=",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:cross-ref id=\"crf"+String.format("%04d", idcount)+"\" refid=";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	idcount=0;
+		    	System.out.println("\t\t...Cross references");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:cross-refs\\s+refid=(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:cross-refs\\s+refid=",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:cross-refs id=\"crfs"+String.format("%04d", idcount)+"\" refid=";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	idcount=0;
+		    	System.out.println("\t\t...Email address");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:e-address\\s+type=(.*?)")){
+			    	Pattern p = Pattern.compile("<ce:e-address\\s+type=",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:e-address id=\"eadd"+String.format("%04d", idcount)+"\" type=";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	
+		    	idcount=0;
+		    	System.out.println("\t\t...Inter-ref");
+		    	while(xmlout1.matches("(?s)(.*?)<ce:inter-ref\\s+xlink:href=(.*?)")){
+//		    		System.out.println("gfsdcxc ");
+			    	Pattern p = Pattern.compile("<ce:inter-ref\\s+xlink:href=",Pattern.DOTALL);		
+			    	java.util.regex.Matcher m=p.matcher(xmlout1);
+			    	if(m.find()){
+			    		String grp=m.group();
+	//		    		String grp1=m.group(1);
+			    		String grpprp=xmlout1.substring(0, m.start());
+			    		String grppop=xmlout1.substring(m.end(),xmlout1.length());
+			    		idcount+=5;
+			    		grp="<ce:inter-ref id=\"intr"+String.format("%04d", idcount)+"\" xlink:href=";
+	//		    		grpprp=grpprp.replaceAll("<ce:cross-ref\\s*refid=\"cor\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>", "<ce:cross-ref refid=\"cor"+String.format("%04d", idcount)+"\"><ce:sup>"+grp1+"</ce:sup></ce:cross-ref>");
+			    		xmlout1=grpprp+grp+grppop;
+			    	}
+		    	}
+		    	
+		    	
+				return xmlout1;
+			}
+
+			private String processcommontags(String xmlout1) {
+		    	System.out.println("Processing common Elements...");
+		    	xmlout1=xmlout1.replaceAll("<td:em\\s*>", "<ce:italic>");
+		    	xmlout1=xmlout1.replaceAll("</td:em\\s*>", "</ce:italic>");
+		    	xmlout1=xmlout1.replaceAll("<td:sub\\s*>", "<ce:inf>");
+		    	xmlout1=xmlout1.replaceAll("</td:sub\\s*>", "</ce:inf>");
+		    	xmlout1=xmlout1.replaceAll("(?s)<ce:section\\s+([^>]*?)>\\s*(<ce:label>((?:(?!(?:</?ce:label>)).)*?)</ce:label>)?\\s*<ce:section-title([^>]*?)\\s+role=\"([^\"]*?)\"([^>]*?)>",
+		    			"<ce:section $1 role=\"$5\">$2<ce:section-title$4$6>");
+
+		    	xmlout1=xmlout1.replaceAll("<td:span\\s+class=\"xps_ndash\">&#8211;</td:span>", "&#8211;");
+		    	xmlout1=xmlout1.replaceAll("<td:span\\s+class=\"xps_thinspace\">&#8201;</td:span>", "<ce:hsp sp=\"0.25\"/>");
+		    	
+		    	xmlout1=xmlout1.replaceAll("<td:sup\\s*>", "<ce:sup>");
+		    	xmlout1=xmlout1.replaceAll("</td:sup\\s*>", "</ce:sup>");
+		    	
+		    	
+		    	
+		    	
+		    	xmlout1=xmlout1.replaceAll("(?s)<ce:para\\s+([^>]*?)>\\s*<td:span\\s+class=\"supple_extended\">((?:(?!(?:</?td:span>)).)*?)</td:span>(.*?)</ce:para>\\s*", "<ce:para $1 view=\"extended\">$2$3</ce:para>");
+		    	
+		    	xmlout1=xmlout1.replaceAll("(?s)<ce:para\\s+([^>]*?)>\\s*<td:span\\s+class=\"supple_compactStandard\">((?:(?!(?:</?td:span>)).)*?)</td:span>(.*?)</ce:para>\\s*", "<ce:para $1 view=\"compact-standard\">$2$3</ce:para>");
+		    	
+		    	
+//		    	xmlout1=xmlout1.replaceAll("(?s)\\s*<td:span\\s+class=\"xps_interref\">((?:(?!(?:</?td:span>)).*?))</td:span>(.*?)", "<ce:inter-ref id> xlink:href>\"$1\"</ce:inter-ref>");
+		    	
+		    	
+		    	
+		    	return xmlout1;
+			}
+
+			private void processxmlout(String xmlout2) throws IOException {
+		    	System.out.println("Writing Xml file...");
+//		    	System.out.println(xmlout2);
+		    	if(xmlout2.matches("(.*?)(<td:([^>]*?)>|</td:([^>]*?)>)(.*?)")){
+		    		
+		    		Pattern p = Pattern.compile("(<td:([^>]*?)>|</td:([^>]*?)>)",Pattern.DOTALL);		
+		    		java.util.regex.Matcher m=p.matcher(xmlout2);
+			        int tdcount=0;
+			        int tdstrprp=0;
+			        int tdstrpop=0;
+			        String tdstr="";
+//			        String tdstr1="";
+			        while(m.find()){
+			        	++tdcount;
+			        	tdstr=m.group();
+			        	tdstrprp=m.start();
+			        	tdstrpop=m.end();
+			        	tdstr=xmlout2.substring(tdstrprp-100, tdstrprp)+tdstr+xmlout2.substring(tdstrpop, tdstrpop+100);
+			    		String err1="\nError[E"+tdcount+"]: Xml Not Converted properly as there exists some unprocessed information. Please check!\n"+m.group()+" in\n....."+tdstr+".....\n";
+						 System.out.println(err1);
+						 byte b[]=err1.getBytes();
+						 fos.write(b);
+			        }
+			        System.exit(tdcount);
+		    	}else
+		    	{
+		    
+			    	try
+			        {
+			          
+			          File file = new File(xmldirpath);
+			          
+			          FileOutputStream fileOutputStream=new FileOutputStream(file);
+			          fileOutputStream.write(xmlout.getBytes());
+			          fileOutputStream.close();
+				      System.out.println("Done!!!!!!");
+			        }
+			    	catch (IOException e)
+			        {
+			          e.printStackTrace();
+			        }
+		    	}
+			}
+
+			public static String TailInfo(String str3) throws IOException {
+				System.out.println("Processing Tail-Info...");
+//				System.out.println("tailstrData:..."+str3);
+				String  tail_str="";
+										
+				Pattern p = Pattern.compile("^(.*?)<td:div\\s*id=\"xps_ref\">(.*?)</td:div>",Pattern.DOTALL);		
+
+		        java.util.regex.Matcher m=p.matcher(str3);//		 
+
+		        if (m.find()) 
+		    	{
+//		        	System.out.println("tail_str:..."+str3);
+//		        	System.out.println("hi"+m.group());
+		        	tail_str=m.group(2);
+//		    		str.replace(body_str,"");
+		    		int prepos=0;
+		    		int postpos=0;
+		    		prepos=m.start();
+		    		postpos=m.end();
+//		    		
+		     		str=m.group(1)+str3.substring(postpos,str3.length());
+//		    		System.out.println("prepos..."+prepos);
+//		    		System.out.println("postpos.."+postpos);
+//		    		System.out.println("str:..."+str.substring(0,50));
+//		     		System.out.println("tail_str:..."+tail_str);
+//		     		System.out.println("str:..."+str);
+//		     		System.exit(0);
+		     		
+		     		tail_str=ProcessTailBiblioInfo(tail_str);
+		    	}
+		        
+		        tail_str="<tail>"+tail_str+"</tail>";
+				return tail_str;
+			}
+		
+			private static String ProcessTailBiblioInfo(String tail_str) throws IOException {
+				String localtail_str=tail_str;
+				System.out.println("\tReferences...");
+//				System.out.println("tail_str:..."+localtail_str);
+//				System.exit(0);
+				String referencetitle="";
+				String referencepara="";
+				String Tail="";
+				
+//					Pattern patt = Pattern.compile("(.*?)",Pattern.DOTALL);
+					
+//						java.util.regex.Matcher m = patt.matcher(tail_str);
+//						if(m.find()) 
+//						{
+//							localtail_str=m.group();
+//							localtail_str=localtail_str.replaceAll("<td:div\\s+id=\"xps_ref\">(.*?)</td:div>","<tail><ce:bibliography>(.*?)</ce:bibliography></tail>");
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:p\\s*class=\"ref\"([^>]*?)>(.*?)</td:p>\\s*", "<ce:section-title>$2</ce:section-title><ce:bibliography-sec>"); 
+																				
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:p\\s+id=\"([^\"]*?)\">(.*?)</td:p>\\s*", "<ce:bib-reference>$2</ce:bib-reference>"); 
+							
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+class=\"ref_lbl\">((?:(?!(</?td:span\\s+)).)*?)</td:span>\\s*","<ce:label>$1</ce:label>");
+							
+																
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+([^>]*?)class=\"ref_gn\"([^>]*?)>((?:(?!(</?td:span\\s+)).)*?)</td:span>([^<]+)?","<ce:given-name>$3</ce:given-name>");
+							
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+([^>]*?)class=\"ref_sn\"([^>]*?)>((?:(?!(</?td:span\\s+)).)*?)</td:span>([^<]+)?","<ce:surname>$3</ce:surname>");
+							
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+([^>]*?)class=\"ref_au\"([^>]*?)>((?:(?!(</?td:span\\s+)).)*?)</td:span>([^<]+)?","<sb:author>$3</sb:author>");
+							
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+([^>]*?)class=\"ref_atitle\"([^>]*?)>((?:(?!(</?td:span\\s+)).)*?)</td:span>([^<]+)?","<sb:title><sb:maintitle>$3</sb:maintitle></sb:title>");
+							
+							
+							
+//							localtail_str=localtail_str.replaceAll("(?s)<td:p\\s+id=\"([^>]*?)>((?:(?!(</?td:span\\s+)).)*?)</td:p>","<ce:bib-reference><sb:reference>$3</sb:reference></ce:bib-reference>");
+																
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+([^>]*?)class=\"ref_jtitle\"([^>]*?)>((?:(?!(</?td:span\\s+)).)*?)</td:span>([^<]+)?","<sb:host type=\"journal\"><sb:maintitle>$3</sb:maintitle>");
+							
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+([^>]*?)class=\"ref_fpage\"([^>]*?)>((?:(?!(</?td:span\\s+)).)*?)</td:span>([^<]+)?","<sb:first-page>$3</sb:first-page>");
+																				
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+([^>]*?)class=\"ref_lpage\"([^>]*?)>((?:(?!(</?td:span\\s+)).)*?)</td:span>([^<]+)?","<sb:last-page>$3</sb:last-page>");
+							
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+([^>]*?)class=\"ref_issue\"([^>]*?)>\\s*[\\(]?\\s*((?:(?!(</?td:span\\s+)).)*?)\\s*[\\)]?\\s*</td:span>([^<]+)?","<sb:issue-nr>$3</sb:issue-nr>");
+							
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+([^>]*?)class=\"ref_vol\"([^>]*?)>((?:(?!(</?td:span\\s+)).)*?)</td:span>([^<]+)?","<sb:volume-nr>$3</sb:volume-nr>");
+							
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+([^>]*?)class=\"ref_yr\"([^>]*?)>((?:(?!(</?td:span\\s+)).)*?)</td:span>([^<]+)?","<sb:date>$3</sb:date>");
+						
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+([^>]*?)class=\"end_ref_comment\"([^>]*?)>((?:(?!(</?td:span\\s+)).)*?)</td:span>([^<]+)?","<sb:comment>$3</sb:comment>");
+							
+//							localtail_str=localtail_str.replaceAll("\\s*(?s)<td:span\\s+([^>]*?)class=\"ref_atitle\"([^>]*?)>((?:(?!(<td:span\\s+)).)*?)</td:span>","<sb:title><sb:maintitle>$3</sb:maintitle></sb:title>");
+							
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s+class=\"ref_pub_name\">(.*?)</td:span>([^<]+)?","<sb:publisher-name>$1</sb:publisher-name>");
+							
+//							localtail_str=localtail_str.replaceAll("\\s*(?s)<td:span\\s+class=\"ref_pub_name\">(.*?)</td:span>","<sb:publisher><sb:name>$1</sb:name>");
+							
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<td:span\\s*class=\"ref_pub_place\">(.*?)</td:span>([^<]+)?","<sb:publisher-location>$1</sb:publisher-location>");
+							
+//							localtail_str=localtail_str.replaceAll("<td:span\\s+class=\"ref_issue\">(.*?)</td:span>","<sb:issue-nr>$1</sb:issue-nr>");
+							
+							localtail_str=localtail_str.replaceAll("(?s)\\s*<ce:bib-reference>\\s*(<ce:label>(?:(?:(?!(?:</?ce:label>)).)*?)</ce:label>)"
+									+ "\\s*((?:(?!(?:</?ce:bib-reference)).)*?)(<sb:host\\s+(?:[^>]*?))((?:(?!(?:</?ce:bib-reference)).)*?)</ce:bib-reference>\\s*",
+									"<ce:bib-reference>$1<sb:reference>$2$3$4</sb:reference></ce:bib-reference>");
+							
+							
+							localtail_str=localtail_str.replaceAll("(?s)((\\s*<sb:author>((?:(?!(</?sb:author>)).)*?)</sb:author>\\s*)+)+",
+									"<sb:authors>$1</sb:authors>");
+							
+							localtail_str=localtail_str.replaceAll("(?s)((?:<sb:authors>(?:(?:(?!(?:</sb:authors>)).)*?)</sb:authors>)"
+									+ "\\s*(?:<sb:title>(?:(?:(?!(?:</sb:title>)).)*?)</sb:title>)?)",
+									"<sb:contribution>$1</sb:contribution>");
+							
+							
+							localtail_str=localtail_str.replaceAll("<td:br\\s*/>","");
+							
+//							localtail_str=localtail_str.replaceAll("<td:div id=\"xps_ref\">","<tail><ce:bibliography>");
+							
+//							localtail_str=localtail_str.replaceAll("</td:div>","</ce:bibliography-sec></ce:bibliography></tail>");
+	
+//							localtail_str=localtail_str.replaceAll("</td:p>","</sb:reference></ce:bib-reference>");
+
+					
+//							System.out.println("ReferenceData:\'"+localtail_str+"\'");
+					
+//							System.out.println("tail_str:..."+localtail_str);
+				
+//						}
+							
+							localtail_str="<ce:bibliography>"+localtail_str+"</ce:bibliography-sec></ce:bibliography>";
+					return localtail_str;
+				}
+			
+			
+			public static String BodyInfo(String str2) throws IOException {
+				System.out.println("Processing Body-Info...");
+//				System.out.println("bodystrData:..."+str2);
+				String  body_str="";
+				Pattern p = Pattern.compile("^(.*?)<td:div\\s*id=\"xps_body\">(.*?)</td:div>",Pattern.DOTALL);		
+				
+//				Pattern p = Pattern.compile^(.*?)(<td:p\\s*class=\"h1\"|<td:div\\s*id=\"xps_body\">
+				
+		        java.util.regex.Matcher m=p.matcher(str2);//		 
+
+		        if (m.find()) 
+		    	{
+//		        	System.out.println("bodystrData:..."+str2);
+//		        	System.out.println("hi"+m.group());
+		        	body_str=m.group(2);
+//		    		str.replace(body_str,"");
+		    		int prepos=0;
+		    		int postpos=0;
+		    		prepos=m.start();
+		    		postpos=m.end();
+//		    		System.out.println(postpos); 		
+//		    		body_str=str2.substring(0,prepos);
+		     		str=m.group(1)+str2.substring(postpos,str2.length());
+//		    		System.out.println("prepos..."+prepos);
+//		    		System.out.println("postpos.."+postpos);
+//		    		System.out.println("str:..."+str.substring(0,50));
+//		    		System.exit(0);
+		    		body_str=ProcessBodyInfo(body_str);
+		    	}
+		    	
+				return body_str;
+			}
+			private static String ProcessBodyInfo(String body_str) throws IOException {
+			
+				String Body="";
+				String localbody_str=body_str.trim();
+												
+				System.out.println("\tProcessing Sections...");
+				
+				while(localbody_str.matches("(?s)(.*?)<td:p\\s*class=\"h1\"([^>]*?)>(.*?)")){
+//					System.out.println("ccgcxcxr");
+					localbody_str=localbody_str.replaceAll("(?s)^(.*?)<td:p\\s*class=\"h1\"([^>]*?)>(.*?)(<td:p\\s*class=\"h1\"([^>]*?)>|\\s*$)", "$1<ce:section><td:p class=\"sec-h1\"$2>$3</ce:section>$4");
+				}
+				
+				while(localbody_str.matches("(?s)(.*?)<td:p\\s*class=\"h2\"([^>]*?)>(.*?)")){
+//					System.out.println("ccgcxcxr");
+					localbody_str=localbody_str.replaceAll("(?s)^(.*?)<td:p\\s*class=\"h2\"([^>]*?)>(.*?)((?:(?:</ce:section>)?\\s*(?:<ce:section>)?)*<td:p\\s*class=\"(?:sec-h1|h2)\"([^>]*?)>|(?:(?:</ce:section\\d+>)?\\s*(?:<ce:section\\d+>)?)*\\s*$)", "$1<ce:section><td:p class=\"sec-h2\"$2>$3</ce:section>$4");
+				}
+				
+				while(localbody_str.matches("(?s)(.*?)<td:p\\s*class=\"h3\"([^>]*?)>(.*?)")){
+//					System.out.println("ccgcxcxr");
+					localbody_str=localbody_str.replaceAll("(?s)^(.*?)<td:p\\s*class=\"h3\"([^>]*?)>(.*?)((?:(?:</ce:section>)?\\s*(?:<ce:section>)?)*<td:p\\s*class=\"(?:sec-h1|sec-h2|h3)\"([^>]*?)>|(?:(?:</ce:section\\d+>)?\\s*(?:<ce:section\\d+>)?)*\\s*$)", "$1<ce:section><td:p class=\"sec-h3\"$2>$3</ce:section>$4");
+				}
+				
+				while(localbody_str.matches("(?s)(.*?)<td:p\\s*class=\"h4\"([^>]*?)>(.*?)")){
+//					System.out.println("ccgcxcxr");
+					localbody_str=localbody_str.replaceAll("(?s)^(.*?)<td:p\\s*class=\"h4\"([^>]*?)>(.*?)((?:(?:</ce:section>)?\\s*(?:<ce:section>)?)*<td:p\\s*class=\"(?:sec-h1|sec-h2|sec-h3|h4)\"([^>]*?)>|(?:(?:</ce:section\\d+>)?\\s*(?:<ce:section\\d+>)?)*\\s*$)", "$1<ce:section><td:p class=\"sec-h4\"$2>$3</ce:section>$4");
+				}
+				
+				while(localbody_str.matches("(?s)(.*?)<td:p\\s*class=\"h5\"([^>]*?)>(.*?)")){
+//					System.out.println("ccgcxcxr");
+					localbody_str=localbody_str.replaceAll("(?s)^(.*?)<td:p\\s*class=\"h5\"([^>]*?)>(.*?)((?:(?:</ce:section>)?\\s*(?:<ce:section>)?)*<td:p\\s*class=\"(?:sec-h1|sec-h2|sec-h3|sec-h4|h5)\"([^>]*?)>|(?:(?:</ce:section\\d+>)?\\s*(?:<ce:section\\d+>)?)*\\s*$)", "$1<ce:section><td:p class=\"sec-h5\"$2>$3</ce:section>$4");
+				}
+				
+				
+				while(localbody_str.matches("(?s)(.*?)<td:p\\s*class=\"sec-h(\\d+)\"([^>]*?)>(.*?)</td:p>(.*?)"))
+				{
+		        	String group="";
+					String group1="";
+					String group2="";
+					String group3="";
+					String groupprp="";
+					String grouppop="";
+					Pattern p = Pattern.compile("<td:p\\s*class=\"sec-h(\\d+)\"([^>]*?)>(.*?)</td:p>",Pattern.DOTALL);			
+			        java.util.regex.Matcher m=p.matcher(localbody_str);//	
+			        if(m.find()){
+			        	group=m.group();
+						group1=m.group(1);
+						group2=m.group(2);
+						group3=m.group(3).trim();
+						groupprp=localbody_str.substring(0,m.start());
+						grouppop=localbody_str.substring(m.end(),localbody_str.length());
+						
+//						group3=group3.replaceFirst("(?s)^\\s*((\\d+|[A-Z])([.]\\d)*)\\s+(.*?)$", "<ce:label>$1</ce:label><ce:section-title>$4</ce:section-title>").trim();
+						
+//						if(group3.matches("(?s)^\\s*((\\d+|[A-Z])([.]\\d)*)\\s+(.*?)$"))
+//						{
+//							group3=group3.replaceFirst("(?s)^\\s*((\\d+|[A-Z])([.]\\d)*)\\s+(.*?)$", "<ce:label>$1</ce:label><ce:section-title>$4</ce:section-title>").trim();
+//						}else{
+//							group3=("<ce:section-title>"+group3+"</ce:section-title>").trim();
+//						}
+//						
+						if(group2.matches("(.*?)\\s+role=\"grey\"(.*?)")){
+							if(group3.matches("(?s)^\\s*((\\d+|[A-Z])([.]\\d)*)\\s+(.*?)$"))
+							{
+								group3=group3.replaceFirst("(?s)^\\s*((\\d+|[A-Z])([.]\\d)*)\\s+(.*?)\\s*$", "<ce:label>$1</ce:label><ce:section-title role=\"$4\">$4</ce:section-title>").trim();
+							}else{
+								group3=("<ce:section-title role=\""+group3+"\">"+group3+"</ce:section-title>").trim();
+							}
+						}else
+						{
+							if(group3.matches("(?s)^\\s*((\\d+|[A-Z])([.]\\d)*)\\s+(.*?)$"))
+							{
+								group3=group3.replaceFirst("(?s)^\\s*((\\d+|[A-Z])([.]\\d)*)\\s+(.*?)$", "<ce:label>$1</ce:label><ce:section-title>$4</ce:section-title>").trim();
+							}else{
+								group3=("<ce:section-title>"+group3+"</ce:section-title>").trim();
+							}
+						}
+						
+						
+						
+						
+						localbody_str=groupprp+group3+grouppop;
+			        }
+		        	group="";
+					group1="";
+					group2="";
+					group3="";
+					groupprp="";
+					grouppop="";
+				}
+
+//				localbody_str=localbody_str.replaceAll("(?s)<td:p\\s*class=\"sec-h1\"([^>]*?)>(.*?)</td:p>", " ");
+				
+				
+				
+				localbody_str=localbody_str.replaceAll("\\s*<td:p\\s+([^>]*?)class=\"txt\"([^>]*?)>(.*?)</td:p>\\s*","<ce:para>$3</ce:para>");
+				
+				localbody_str=localbody_str.replaceAll("(?s)<td:span\\s+([^>]*?)class=\"xps_ndreflinking\"([^>]*?)>((?:(?!(<td:span\\s+)).)*?)</td:span>\\s*<td:span\\s+([^>]*?)class=\"xps_ndrefoutput\"([^>]*?)>((?:(?!(<td:span\\s+)).)*?)</td:span>","<ce:cross-ref refid=\"bib\">$7</ce:cross-ref>");
+				
+				localbody_str=localbody_str.replaceAll("(?s)<td:span\\s+([^>]*?)class=\"xps_ndreflinking\"([^>]*?)>((?:(?!(<td:span\\s+)).)*?)</td:span>","<ce:cross-ref refid=\"bib\">$3</ce:cross-ref>");			
+				
+				
+				System.out.println("\tProcessing Equations...");
+				
+								
+				//localbody_str=localbody_str.replaceAll("(?s)\\s*<td:p\\s+([^>]*?)class=\"eq\"([^>]*?)>\\s*<td:img\\s+([^>]*?)alt=\"([^>]*?)\"\\s*/>\\s*</td:p>\\s*",  "");
+				
+				while(localbody_str.matches("(?s)\\s*(.*?)<td:p\\s+([^>]*?)class=\"eq\"([^>]*?)>\\s*<td:img\\s+([^>]*?)alt=\"([^>]*?)\"\\s*/>\\s*</td:p>(.*?)\\s*"))
+				{
+		        	String group="";
+					//String group1="";
+					//String group2="";
+					//String group3="";
+					String group4="";
+					String groupprp="";
+					String grouppop="";
+					Pattern p = Pattern.compile("(?s)\\s*<td:p\\s+([^>]*?)class=\"eq\"([^>]*?)>\\s*<td:img\\s+([^>]*?)alt=\"([^>]*?)\"\\s*/>\\s*</td:p>\\s*",Pattern.DOTALL);			
+			        java.util.regex.Matcher m=p.matcher(localbody_str);//	
+			        if(m.find()){
+			        	group=m.group();
+						//group1=m.group(1);
+						//group2=m.group(2);
+						//group3=m.group(3).trim();
+			        	group4=m.group(4).trim();
+			        	group4=processmath(group4);
+						groupprp=localbody_str.substring(0,m.start());
+						grouppop=localbody_str.substring(m.end(),localbody_str.length());
+						
+//						
+//					
+						
+						
+						
+						localbody_str=groupprp+group4+grouppop;
+			        }
+		        	group="";
+					//group1="";
+					//group2="";
+					//group3="";
+		        	group4="";
+					groupprp="";
+					grouppop="";
+				}
+				
+//				System.out.println("localbody_str:"+localbody_str);
+//				System.exit(0);
+				
+				localbody_str=localbody_str.replaceAll("(?si)<td:span\\s+class=\"xps_floatlinking\">\\s*(Tables)((?:(?!(?:</?td:span>)).)*?)</td:span>", "<ce:cross-refs refid=\"tbl\">$1$2</ce:cross-refs>");
+				
+				localbody_str=localbody_str.replaceAll("(?si)<td:span\\s+class=\"xps_floatlinking\">\\s*(Table)((?:(?!(?:</?td:span>)).)*?)</td:span>", "<ce:cross-ref refid=\"tbl\">$1$2</ce:cross-ref>");
+				
+				localbody_str=localbody_str.replaceAll("(?si)\\s*<td:span\\s+class=\"xps_afloatlinking\">\\s*(Table)((?:(?!(?:</?td:span>)).)*?)</td:span>", "<ce:float-anchor refid=\"tbl\">$1$2</ce:float-anchor>");
+				
+				localbody_str=localbody_str.replaceAll("(?si)<td:span\\s+class=\"xps_floatlinking\">\\s*(figures|figs)((?:(?!(?:</?td:span>)).)*?)</td:span>", "<ce:cross-refs refid=\"fig\">$1$2</ce:cross-refs>");
+				
+				localbody_str=localbody_str.replaceAll("(?si)<td:span\\s+class=\"xps_floatlinking\">\\s*(figure|fig)((?:(?!(?:</?td:span>)).)*?)</td:span>", "<ce:cross-ref refid=\"fig\">$1$2</ce:cross-ref>");
+				
+				localbody_str=localbody_str.replaceAll("(?si)\\s*<td:span\\s+class=\"xps_afloatlinking\">\\s*(figure|fig)((?:(?!(?:</?td:span>)).)*?)</td:span>", "<ce:float-anchor refid=\"fig\">$1$2</ce:float-anchor>");
+				
+				localbody_str=localbody_str.replaceAll("(?s)<td:span\\s+class=\"xps_interref\">\\s*(doi\\s*:\\s*)?((?:(?!(?:</?td:span>)).)*?)</td:span>", "<ce:inter-ref xlink:href=\"http://dx.doi.org/$2\">$1$2</ce:inter-ref>");
+				
+				
+				localbody_str="<ce:sections>"+localbody_str+"</ce:sections>";
+				
+				localbody_str="<body>"+localbody_str+"</body>";
+				
+				
+//				System.out.println("localbody_str:"+localbody_str);
+				
+				
+				
+				
+//				Pattern pat = Pattern.compile("(<td:div\\s*id=\"xps_body\">(.*?)</td:div>)",Pattern.DOTALL);	
+				
+				
+//							System.out.println("localbody_str:\'"+localbody_str+"\'");
+						
+				
+//						while(introduction.matches("\\s*<td:p\\s*class=\"txt\"\\s*id=\"([^\"]*?)\">(.*?)</td:p>\\s*(<td:p\\s*class=\"txt\"(.*?))")){
+//							introduction=introduction.replaceAll("\\s*<td:p\\s*class=\"txt\"\\s*id=\"([^\"]*?)\">(.*?)</td:p>\\s*", "<ce:section-para>$2</ce:section-para>");
+//						}
+//					
+					
+											
+//						System.exit(0);
+						
+					
+						
+					
+					return localbody_str;
+//=============================================================
+				
+				}
+			
+		
+		
+	
+			private static String processmath(String mathstr1) {
+				// TODO Auto-generated method stub
+				String mathstr=mathstr1;
+				mathstr=mathstr.replaceAll("&lt;/", "</mml:");
+				mathstr=mathstr.replaceAll("&lt;", "<mml:");
+				mathstr=mathstr.replaceAll("&gt;", ">");
+				mathstr=mathstr.replaceAll("&quot;", "\"");
+				mathstr=mathstr.replaceAll("&amp;", "&");
+				
+				mathstr="<ce:para><ce:display><ce:formula>"+mathstr+"</ce:formula></ce:display></ce:para>";
+				//System.out.println(mathstr);
+				
+				return mathstr;
+			
+			}
+
+//			}
+
+			public static String HeaderInfo(String str1) throws IOException {
+				System.out.println("Processing Header-Info...");
+				String  header_str="";
+//				System.out.println("str:..."+str);
+				Pattern p = Pattern.compile("^(.*?)(<td:p\\s*class=\"h1\"|<td:div\\s*id=\"xps_body\">)",Pattern.DOTALL);
+		        java.util.regex.Matcher m=p.matcher(str1);
+		        if (m.find()) 
+		    	{
+//		    	   System.out.println("hi"+m.group());
+		    		header_str=m.group(1);
+		    		//str.replace(iteminfo_str,"");
+		    		int prepos=0;
+		    		int postpos=0;
+		    		prepos=m.start();
+		    		postpos=m.end();
+//		    		System.out.println(postpos); 		
+//		    		header_str=str1.substring(0,prepos);  		
+		    		str=m.group(2)+str1.substring(postpos,str1.length());
+//		    		System.out.println("prepos..."+prepos);
+//		    		System.out.println("postpos.."+postpos);
+//		    		str=removefromstr("<td:div\\s+([^>]*?)>(.*?)</td:div>",str);    		
+//		    		System.out.println("headerstr:..."+header_str);
+//		    		System.out.println("str:..."+str);
+		    
+		    	header_str=ProcessHeaderInfo(header_str);
+		
+		    	}
+		    	else
+		    	{
+		    		//log 4j writting error msg to fil
+		    		String err1="Error[14]: No HeaderInfo found in the input file. This information is mandatory for all files.\n";
+		    		System.out.println(err1);
+		    		byte b[]=err1.getBytes();
+//		    		System.out.println(err1);
+		    		fos.write(b);
+		    		System.exit(14);
+		    	}
+				return header_str;
+				
+			}
+			private static String ProcessHeaderInfo(String header_str) throws IOException {
+				
+				String localheader_str=header_str;
+				System.out.println("\tProcessing Article Title...");
+				String articletitle="";
+				String Head="";
+				
+					Pattern patt = Pattern.compile("<td:p\\s*class=\"at\"\\s*id=\"([^\"]*?)\">(.*?)</td:p>",Pattern.DOTALL);
+					java.util.regex.Matcher m = patt.matcher(localheader_str);
+					if(m.find()) 
+					{
+						articletitle=m.group(2);
+						localheader_str=localheader_str.replaceAll(m.group(),"");
+//						System.out.println("articletitle:\'"+articletitle+"\'");
+//						System.out.println("localheader_str:\'"+localheader_str+"\'");
+						articletitle="<ce:title>"+articletitle+"</ce:title>";
+//						System.out.println("articletitle:\'"+articletitle+"\'");
+						}
+					else{		
+						//log 4j writting error msg to fil
+			    		String err1="Error[15]: Article Title Not found in the input file. This is mandatory for all files.";
+			    		System.out.println(err1);
+			    		byte b[]=err1.getBytes();
+			    		fos.write(b);
+			    		System.exit(15);
+					}
+//=============================================================
+					System.out.println("\tProcessing Author Info...");
+					String authorinfo="";
+						Pattern pat = Pattern.compile("<td:p\\s*class=\"au\"\\s*id=\"([^\"]*?)\">(.*?)</td:p>",Pattern.DOTALL);
+						java.util.regex.Matcher m1 = pat.matcher(localheader_str);
+							if(m1.find()) 
+							{
+								String authorinfoGroup=m1.group();
+								authorinfo=m1.group(2);
+//								System.out.println("localheaderbefore_str:......"+localheader_str);
+								localheader_str=localheader_str.replace(authorinfoGroup,"");
+//								System.out.println("localheaderafter_str:......"+localheader_str);
+							
+								authorinfo=authorinfo.replaceAll("\\s*<td:span\\s*class=\"head_gn\">(.*?)</td:span>\\s*","<ce:given-name>$1</ce:given-name>");
+//								System.out.println("authorinfo:\'"+authorinfo+"\'");
+								authorinfo=authorinfo.replaceAll("\\s*<td:span\\s*class=\"head_sn\">(.*?)</td:span>\\s*","<ce:surname>$1</ce:surname>");
+								authorinfo=authorinfo.replaceAll("\\s*<td:sup>\\*</td:sup>\\s*","<ce:cross-ref refid=\"cor\"><ce:sup>&#x204e;</ce:sup></ce:cross-ref>");
+								authorinfo=authorinfo.replaceAll("\\s*<td:a href=\"([^\"]*?)\">(.*?)</td:a>\\s*","<ce:e-address type=\"email\">$1</ce:e-address>");
+					
+								
+								authorinfo=authorinfo.replaceAll("\\s*<td:span\\s*class=\"head_au\">\\s*(.*?)\\s*</td:span>\\s*(&#65279;)\\s*","<ce:author>$1</ce:author>");
+								
+								if(authorinfo.matches("(.*?)<[/]?td:(.*?)")){
+									String err1="Error[17]: Author information Not processed properly as there exists some unprocessed information - \'<td: or </td:\'. Please check!\n"+authorinfo;
+						    		System.out.println(err1);
+						    		byte b[]=err1.getBytes();
+						    		fos.write(b);
+						    		System.exit(17);
+								
+								}
+								
+//								System.out.println("authorinfo:\'"+authorinfo+"\'");
+//								System.out.println("localheader_str:......"+localheader_str+"");
+								authorinfo="<ce:author-group>"+authorinfo+"</ce:author-group>";
+//								System.out.println("authorinfo:\'"+authorinfo+"\'");
+//								
+								}
+							else{		
+								//log 4j writting error msg to fil
+					    		String err1="Error[16]: Author information Not found in the input file. This is mandatory for all files.";
+					    		System.out.println(err1);
+					    		byte b[]=err1.getBytes();
+					    		fos.write(b);
+					    		System.exit(16);
+							}
+
+//=============================================================				
+							System.out.println("\tProcessing Affiliation...");
+							String affiliation="";
+							String aff="";
+							String saff="";
+														
+							pat = Pattern.compile("\\s*<td:p\\s*class=\"aff\"\\s*id=\"([^\"]*?)\">(.*?)</td:p>\\s*(<td:p\\s*class=\"saff\"\\s*id=\"([^\"]*?)\">(.*?)</td:p>)?\\s*",Pattern.DOTALL);
+								m1 = pat.matcher(localheader_str);
+									if(m1.find()) 
+									{
+										String affinfoGroup=m1.group();
+										aff=m1.group(2);
+										saff=m1.group(5);
+										localheader_str=localheader_str.replaceAll(affinfoGroup,"");
+										saff=saff.replaceAll("\\s*<td:span\\s*class=\"xps_organization\">(.*?)</td:span>,\\s*","<sa:organization>$1</sa:organization>");
+										saff=saff.replaceAll("\\s*<td:span\\s*class=\"xps_address\">(.*?)</td:span>,\\s*","<sa:address-line>$1</sa:address-line>");
+										saff=saff.replaceAll("\\s*<td:span\\s*class=\"xps_city\">(.*?)</td:span>,\\s*","<sa:city>$1</sa:city>");
+										saff=saff.replaceAll("\\s*<td:span\\s*class=\"xps_pincode\">(.*?)</td:span>,\\s*","<sa:postal-code>$1</sa:postal-code>");
+										saff=saff.replaceAll("\\s*<td:span\\s*class=\"xps_country\">(.*?)</td:span>\\s*","<sa:country>$1</sa:country>");
+										
+//										System.out.println("aff:\'"+aff+"\'");
+//										System.out.println("saff:\'"+saff+"\'");
+										
+//										System.out.println("localheader_str:\'"+localheader_str+"\'");
+										aff="<ce:textfn>"+aff+"</ce:textfn>";
+										if(!saff.equals(""))
+										{
+											saff="<sa:affiliation>"+saff+"</sa:affiliation>";
+										}
+										affiliation="<ce:affiliation>"+aff+saff+"</ce:affiliation>";
+//										System.out.println("aff:\'"+affiliation+"\'");
+									}
+									authorinfo=authorinfo.replace("</ce:author-group>", affiliation+"</ce:author-group>");
+
+									if(affiliation.matches("(.*?)<[/]?td:(.*?)")){
+										String err1="Error[18]: Affiliation information Not processed properly as there exists some unprocessed information - \'<td: or </td:\'. Please check!\n"+affiliation;
+							    		System.out.println(err1);
+							    		byte b[]=err1.getBytes();
+							    		fos.write(b);
+							    		System.exit(18);
+									
+									}
+									
+				
+	//=============================================================
+									System.out.println("\tProcessing Corresponding Address...");
+									String auttel="";			
+									pat = Pattern.compile("\\s*<td:div\\s*id=\"xps_corr\">\\s*<td:p\\s*class=\"cor\"\\s*id=\"([^\"]*?)\">(.*?)</td:p>\\s*</td:div>\\s*",Pattern.DOTALL);
+									m1 = pat.matcher(localheader_str);
+									if(m1.find()) 
+										{
+											String auttelinfoGroup=m1.group();
+											auttel=m1.group(2);
+//											System.out.println(".......localheader_str:\'"+localheader_str+"\'");
+											localheader_str=localheader_str.replace(auttelinfoGroup,"");
+											auttel=auttel.replaceAll("^\\s*<td:sup>\\*</td:sup>\\s*","<ce:label>&#x204e;</ce:label><ce:text>");
+											auttel=auttel+"</ce:text>";
+											if(!auttel.equals(""))	
+												{
+													auttel="<ce:correspondence>"+auttel+"</ce:correspondence>";
+												}
+//												System.out.println("auttel:\'"+auttel+"\'");
+										}
+										  if(auttel.matches("(.*?)<[/]?td:(.*?)"))
+										  {
+											 String err1="Error[19]: Corresponding information Not processed properly as there exists some unprocessed information - \'<td: or </td:\'. Please check!\n"+auttel;
+									    	 System.out.println(err1);
+									    	 byte b[]=err1.getBytes();
+									    	 fos.write(b);
+									    	 System.exit(19);
+									       }
+										authorinfo=authorinfo.replace("</ce:author-group>", auttel+"</ce:author-group>");
+											
+				//=============================================================		
+											//reserved for author-footnote
+				//=============================================================	
+								System.out.println("\tProcessing Article History...");
+								String history="";
+								String history_temp="";
+								
+								
+								
+	//							System.out.println("localheader_str:\'"+localheader_str+"\'");
+																
+								 patt = Pattern.compile("\\s*<td:p\\s*class=\"history\"\\s*id=\"([^\"]*?)\">(.*?)</td:p>",Pattern.DOTALL);
+							
+									 m1 = patt.matcher(localheader_str);
+										if(m1.find()) 
+										{
+											String historyinfoGroup=m1.group();
+											history=m1.group(2);
+											
+											localheader_str=localheader_str.replace(historyinfoGroup,"");
+										
+											
+											history=history.replaceAll("\\s*(Received)\\s*[:]\\s*(\\d+)\\s*[-]\\s*(\\d+)\\s*[-]\\s*(\\d+)\\s*","<ce:date-received day=\"$2\" month=\"$3\" year=\"$4\"/>");
+											history=history.replaceAll("\\s*(Revised)\\s*[:]\\s*(\\d+)\\s*[-]\\s*(\\d+)\\s*[-]\\s*(\\d+)\\s*","<ce:date-revised day=\"$2\" month=\"$3\" year=\"$4\"/>");
+											history=history.replaceAll("\\s*(Accepted)\\s*[:]\\s*(\\d+)\\s*[-]\\s*(\\d+)\\s*[-]\\s*(\\d+)\\s*","<ce:date-accepted day=\"$2\" month=\"$3\" year=\"$4\"/>");
+	
+											history_temp=history;
+											history_temp=history_temp.replaceAll("<ce:date-([^>]*?)>", "").trim();
+											if(!history_temp.equals(""))
+											{
+												 String err1="Error[20]: History information Not processed properly as there exists some unprocessed information. Please check!\n"+history;
+										    	 System.out.println(err1);
+										    	 byte b[]=err1.getBytes();
+										    	 fos.write(b);
+										    	 System.exit(20);
+											}
+											
+											localheader_str=localheader_str.trim();
+//											System.out.println("localheader_str:..."+localheader_str);
+//											System.out.println("history:\'"+history+"\'");
+											
+										}
+//										System.exit(0);
+										
+//=============================================================	
+								 System.out.println("\tProcessing Abstract and keywords ...");	
+								 System.out.println("\t\tProcessing Abstract ...");
+								 String abskwd= "";
+								 String abstinfo= "";
+								 String abstitle= "";
+								 String abstpara= "";
+								 String keywords= "";
+																			
+								 patt = Pattern.compile("\\s*<td:div\\s*id=\"xps_abstract\">(.*?)</td:div>\\s*",Pattern.DOTALL);
+								 m1 = patt.matcher(localheader_str);
+//								 System.out.println("hiii1");
+									if(m1.find()) 
+									  {
+//										System.out.println("hiii2");
+										abskwd=m1.group(1);
+										keywords=m1.group(1);
+										abstinfo=m1.group(1);
+										localheader_str=localheader_str.replace(m1.group(),"").trim();
+//										System.out.println("abstract:......\'"+abskwd+"\'");
+//										System.exit(0);
+										abstinfo=abstinfo.replaceAll("(<td:p\\s*class=\"kwd\"([^>]*?)>(.*?)</td:p>)", "").trim();
+										keywords=keywords.replaceAll("(?s)^(.*?)(<td:p\\s*class=\"kwd\"([^>]*?)>(.*?)</td:p>)(.*?)$", "$2").trim();
+																				
+										abskwd=abskwd.replace(abstinfo, "");
+										abskwd=abskwd.replace(keywords, "");
+										abskwd=abskwd.trim();
+										
+										
+										abstinfo=abstinfo.replaceAll("(?s)\\s*<td:p\\s*class=\"abs\"([^>]*?)>(.*?)</td:p>", "<ce:abstract><td:p class=\"abs\"$1>$2</td:p>");
+										
+										abstinfo=abstinfo.replaceAll("(?s)\\s*(((\\s*<td:p\\s*class=\"absp\"([^>]*?)>(.*?)</td:p>\\s*)+)+)\\s*", "<ce:abstract-sec>$2</ce:abstract-sec>");
+										abstinfo=abstinfo.replaceAll("(?s)\\s*<td:p\\s*class=\"abs\"([^>]*?)>(.*?)</td:p>\\s*", "<ce:section-title>$2</ce:section-title>");
+										while(abstinfo.matches("(?s)(.*?)\\s*<td:p\\s*class=\"absp\"([^>]*?)>(.*?)</td:p>\\s*(<ce:simple-para>|<td:p\\s*class=\"absp\"|</ce:abstract-sec>)(.*?)")){
+											abstinfo=abstinfo.replaceAll("(?s)\\s*<td:p\\s*class=\"absp\"([^>]*?)>(.*?)</td:p>\\s*(<ce:simple-para>|<td:p\\s*class=\"absp\"|</ce:abstract-sec>)", "<ce:simple-para>$2</ce:simple-para>$3");
+										}
+										abstinfo=abstinfo+"</ce:abstract>";
+										System.out.println("\t\tProcessing Keywords ...");
+										keywords=keywords.replaceAll("(?s)<td:p\\s*class=\"kwd\"\\s*role=\"([^\"]*?)\"([^>]*?)>(Keywords)\\s*[:]?\\s*(&#8203;)?\\s*<td:span\\s*class=\"keyword\">", "<ce:keywords class=\"$1\"><ce:section-title>$3</ce:section-title><td:span class=\"keyword\">");
+										keywords=keywords.replaceAll("(?s)\\s*<td:span\\s*class=\"keyword\">", "<ce:keyword><ce:text>");
+										keywords=keywords.replaceAll("(?s)\\s*</td:span>\\s*(,)?\\s*", "</ce:text></ce:keyword>");
+										keywords=keywords.replaceAll("(?s)\\s*</td:p>$", "</ce:keywords>");
+
+//										System.out.println("abstract:......\'"+abstinfo+"\'");
+//										System.out.println("keywords:......\'"+keywords+"\'");
+										
+									  }	
+									
+									if(!abskwd.equals(""))
+									{
+										String err1="Error[21]: Abstract and keyword information Not processed properly as there exists some unprocessed information. Please check!\n"+abskwd;
+								    	 System.out.println(err1);
+								    	 byte b[]=err1.getBytes();
+								    	 fos.write(b);
+								    	 System.exit(21);
+									}
+									
+									localheader_str=localheader_str.replaceAll("<td:hr\\s*/>", "");
+//									System.out.println("localheader_str:......\'"+localheader_str+"\'");
+			
+									if(!localheader_str.equals(""))
+									{
+										String err1="Error[22]: Header information Not processed properly as there exists some unprocessed information. Please check!\n"+localheader_str;
+										 System.out.println(err1);
+										 byte b[]=err1.getBytes();
+										 fos.write(b);
+										 System.exit(22);
+									}
+									localheader_str="<head>"+articletitle+authorinfo+history+abstinfo+keywords+"</head>";
+//											System.out.println("Head:......\'"+Head+"\'");
+		
+				return localheader_str;
+			}
+
+			public static String ItemInfo(String str1) throws IOException, SAXException 
+			{
+				String  iteminfo_str="";
+				System.out.println("Processing Item-Info...");
+				
+//		    	System.out.println("Item-info...str.."+str);
+		    	
+		    	Pattern p = Pattern.compile("<td:div\\s+id=\"xps_meta\"\\s*>(.*?)</td:div>");
+		    	
+//		    	java.util.regex.Matcher m = p.matcher(str);    	
+//		        Pattern p = Pattern.compile("<td:br />");
+		    	
+		        java.util.regex.Matcher m=p.matcher(str1);
+		        
+	
+		    	if (m.find()) 
+		    	{
+		    	   
+		    		iteminfo_str=m.group();
+		    		//str.replace(iteminfo_str,"");
+		    		int prepos=0;
+		    		int postpos=0;
+		    		prepos=m.start();
+		    		postpos=m.end();
+//		    		System.out.println(postpos); 		
+		    		
+		    		str=str1.substring(0,prepos)+str1.substring(postpos,str1.length());
+//		    		System.out.println("prepos..."+prepos);
+//		    		System.out.println("postpos.."+postpos);
+		    		
+//		    		str=removefromstr("<td:div\\s+([^>]*?)>(.*?)</td:div>",str);
+		    		
+//		    		System.out.println("iteminfo_str:..."+iteminfo_str);
+		    		//System.out.println("str:..."+str);
+		    		
+		    		iteminfo_str=ProcessItemInfo(iteminfo_str);
+//		    		
+		    		
+		    	}
+		    	else
+		    	{
+		    		//log 4j writting error msg to fil
+		    		String err1="Error[3]: No ItemInfo found in the input file. This information is mandatory for all files.\n";
+		    		System.out.println(err1);
+		    		byte b[]=err1.getBytes();
+//		    		System.out.println(err1);
+		    		fos.write(b);
+		    		System.exit(3);
+		    	}
+		    	return iteminfo_str;
+		    }
+			
+			
+			public static String ProcessItemInfo(String iteminfo_str) throws IOException, SAXException {
+				String localiteminfo_str=iteminfo_str;
+				localiteminfo_str=localiteminfo_str.replaceAll("^<td:div\\s+id=\"xps_meta\"\\s*>\\s*\\**", "");
+				localiteminfo_str=localiteminfo_str.replaceAll("\\s*\\**</td:div>$", "");
+				
+//				System.out.println("localiteminfo_str=====:"+localiteminfo_str);
+				
+							
+//===============================================Article language code capturing
+				System.out.println("\tProcessing Article Language...");
+//				String langcode="";
+				if(localiteminfo_str.matches("(.*?)<td:br\\s*/>\\s*Lang:\\s*([a-z]+)\\s*<td:br\\s*/>(.*?)"))
+				{
+					Pattern patt = Pattern.compile("<td:br\\s*/>\\s*Lang:\\s*([a-z]+)\\s*<td:br\\s*/>");
+					java.util.regex.Matcher m = patt.matcher(localiteminfo_str);
+					if(m.find()) 
+					  {
+						langcode=m.group(1);
+						localiteminfo_str=localiteminfo_str.replaceAll(m.group(),"<td:br/>");
+						  }
+					
+					if(LangCode.matches("(.*)[|]"+langcode+"[|](.*)")){
+//						System.out.println("langcode:\'"+langcode+"\'");
+//						System.out.println("langcode:correct");
+					}
+					else 
+					{
+						//log 4j writting error msg to fil
+			    		String err1="Error[5]: The given Article Language code \'"+langcode+"\' is invalid!\nThe valid Article Language codes are:"+LangCode;
+			    		System.out.println(err1);
+			    		byte b[]=err1.getBytes();
+			    		fos.write(b);
+			    		System.exit(5);
+					}
+//					System.out.println("loc:.."+localiteminfo_str);
+				}else{		
+					//log 4j writting error msg to fil
+		    		String err1="Error[4]: No Article Language code found in the input file. This is mandatory for all files.";
+		    		System.out.println(err1);
+		    		byte b[]=err1.getBytes();
+		    		fos.write(b);
+		    		System.exit(4);
+				}
+//=============================================================
+				System.out.println("\tProcessing Client Information...");
+				String client="";
+				if(localiteminfo_str.matches("(.*?)<td:br\\s*/>\\s*Client:\\s*([A-Za-z]+)\\s*<td:br\\s*/>(.*?)"))
+									
+				{
+//					System.out.println("local:.."+localiteminfo_str);
+					Pattern pattern = Pattern.compile("<td:br\\s*/>\\s*Client:\\s*([A-Za-z]+)\\s*<td:br\\s*/>");
+					java.util.regex.Matcher m = pattern.matcher(localiteminfo_str);
+					if(m.find()) 
+					  {
+						client=m.group(1);
+//						System.out.println("ClientInfo:.."+client);
+						localiteminfo_str=localiteminfo_str.replaceAll(m.group(),"<td:br/>");
+					  }
+//					System.out.println("client:..."+client);
+					if(client.matches("[E][L][J]")){
+//						System.out.println("ClientDetails.."+client);
+					}
+					else 
+					{
+						//log 4j writting error msg to fil
+			    		String err1="Error[6]: Invalid Client Information "+client+" is given!\nThe valid client name is ELJ";
+			    		System.out.println(err1);
+			    		byte b[]=err1.getBytes();
+			    		fos.write(b);
+			    		System.exit(6);
+					}
+//					System.out.println("local:.."+localiteminfo_str);
+									
+				}
+				else 
+				{
+					//log 4j writting error msg to fil
+		    		String err1="Error[8]: Client Information is not given!";
+		    		System.out.println(err1);
+		    		byte b[]=err1.getBytes();
+		    		fos.write(b);
+		    		System.exit(8);
+				}
+					
+//=============================================================
+				System.out.println("\tProcessing Jid and Aid ...");
+				String jid="";
+				String aid="";
+				if(localiteminfo_str.matches("(.*?)<td:br\\s*/>\\s*([A-Za-z]+)\\s+(\\d+)\\s*<td:br\\s*/>(.*?)"))
+									
+				{
+//					System.out.println("local:.."+localiteminfo_str);
+					Pattern pattern = Pattern.compile("<td:br\\s*/>\\s*([A-Za-z]+)\\s+(\\d+)\\s*<td:br\\s*/>");
+					java.util.regex.Matcher m = pattern.matcher(localiteminfo_str);
+					if(m.find()) 
+					  {
+						jid=m.group(1);
+						aid=m.group(2);
+//						System.out.println("Jid,aid:.."+jid+","+aid);
+						localiteminfo_str=localiteminfo_str.replaceAll(m.group(),"<td:br/>");
+					  }
+//					System.out.println("client:..."+client);
+	
+//					System.out.println("local:.."+localiteminfo_str);
+									
+				}
+				else
+				{
+					//log 4j writting error msg to fil
+		    		String err1="\t\tError[7]: Either Journel-id or Article-id not found!\n\t\tCorrect format is AAA 123";
+		    		System.out.println(err1);
+		    		byte b[]=err1.getBytes();
+		    		fos.write(b);
+		    		System.exit(7);
+				}
+				
+//=============================================================		
+				System.out.println("\tProcessing Pii...");
+				
+				String pii="";
+				
+				if(localiteminfo_str.matches("(.*?)<td:br\\s*/>\\s*(([S])(\\d{4})[-](\\d{4})[\\(](\\d{2})[\\)](\\d{5})[-](\\d))<td:br\\s*/>(.*?)"))
+					
+				{
+//					System.out.println("pii:.."+localiteminfo_str);
+					Pattern pattern = Pattern.compile("<td:br\\s*/>\\s*(([S])(\\d{4})[-](\\d{4})[\\(](\\d{2})[\\)](\\d{5})[-](\\d))<td:br\\s*/>");
+					java.util.regex.Matcher m = pattern.matcher(localiteminfo_str);
+					if(m.find()) 
+					  {
+						pii=m.group(1);
+//						System.out.println("localiteminfo_str1:..."+localiteminfo_str);
+//						System.out.println("Group:..."+m.group());
+						localiteminfo_str=localiteminfo_str.replace(m.group(),"<td:br/>");
+//						System.out.println("localiteminfo_str2:..."+localiteminfo_str);
+					  }
+
+//					System.out.println("piino:.."+pii);
+									
+				}
+				else
+				{
+					//log 4j writting error msg to fil
+		    		String err1="\t\tError[9]: PII Information is not found!";
+		    		System.out.println(err1);
+		    		byte b[]=err1.getBytes();
+		    		fos.write(b);
+		    		System.exit(9);
+				}
+				
+//=============================================================		
+				System.out.println("\tProcessing Doi and Articlenumber...");
+				
+				String doi="";
+				String articlenumber="";
+				
+				if(localiteminfo_str.matches("(.*?)<td:br\\s*/>\\s*((10.1016/)(.*?))<td:br\\s*/>(.*?)"))
+									
+				{
+					
+					Pattern pattern = Pattern.compile("<td:br\\s*/>\\s*((10.1016/)(.*?))<td:br\\s*/>");
+					java.util.regex.Matcher m = pattern.matcher(localiteminfo_str);
+					if(m.find()) 
+					  {
+						doi=m.group(1);
+						articlenumber=doi.substring(doi.lastIndexOf(".")+1);
+						localiteminfo_str=localiteminfo_str.replaceAll(m.group(),"<td:br/>");
+					  }
+
+//					System.out.println("doino:.."+doi);
+//					System.out.println("Articleno:.."+articlenumber);
+									
+				}
+				else
+				{
+					//log 4j writting error msg to fil
+		    		String err1="\t\tError[10]: Doi and Articlenumber Information is not found!";
+		    		System.out.println(err1);
+		    		byte b[]=err1.getBytes();
+		    		fos.write(b);
+		    		System.exit(10);
+				}
+				
+//				System.out.println("localiteminfo_str:..."+localiteminfo_str);
+//=============================================================		
+				System.out.println("\tProcessing Copyrightstatus...");
+
+				String copyrightstatus="";
+				String copyrighttype ="";
+				String copyrightyear="";
+				String copyrightorg="";
+
+				if(localiteminfo_str.matches("(.*?)<td:br\\s*/>\\s*(\\d{3})\\s*<td:br\\s*/>(.*?)"))
+									
+				{
+					Pattern pattern = Pattern.compile("<td:br\\s*/>\\s*(\\d{3})\\s*<td:br\\s*/>");
+					java.util.regex.Matcher m = pattern.matcher(localiteminfo_str);
+					if(m.find()) 
+					  {
+						copyrightstatus=m.group(1);
+//						System.out.println("copyrightstatus is:... "+m.group(1));
+				
+						//getting current year 
+						
+						Calendar now = Calendar.getInstance();
+						copyrightyear="" + now.get(Calendar.YEAR);
+						//System.out.println("Current Year is : " + now.get(Calendar.YEAR));
+														 
+						String copyrightstatuspatternmatch="[@|]"+copyrightstatus+"[|](.*?)[|](.*?)[|@]";
+						Pattern pattern1 = Pattern.compile(copyrightstatuspatternmatch);
+//						Pattern pattern1 = Pattern.compile("@|"+copyrightstatus+"|([a-zA-Z]*?)|@");
+						
+						java.util.regex.Matcher m1 = pattern1.matcher(copyrightInfo);     				    						      
+						
+						if(m1.find())
+						{
+//							System.out.println(m1.group());
+							copyrighttype = m1.group(1).trim();
+							copyrightorg =m1.group(2).trim();
+						}
+						else
+						{
+							//log 4j writting error msg to fil
+				    		String err1="\t\tError[12]:Invalid Copyrightstatus \'"+copyrightstatus+"\' is given! The valid copyrightstatus are: 000,001,002,003,004,005,006,007,008";
+				    		System.out.println(err1);
+				    		byte b[]=err1.getBytes();
+				    		fos.write(b);
+				    		System.exit(12);	
+						}
+						     
+						          
+//						    System.out.println("\t\tcopyrighttype is: "+copyrighttype+"\tcopyrightyear: " + copyrightyear+"\tcopyrightorg:"+copyrightorg);
+						
+						localiteminfo_str=localiteminfo_str.replace(m.group(),"<td:br/>");
+					  }
+				
+				}
+				else 
+				{
+					//log 4j writting error msg to fil
+		    		String err1="\t\tError[11]:Copyrightstatus Information is not found!";
+		    		System.out.println(err1);
+		    		byte b[]=err1.getBytes();
+		    		fos.write(b);
+		    		System.exit(11);
+				}
+				
+//				System.out.println("localiteminfo_str:..."+localiteminfo_str);
+
+				localiteminfo_str=localiteminfo_str.replaceAll("\\s*<td:br\\s*/>\\s*", "");
+				
+				localiteminfo_str=localiteminfo_str.trim();
+				
+//				System.out.println("localiteminfo_str:..."+localiteminfo_str);
+				
+				if(localiteminfo_str.equals(""))
+				{
+					localiteminfo_str="<item-info><jid>"+jid+"</jid>";
+					
+					if(!aid.equals("")){
+						localiteminfo_str+="<aid>"+aid+"</aid>";
+					}
+					if(!articlenumber.equals("")){
+						localiteminfo_str+="<ce:article-number>"+articlenumber+"</ce:article-number>";}
+					
+						localiteminfo_str+="<ce:pii>"+pii+"</ce:pii>" ;
+					if(!doi.equals("")){
+						localiteminfo_str+="<ce:doi>"+doi+"</ce:doi>" ;}
+//					
+						localiteminfo_str+="<ce:copyright type=\""+copyrighttype+"\" year=\""+copyrightyear+"\">"+copyrightorg+"</ce:copyright>" ;
+						localiteminfo_str+="</item-info>";
+					
+					
+//					System.out.println("localiteminfo_strxml:..."+localiteminfo_str);
+					
+					
+				}
+				else 
+				{
+
+						//log 4j writting error msg to fil
+			    		String err1="\t\tError[13]:ItemInfo not processed completly!\n\t\t\""+localiteminfo_str+"\" is left unprocessed!\n\t\tPlease check!";
+			    		System.out.println(err1);
+			    		byte b[]=err1.getBytes();
+			    		fos.write(b);
+			    		System.exit(13);
+
+				}
+				//System.out.println("str2===="+str);
+				return localiteminfo_str;
+			}
+			
+//=============================================================		
+			
+
+			public String removefromstr(String removeStr,String str)
+			{
+				System.out.println("removeStr:"+removeStr);
+				  Pattern patt = Pattern.compile((String) removeStr);
+				  java.util.regex.Matcher m = patt.matcher(str);
+				  StringBuffer sb = new StringBuffer(str.length());
+				  while (m.find()) 
+				  {
+				    String text = m.group();
+				    System.out.println("text:"+text);
+				    // ... possibly process 'text' ...
+				    System.out.println("sb-before:"+sb.toString());
+				    //m.appendReplacement(sb, m.quoteReplacement(text));
+				    m.appendReplacement(sb, "");
+				    System.out.println("sb-after:"+sb.toString());
+				  }
+				  m.appendTail(sb);
+				  return sb.toString();
+				}
+			
+//-------------------------------------------------------------------------------------------------------------			 	
+
+	/*		public static void initXML() throws ParserConfigurationException,TransformerConfigurationException, SAXException 
+			{
+		        // JAXP + SAX
+		        SAXTransformerFactory tf = (SAXTransformerFactory) SAXTransformerFactory
+		                .newInstance();
+
+		        th = tf.newTransformerHandler();
+		        Transformer serializer = th.getTransformer();
+		        serializer.setOutputProperty(OutputKeys.ENCODING, "ISO-8859-1");
+		        // pretty XML output
+		        serializer.setOutputProperty(
+		                "{http://xml.apache.org/xslt}indent-amount", "4");
+		        serializer.setOutputProperty(OutputKeys.INDENT, "yes");
+		        th.setResult(out);
+		        th.startDocument();
+		        atts = new AttributesImpl();
+		        th.startElement("", "", "item-info", atts);
+		        System.out.println("ItemInfer.."+serializer);
+		    }
+
+		   
+			    public void closeXML() throws SAXException 
+		    {
+		       
+		        th.endElement("", "", "item-info");
+		        th.endDocument();
+		    }
+		
+*/
+}
