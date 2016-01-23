@@ -1,0 +1,60 @@
+my input text file 
+
+entry role="rowhead" align="left" morerows="3">pH<ce:cross-ref id="crf0030" refid="tblfn0015"><ce:sup>**</ce:sup>
+</ce:cross-ref><entry align="left">8</entry><entry align="char" char="±">3.83±0.16</entry><entry 
+align="char" char="±">187.07±9.09</entry></row><row><entry role="rowhead" align="left" morerows="2">Moisture content
+
+output
+
+entry role="rowhead" align="left" morerows="2">pH<ce:cross-ref id="crf0030" refid="tblfn0015"><ce:sup>**</ce:sup>
+</ce:cross-ref><entry align="left">8</entry><entry align="char" char="±">3.83±0.16</entry><entry 
+align="char" char="±">187.07±9.09</entry></row><row><entry role="rowhead" align="left" morerows="1">Moisture content
+
+my code 
+          while(table_str.matches("(?s)(.*?)morerows=(.*?)"))
+								{
+									System.out.println("morerowsdata:");
+									Pattern papa = Pattern.compile("morerows=(.*?)\\s+");
+									java.util.regex.Matcher ma = papa.matcher(table_str);
+							    	if (ma.find())
+							    	{
+							    		String morerows=ma.group();
+							    		String morerowscount=ma.group(1);
+							    		int a = Integer.parseInt(morerowscount);
+							    		int b=--a;
+							    		String morerows1=Integer.toString(b); 
+						    			table_str=table_str.replaceAll(ma.group(), "morerows=\""+morerows1+"\" ");
+						    			System.out.println("morerows:"+morerows1);
+								    		}
+							    	}
+			
+result in console along wth error:
+
+morerowsdata:
+morerowscount:3
+morerows:2
+morerowsdata:
+java.lang.NumberFormatException: For input string: ""2""
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at New.Code.ProcesstableInfo(Code.java:932)
+	at New.Code.ProcessFloatsInfo(Code.java:815)
+	at New.Code.FloatsInfo(Code.java:796)
+	at New.Code.doit(Code.java:146)
+	at New.Code.main(Code.java:80)
+	
+	
+	in the above output iam note checkong next line nanu antay same output malii inpu ga potodi so andukay naku error vastodi
+so i need check next value
+
+	But my required output is :
+	
+morerowsdata:
+morerowscount:3
+morerows:2
+
+morerowsdata:
+morerowscount:2
+morerows:1
+	
