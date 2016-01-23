@@ -27,3 +27,23 @@ output===>morerows="3";
 						    				System.out.println("mores:"+i);
 							    		}
 							    	}
+
+
+
+
+
+
+
+
+
+
+
+            String morerows="6"; 
+		int a=Integer.parseInt(morerows);
+	    int b=--a;
+		String morerows1=Integer.toString(b); 
+		
+		
+		
+		
+		
