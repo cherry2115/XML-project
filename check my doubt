@@ -1,0 +1,29 @@
+input===>morerows="6";
+output===>morerows="5";
+input===>morerows="4";
+output===>morerows="3";
+
+// i done code like this but it is checking only 1st value after that  2nd value not reading ra check it and send me 
+
+	while(table_str.matches("(?s)(.*?)morerows=(.*?)"))
+								{
+										
+									Pattern papa = Pattern.compile("morerows=(.*?)\\s+");
+										
+							    	java.util.regex.Matcher ma = papa.matcher(table_str);
+							    	if (ma.find())
+							    	{
+							    		String morerows=ma.group();
+							    		System.out.println("morerowsdata:"+morerows);
+							    		String morerowscount=ma.group(1);
+//							    		if (ma.hasNext()){
+							    		
+							    		int i = Integer.parseInt(morerowscount)-1;
+							    		morerowscount = String.valueOf(i);
+						    			table_str=table_str.replaceAll(ma.group(), "morerows=\""+morerowscount+"\" ");
+						    				
+						    				System.out.println("morerowscount:"+morerowscount);
+						    				System.out.println("morerows:"+morerows);
+						    				System.out.println("mores:"+i);
+							    		}
+							    	}
