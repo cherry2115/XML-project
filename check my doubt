@@ -39,9 +39,10 @@ output===>morerows="3";
 
 
             String morerows="6"; 
-		int a=Integer.parseInt(morerows);
-	    int b=--a;
-		String morerows1=Integer.toString(b); 
+		int a=Integer.parseInt(morerows)-1;
+
+		String morerows1=Integer.toString(a); 
+		System.out.println(morerows1);
 		
 		
 		
